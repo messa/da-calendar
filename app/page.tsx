@@ -38,7 +38,7 @@ export default function Home() {
 
       <p className="mb-4" style={{ fontSize: '14px' }}>
         Tato stránka shromažďuje informace o akcích a kurzech, které jsou dostupné na
-        stránce <a href='https://daily-adventures.cz/kalendar-akci-a-kurzu/' style={{ color: 'blue' }}>https://daily-adventures.cz/kalendar-akci-a-kurzu/</a>.
+        stránce <a href='https://daily-adventures.cz/kalendar-akci-a-kurzu/' style={{ color: 'blue' }}>daily-adventures.cz/kalendar-akci-a-kurzu/</a>.
       </p>
 
       <div className="grid grid-cols-2 gap-4">
@@ -60,6 +60,10 @@ export default function Home() {
           </div>
         ))}
       </div>
+
+      <p className="mb-4">
+        Github: <a href='https://github.com/messa/da-calendar' style={{ color: 'blue' }}>github.com/messa/da-calendar</a>
+      </p>
     </main>
   );
 }

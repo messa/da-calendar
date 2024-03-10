@@ -30,15 +30,15 @@ const dayOfWeekNames = ['Ne', 'Po', 'Út', 'St', 'Čt', 'Pá', 'So'];
 
 export default function Home() {
   return (
-    <main className="container mx-auto px-4">
+    <main className="container mx-auto px-4" style={{ backgroundColor: 'white', color: 'black' }}>
       <h1 className="text-2xl font-bold mb-4">
         Kalendář akcí a kurzů{' '}
-        <a href='https://daily-adventures.cz/'>Daily Adventures</a>
+        <a href='https://daily-adventures.cz/' style={{ color: 'blue' }}>Daily Adventures</a>
       </h1>
 
-      <p className="mb-4">
+      <p className="mb-4" style={{ fontSize: '14px' }}>
         Tato stránka shromažďuje informace o akcích a kurzech, které jsou dostupné na
-        stránce <a href='https://daily-adventures.cz/kalendar-akci-a-kurzu/'>https://daily-adventures.cz/kalendar-akci-a-kurzu/</a>.
+        stránce <a href='https://daily-adventures.cz/kalendar-akci-a-kurzu/' style={{ color: 'blue' }}>https://daily-adventures.cz/kalendar-akci-a-kurzu/</a>.
       </p>
 
       <div className="grid grid-cols-2 gap-4">
@@ -52,7 +52,7 @@ export default function Home() {
                 {day.events.map((event, i) => (
                   <span key={event.title}>
                     {i > 0 && ' / '}
-                    <a href={event.url}>{event.title}</a>
+                    <a href={event.url} style={{ color: 'blue' }}>{event.title}</a>
                   </span>
                 ))}
               </div>

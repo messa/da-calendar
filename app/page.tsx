@@ -41,23 +41,25 @@ export default function Home() {
         stránce <a href='https://daily-adventures.cz/kalendar-akci-a-kurzu/'>https://daily-adventures.cz/kalendar-akci-a-kurzu/</a>.
       </p>
 
-      {calendarData.months.map((month) => (
-        <div key={month.date} className="mb-4">
-          <h3 className="text-lg font-bold mb-2">{month.date.substring(0, 7)}</h3>
-          {month.days.map((day) => (
-            <div key={day.date} className="mb-2">
-              <span className="mr-2">{dayOfWeekNames[new Date(day.date).getDay()]}</span>
-              <span className="mr-2">{new Date(day.date).getDate()}.</span>
-              {day.events.map((event, i) => (
-                <span key={event.title}>
-                  {i > 0 && ' / '}
-                  <a href={event.url}>{event.title}</a>
-                </span>
-              ))}
-            </div>
-          ))}
-        </div>
-      ))}
+      <div className="grid grid-cols-2 gap-4">
+        {calendarData.months.map((month) => (
+          <div key={month.date} className="mb-4">
+            <h3 className="text-lg font-bold mb-2">{month.date.substring(0, 7)}</h3>
+            {month.days.map((day) => (
+              <div key={day.date} className="mb-2">
+                <span className="mr-2">{dayOfWeekNames[new Date(day.date).getDay()]}</span>
+                <span className="mr-2">{new Date(day.date).getDate()}.</span>
+                {day.events.map((event, i) => (
+                  <span key={event.title}>
+                    {i > 0 && ' / '}
+                    <a href={event.url}>{event.title}</a>
+                  </span>
+                ))}
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
     </main>
   );
 }

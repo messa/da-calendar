@@ -40,7 +40,7 @@ rs = requests.Session()
 
 def main():
     p = ArgumentParser()
-    p.add_argument('--output', '-o', default='-', help='Output file (default: stdout)')
+    p.add_argument('--output', '-o', help='Output file (default: calendar.json)')
     p.add_argument('--verbose', '-v', action='store_true', help='Verbose output')
     args = p.parse_args()
     setup_logging(verbose=args.verbose)
@@ -61,7 +61,10 @@ def main():
     if args.output == '-':
         print(output_json)
     else:
-        output_path = Path(args.output)
+        if args.output:
+            output_path = Path(args.output)
+        else:
+            output_path = Path(__file__).resolve().parent / 'calendar.json'
         temp_path = output_path.with_name(f'.{output_path.name}.temp')
         temp_path.write_text(output_json + '\n')
         temp_path.rename(output_path)
@@ -105,7 +108,8 @@ def retrieve_month_html(month_date):
         'month': month_date.month,
         'id': 12100,
     }
-    r = rs.post(url, headers=headers, data=data, timeout=10)
+    logger.debug('POST %s data: %s', url, data)
+    r = rs.post(url, headers=headers, data=data, timeout=30)
     r.raise_for_status()
     rj = r.json()
     logger.debug('Response: %s', smart_repr(rj))

@@ -306,11 +306,21 @@
         },
         {
           "date": "2024-05-18",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/"
+            }
+          ]
         },
         {
           "date": "2024-05-19",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/"
+            }
+          ]
         },
         {
           "date": "2024-05-20",
@@ -420,7 +430,12 @@
         },
         {
           "date": "2024-05-31",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR LUK\u00c1\u0160",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/"
+            }
+          ]
         }
       ]
     },
@@ -500,11 +515,21 @@
         },
         {
           "date": "2024-06-11",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ LEZEN\u00cd NA UM\u011aL\u00c9 ST\u011aN\u011a PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 PRAHA",
+              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-umele-stene/"
+            }
+          ]
         },
         {
           "date": "2024-06-12",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ LEZEN\u00cd NA UM\u011aL\u00c9 ST\u011aN\u011a PRO POKRO\u010cIL\u00c9 \u2013 PRAHA",
+              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-umele-stene/"
+            }
+          ]
         },
         {
           "date": "2024-06-13",

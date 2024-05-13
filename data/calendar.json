@@ -1,191 +1,6 @@
 {
   "months": [
     {
-      "date": "2024-04-01",
-      "days": [
-        {
-          "date": "2024-04-01",
-          "events": []
-        },
-        {
-          "date": "2024-04-02",
-          "events": []
-        },
-        {
-          "date": "2024-04-03",
-          "events": []
-        },
-        {
-          "date": "2024-04-04",
-          "events": []
-        },
-        {
-          "date": "2024-04-05",
-          "events": [
-            {
-              "title": "Zimn\u00ed kurz p\u0159e\u017eit\u00ed - Orlick\u00e9 hory",
-              "url": "https://www.google.com/calendar/event?eid=NmNvbTJkMWxjY3NqY2JiM2NvcjM4YjlrNzRwM2liOW9jNWdqZWJiMzc1aWpnb2I2NmdyNjRkcjM2ayBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
-            }
-          ]
-        },
-        {
-          "date": "2024-04-06",
-          "events": [
-            {
-              "title": "Zimn\u00ed kurz p\u0159e\u017eit\u00ed - Orlick\u00e9 hory",
-              "url": "https://www.google.com/calendar/event?eid=NmNvbTJkMWxjY3NqY2JiM2NvcjM4YjlrNzRwM2liOW9jNWdqZWJiMzc1aWpnb2I2NmdyNjRkcjM2ayBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
-            }
-          ]
-        },
-        {
-          "date": "2024-04-07",
-          "events": [
-            {
-              "title": "Zimn\u00ed kurz p\u0159e\u017eit\u00ed - Orlick\u00e9 hory",
-              "url": "https://www.google.com/calendar/event?eid=NmNvbTJkMWxjY3NqY2JiM2NvcjM4YjlrNzRwM2liOW9jNWdqZWJiMzc1aWpnb2I2NmdyNjRkcjM2ayBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
-            }
-          ]
-        },
-        {
-          "date": "2024-04-08",
-          "events": []
-        },
-        {
-          "date": "2024-04-09",
-          "events": []
-        },
-        {
-          "date": "2024-04-10",
-          "events": []
-        },
-        {
-          "date": "2024-04-11",
-          "events": []
-        },
-        {
-          "date": "2024-04-12",
-          "events": []
-        },
-        {
-          "date": "2024-04-13",
-          "events": []
-        },
-        {
-          "date": "2024-04-14",
-          "events": []
-        },
-        {
-          "date": "2024-04-15",
-          "events": []
-        },
-        {
-          "date": "2024-04-16",
-          "events": []
-        },
-        {
-          "date": "2024-04-17",
-          "events": [
-            {
-              "title": "KURZ LEZEN\u00cd NA UM\u011aL\u00c9 ST\u011aN\u011a PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 PRAHA",
-              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-umele-stene/"
-            }
-          ]
-        },
-        {
-          "date": "2024-04-18",
-          "events": []
-        },
-        {
-          "date": "2024-04-19",
-          "events": []
-        },
-        {
-          "date": "2024-04-20",
-          "events": [
-            {
-              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR LUK\u00c1\u0160",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/"
-            }
-          ]
-        },
-        {
-          "date": "2024-04-21",
-          "events": [
-            {
-              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR LUK\u00c1\u0160",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/"
-            }
-          ]
-        },
-        {
-          "date": "2024-04-22",
-          "events": [
-            {
-              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR LUK\u00c1\u0160",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/"
-            }
-          ]
-        },
-        {
-          "date": "2024-04-23",
-          "events": []
-        },
-        {
-          "date": "2024-04-24",
-          "events": []
-        },
-        {
-          "date": "2024-04-25",
-          "events": [
-            {
-              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR LUK\u00c1\u0160",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/"
-            }
-          ]
-        },
-        {
-          "date": "2024-04-26",
-          "events": [
-            {
-              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR LUK\u00c1\u0160",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/"
-            }
-          ]
-        },
-        {
-          "date": "2024-04-27",
-          "events": [
-            {
-              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR LUK\u00c1\u0160",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/"
-            }
-          ]
-        },
-        {
-          "date": "2024-04-28",
-          "events": [
-            {
-              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAH, INSTRUKTOR LUK\u00c1\u0160",
-              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/"
-            }
-          ]
-        },
-        {
-          "date": "2024-04-29",
-          "events": [
-            {
-              "title": "Kurz dopomoci a z\u00e1chrany na ferrat\u011b Gutovka - Praha, instruktor Luk\u00e1\u0161",
-              "url": "https://www.google.com/calendar/event?eid=NjVqM2lwYjE2NHIzZ2I5bTY0cm0yYjlrNnBnbThiOXA2bGgzY2JiNWNncDNnb2oxNnNvMzhwMzU2byBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
-            }
-          ]
-        },
-        {
-          "date": "2024-04-30",
-          "events": []
-        }
-      ]
-    },
-    {
       "date": "2024-05-01",
       "days": [
         {
@@ -537,15 +352,30 @@
         },
         {
           "date": "2024-06-14",
-          "events": []
+          "events": [
+            {
+              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA P\u00cdSKOVCOV\u00ddCH SKAL\u00c1CH V OSTROV\u011a -Instruktor Jirka",
+              "url": "https://daily-adventures.cz/eshop/kurz-na-piskovcovych-skalach-2dny/"
+            }
+          ]
         },
         {
           "date": "2024-06-15",
-          "events": []
+          "events": [
+            {
+              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA P\u00cdSKOVCOV\u00ddCH SKAL\u00c1CH V OSTROV\u011a -Instruktor Jirka",
+              "url": "https://daily-adventures.cz/eshop/kurz-na-piskovcovych-skalach-2dny/"
+            }
+          ]
         },
         {
           "date": "2024-06-16",
-          "events": []
+          "events": [
+            {
+              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA P\u00cdSKOVCOV\u00ddCH SKAL\u00c1CH V OSTROV\u011a -Instruktor Jirka",
+              "url": "https://daily-adventures.cz/eshop/kurz-na-piskovcovych-skalach-2dny/"
+            }
+          ]
         },
         {
           "date": "2024-06-17",

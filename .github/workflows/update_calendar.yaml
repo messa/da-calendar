@@ -25,6 +25,9 @@ jobs:
     - name: Run script to update calendar
       run: python3 data/fetch_calendar.py
 
+    - name: Show changes
+      run: git diff
+
     - name: Check for changes
       run: |
         if [ -n "$(git status --porcelain)" ]; then

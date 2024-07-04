@@ -352,6 +352,10 @@
               "url": "https://daily-adventures.cz/eshop/via-ferrata-solna-komora-rakousko/"
             },
             {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAHY - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/"
+            },
+            {
               "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA P\u00cdSKOVCOV\u00ddCH SKAL\u00c1CH V OSTROV\u011a -Instruktor Jirka",
               "url": "https://daily-adventures.cz/eshop/kurz-na-piskovcovych-skalach-2dny/"
             }
@@ -367,6 +371,10 @@
             {
               "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA P\u00cdSKOVCOV\u00ddCH SKAL\u00c1CH V OSTROV\u011a -Instruktor Jirka",
               "url": "https://daily-adventures.cz/eshop/kurz-na-piskovcovych-skalach-2dny/"
+            },
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAHY - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/"
             }
           ]
         },
@@ -380,6 +388,10 @@
             {
               "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA P\u00cdSKOVCOV\u00ddCH SKAL\u00c1CH V OSTROV\u011a -Instruktor Jirka",
               "url": "https://daily-adventures.cz/eshop/kurz-na-piskovcovych-skalach-2dny/"
+            },
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAHY - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/"
             }
           ]
         },
@@ -520,6 +532,10 @@
             {
               "title": "V\u00ddSTUP NA HOCHFEILER \u2013 GRAN PILASTRO 3509 M.N.M.",
               "url": "https://daily-adventures.cz/eshop/vystup-na-hochfeiler/"
+            },
+            {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktorka Petra",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
             }
           ]
         },
@@ -632,6 +648,10 @@
             {
               "title": "NEZAPOMENUTELN\u00dd FERRATOV\u00dd KURZ V DOLOMITECH, TRE CIME \u2013 IT\u00c1LIE - Instruktor Filip",
               "url": "https://daily-adventures.cz/eshop/ferratovy-kurz-v-dolomitech-oblast-tre-cime/"
+            },
+            {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktorka Petra",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
             }
           ]
         },
@@ -641,6 +661,10 @@
             {
               "title": "NEZAPOMENUTELN\u00dd FERRATOV\u00dd KURZ V DOLOMITECH, TRE CIME \u2013 IT\u00c1LIE - Instruktor Filip",
               "url": "https://daily-adventures.cz/eshop/ferratovy-kurz-v-dolomitech-oblast-tre-cime/"
+            },
+            {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktorka Petra",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
             }
           ]
         },
@@ -1067,6 +1091,135 @@
         },
         {
           "date": "2024-12-31",
+          "events": []
+        }
+      ]
+    },
+    {
+      "date": "2025-01-01",
+      "days": [
+        {
+          "date": "2025-01-01",
+          "events": []
+        },
+        {
+          "date": "2025-01-02",
+          "events": []
+        },
+        {
+          "date": "2025-01-03",
+          "events": []
+        },
+        {
+          "date": "2025-01-04",
+          "events": []
+        },
+        {
+          "date": "2025-01-05",
+          "events": []
+        },
+        {
+          "date": "2025-01-06",
+          "events": []
+        },
+        {
+          "date": "2025-01-07",
+          "events": []
+        },
+        {
+          "date": "2025-01-08",
+          "events": []
+        },
+        {
+          "date": "2025-01-09",
+          "events": []
+        },
+        {
+          "date": "2025-01-10",
+          "events": []
+        },
+        {
+          "date": "2025-01-11",
+          "events": []
+        },
+        {
+          "date": "2025-01-12",
+          "events": []
+        },
+        {
+          "date": "2025-01-13",
+          "events": []
+        },
+        {
+          "date": "2025-01-14",
+          "events": []
+        },
+        {
+          "date": "2025-01-15",
+          "events": []
+        },
+        {
+          "date": "2025-01-16",
+          "events": []
+        },
+        {
+          "date": "2025-01-17",
+          "events": []
+        },
+        {
+          "date": "2025-01-18",
+          "events": []
+        },
+        {
+          "date": "2025-01-19",
+          "events": []
+        },
+        {
+          "date": "2025-01-20",
+          "events": []
+        },
+        {
+          "date": "2025-01-21",
+          "events": []
+        },
+        {
+          "date": "2025-01-22",
+          "events": []
+        },
+        {
+          "date": "2025-01-23",
+          "events": []
+        },
+        {
+          "date": "2025-01-24",
+          "events": []
+        },
+        {
+          "date": "2025-01-25",
+          "events": []
+        },
+        {
+          "date": "2025-01-26",
+          "events": []
+        },
+        {
+          "date": "2025-01-27",
+          "events": []
+        },
+        {
+          "date": "2025-01-28",
+          "events": []
+        },
+        {
+          "date": "2025-01-29",
+          "events": []
+        },
+        {
+          "date": "2025-01-30",
+          "events": []
+        },
+        {
+          "date": "2025-01-31",
           "events": []
         }
       ]

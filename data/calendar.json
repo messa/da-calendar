@@ -524,7 +524,12 @@
         },
         {
           "date": "2024-09-27",
-          "events": []
+          "events": [
+            {
+              "title": "Kurz dopomoci a z\u00e1chrany na ferrat\u011b Gutovka - Praha, instruktor Luk\u00e1\u0161",
+              "url": "https://www.google.com/calendar/event?eid=NmRpMzhvaGw2bGkzYWI5amNkaW02YjlrNmdyM2liOXA2a29tYWJiMmNkZ2pjcGhnNjhvajJwaG42ZyBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
+            }
+          ]
         },
         {
           "date": "2024-09-28",
@@ -532,12 +537,20 @@
             {
               "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR \u0160T\u011aP\u00c1N",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/"
+            },
+            {
+              "title": "Kurz dopomoci a z\u00e1chrany na ferrat\u011b Gutovka - Praha, instruktor Luk\u00e1\u0161",
+              "url": "https://www.google.com/calendar/event?eid=NzBvbTZlMzE2OWgzY2I5aDZncG1hYjlrY2NxNjJiYjE2a3JqMGI5ZzZncDMyY2hoYzhwajJvYjM2byBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
             }
           ]
         },
         {
           "date": "2024-09-29",
           "events": [
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAHY - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/"
+            },
             {
               "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR \u0160T\u011aP\u00c1N",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/"
@@ -546,7 +559,12 @@
         },
         {
           "date": "2024-09-30",
-          "events": []
+          "events": [
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAHY - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/"
+            }
+          ]
         }
       ]
     },

@@ -938,6 +938,146 @@
           "events": []
         }
       ]
+    },
+    {
+      "date": "2025-04-01",
+      "days": [
+        {
+          "date": "2025-04-01",
+          "events": []
+        },
+        {
+          "date": "2025-04-02",
+          "events": []
+        },
+        {
+          "date": "2025-04-03",
+          "events": []
+        },
+        {
+          "date": "2025-04-04",
+          "events": [
+            {
+              "title": "Zimn\u00ed kurz p\u0159e\u017eit\u00ed - Orlick\u00e9 hory",
+              "url": "https://www.google.com/calendar/event?eid=NjBzamlwaHBjOWg2MmI5bDZrcjNjYjlrY2dyMzRiYjE2MHAzZ2JiNDYxaDNpcDM2YzhwamFwYjM2YyBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
+            }
+          ]
+        },
+        {
+          "date": "2025-04-05",
+          "events": [
+            {
+              "title": "Zimn\u00ed kurz p\u0159e\u017eit\u00ed - Orlick\u00e9 hory",
+              "url": "https://www.google.com/calendar/event?eid=NjBzamlwaHBjOWg2MmI5bDZrcjNjYjlrY2dyMzRiYjE2MHAzZ2JiNDYxaDNpcDM2YzhwamFwYjM2YyBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
+            }
+          ]
+        },
+        {
+          "date": "2025-04-06",
+          "events": [
+            {
+              "title": "Zimn\u00ed kurz p\u0159e\u017eit\u00ed - Orlick\u00e9 hory",
+              "url": "https://www.google.com/calendar/event?eid=NjBzamlwaHBjOWg2MmI5bDZrcjNjYjlrY2dyMzRiYjE2MHAzZ2JiNDYxaDNpcDM2YzhwamFwYjM2YyBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
+            }
+          ]
+        },
+        {
+          "date": "2025-04-07",
+          "events": []
+        },
+        {
+          "date": "2025-04-08",
+          "events": []
+        },
+        {
+          "date": "2025-04-09",
+          "events": []
+        },
+        {
+          "date": "2025-04-10",
+          "events": []
+        },
+        {
+          "date": "2025-04-11",
+          "events": []
+        },
+        {
+          "date": "2025-04-12",
+          "events": []
+        },
+        {
+          "date": "2025-04-13",
+          "events": []
+        },
+        {
+          "date": "2025-04-14",
+          "events": []
+        },
+        {
+          "date": "2025-04-15",
+          "events": []
+        },
+        {
+          "date": "2025-04-16",
+          "events": []
+        },
+        {
+          "date": "2025-04-17",
+          "events": []
+        },
+        {
+          "date": "2025-04-18",
+          "events": []
+        },
+        {
+          "date": "2025-04-19",
+          "events": []
+        },
+        {
+          "date": "2025-04-20",
+          "events": []
+        },
+        {
+          "date": "2025-04-21",
+          "events": []
+        },
+        {
+          "date": "2025-04-22",
+          "events": []
+        },
+        {
+          "date": "2025-04-23",
+          "events": []
+        },
+        {
+          "date": "2025-04-24",
+          "events": []
+        },
+        {
+          "date": "2025-04-25",
+          "events": []
+        },
+        {
+          "date": "2025-04-26",
+          "events": []
+        },
+        {
+          "date": "2025-04-27",
+          "events": []
+        },
+        {
+          "date": "2025-04-28",
+          "events": []
+        },
+        {
+          "date": "2025-04-29",
+          "events": []
+        },
+        {
+          "date": "2025-04-30",
+          "events": []
+        }
+      ]
     }
   ]
 }

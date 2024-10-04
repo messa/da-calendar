@@ -61,6 +61,10 @@
           "date": "2024-10-12",
           "events": [
             {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Filip",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
+            },
+            {
               "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR LUK\u00c1\u0160",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/"
             }
@@ -69,6 +73,10 @@
         {
           "date": "2024-10-13",
           "events": [
+            {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Filip",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
+            },
             {
               "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR LUK\u00c1\u0160",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/"
@@ -135,7 +143,12 @@
         },
         {
           "date": "2024-10-25",
-          "events": []
+          "events": [
+            {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
+            }
+          ]
         },
         {
           "date": "2024-10-26",

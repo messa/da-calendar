@@ -1,192 +1,6 @@
 {
   "months": [
     {
-      "date": "2024-10-01",
-      "days": [
-        {
-          "date": "2024-10-01",
-          "events": []
-        },
-        {
-          "date": "2024-10-02",
-          "events": []
-        },
-        {
-          "date": "2024-10-03",
-          "events": []
-        },
-        {
-          "date": "2024-10-04",
-          "events": []
-        },
-        {
-          "date": "2024-10-05",
-          "events": []
-        },
-        {
-          "date": "2024-10-06",
-          "events": []
-        },
-        {
-          "date": "2024-10-07",
-          "events": [
-            {
-              "title": "KURZ LEZEN\u00cd NA UM\u011aL\u00c9 ST\u011aN\u011a PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 PRAHA",
-              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-umele-stene/"
-            }
-          ]
-        },
-        {
-          "date": "2024-10-08",
-          "events": []
-        },
-        {
-          "date": "2024-10-09",
-          "events": []
-        },
-        {
-          "date": "2024-10-10",
-          "events": []
-        },
-        {
-          "date": "2024-10-11",
-          "events": [
-            {
-              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR LUK\u00c1\u0160",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/"
-            }
-          ]
-        },
-        {
-          "date": "2024-10-12",
-          "events": [
-            {
-              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Filip",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
-            },
-            {
-              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR LUK\u00c1\u0160",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/"
-            }
-          ]
-        },
-        {
-          "date": "2024-10-13",
-          "events": [
-            {
-              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Filip",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
-            },
-            {
-              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR LUK\u00c1\u0160",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/"
-            }
-          ]
-        },
-        {
-          "date": "2024-10-14",
-          "events": [
-            {
-              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR LUK\u00c1\u0160",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/"
-            }
-          ]
-        },
-        {
-          "date": "2024-10-15",
-          "events": [
-            {
-              "title": "Kurz dopomoci a z\u00e1chrany na ferrat\u011b Gutovka - Praha, instruktor Luk\u00e1\u0161",
-              "url": "https://www.google.com/calendar/event?eid=NzBzajJkaGdjZ3NtOGI5bmM1Z21jYjlrNmdwamdiOW9jbGdqNmJiMWNjczM0cGhvNnRqM2NjOXA2ZyBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
-            },
-            {
-              "title": "KURZ SLACKLINE PRO ZA\u010c\u00c1TE\u010cN\u00cdKY I POKRO\u010cIL\u00c9 \u2013 PRAHA",
-              "url": "https://www.google.com/calendar/event?eid=NjlpM2VlMWdjZGhtOGI5bzZzb202YjlrNjFnamliYjE2cGdqY2I5ajZkaG1jY2I1NjVpbWNjMzJjNCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
-            }
-          ]
-        },
-        {
-          "date": "2024-10-16",
-          "events": []
-        },
-        {
-          "date": "2024-10-17",
-          "events": []
-        },
-        {
-          "date": "2024-10-18",
-          "events": []
-        },
-        {
-          "date": "2024-10-19",
-          "events": [
-            {
-              "title": "KURZ LEZEN\u00cd NA UM\u011aL\u00c9 ST\u011aN\u011a PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 PRAHA",
-              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-umele-stene/"
-            }
-          ]
-        },
-        {
-          "date": "2024-10-20",
-          "events": []
-        },
-        {
-          "date": "2024-10-21",
-          "events": []
-        },
-        {
-          "date": "2024-10-22",
-          "events": []
-        },
-        {
-          "date": "2024-10-23",
-          "events": []
-        },
-        {
-          "date": "2024-10-24",
-          "events": []
-        },
-        {
-          "date": "2024-10-25",
-          "events": [
-            {
-              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Luk\u00e1\u0161",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
-            }
-          ]
-        },
-        {
-          "date": "2024-10-26",
-          "events": []
-        },
-        {
-          "date": "2024-10-27",
-          "events": []
-        },
-        {
-          "date": "2024-10-28",
-          "events": []
-        },
-        {
-          "date": "2024-10-29",
-          "events": [
-            {
-              "title": "KURZ LEZEN\u00cd NA UM\u011aL\u00c9 ST\u011aN\u011a PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 PRAHA",
-              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-umele-stene/"
-            }
-          ]
-        },
-        {
-          "date": "2024-10-30",
-          "events": []
-        },
-        {
-          "date": "2024-10-31",
-          "events": []
-        }
-      ]
-    },
-    {
       "date": "2024-11-01",
       "days": [
         {
@@ -1103,6 +917,135 @@
         },
         {
           "date": "2025-04-30",
+          "events": []
+        }
+      ]
+    },
+    {
+      "date": "2025-05-01",
+      "days": [
+        {
+          "date": "2025-05-01",
+          "events": []
+        },
+        {
+          "date": "2025-05-02",
+          "events": []
+        },
+        {
+          "date": "2025-05-03",
+          "events": []
+        },
+        {
+          "date": "2025-05-04",
+          "events": []
+        },
+        {
+          "date": "2025-05-05",
+          "events": []
+        },
+        {
+          "date": "2025-05-06",
+          "events": []
+        },
+        {
+          "date": "2025-05-07",
+          "events": []
+        },
+        {
+          "date": "2025-05-08",
+          "events": []
+        },
+        {
+          "date": "2025-05-09",
+          "events": []
+        },
+        {
+          "date": "2025-05-10",
+          "events": []
+        },
+        {
+          "date": "2025-05-11",
+          "events": []
+        },
+        {
+          "date": "2025-05-12",
+          "events": []
+        },
+        {
+          "date": "2025-05-13",
+          "events": []
+        },
+        {
+          "date": "2025-05-14",
+          "events": []
+        },
+        {
+          "date": "2025-05-15",
+          "events": []
+        },
+        {
+          "date": "2025-05-16",
+          "events": []
+        },
+        {
+          "date": "2025-05-17",
+          "events": []
+        },
+        {
+          "date": "2025-05-18",
+          "events": []
+        },
+        {
+          "date": "2025-05-19",
+          "events": []
+        },
+        {
+          "date": "2025-05-20",
+          "events": []
+        },
+        {
+          "date": "2025-05-21",
+          "events": []
+        },
+        {
+          "date": "2025-05-22",
+          "events": []
+        },
+        {
+          "date": "2025-05-23",
+          "events": []
+        },
+        {
+          "date": "2025-05-24",
+          "events": []
+        },
+        {
+          "date": "2025-05-25",
+          "events": []
+        },
+        {
+          "date": "2025-05-26",
+          "events": []
+        },
+        {
+          "date": "2025-05-27",
+          "events": []
+        },
+        {
+          "date": "2025-05-28",
+          "events": []
+        },
+        {
+          "date": "2025-05-29",
+          "events": []
+        },
+        {
+          "date": "2025-05-30",
+          "events": []
+        },
+        {
+          "date": "2025-05-31",
           "events": []
         }
       ]

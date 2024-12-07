@@ -465,7 +465,12 @@
         },
         {
           "date": "2025-02-28",
-          "events": []
+          "events": [
+            {
+              "title": "Zimn\u00ed kurz p\u0159e\u017eit\u00ed Hard- Orlick\u00e9 hory",
+              "url": "https://www.google.com/calendar/event?eid=NjFpM2VvajM2bGozYWJiNmM4cDM4YjlrY2twMzBiYjJjbGhqY2JiNTY0cmo0bzlrNmdyMzBvajM2ayBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
+            }
+          ]
         }
       ]
     },
@@ -474,11 +479,21 @@
       "days": [
         {
           "date": "2025-03-01",
-          "events": []
+          "events": [
+            {
+              "title": "Zimn\u00ed kurz p\u0159e\u017eit\u00ed Hard- Orlick\u00e9 hory",
+              "url": "https://www.google.com/calendar/event?eid=NjFpM2VvajM2bGozYWJiNmM4cDM4YjlrY2twMzBiYjJjbGhqY2JiNTY0cmo0bzlrNmdyMzBvajM2ayBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
+            }
+          ]
         },
         {
           "date": "2025-03-02",
-          "events": []
+          "events": [
+            {
+              "title": "Zimn\u00ed kurz p\u0159e\u017eit\u00ed Hard- Orlick\u00e9 hory",
+              "url": "https://www.google.com/calendar/event?eid=NjFpM2VvajM2bGozYWJiNmM4cDM4YjlrY2twMzBiYjJjbGhqY2JiNTY0cmo0bzlrNmdyMzBvajM2ayBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
+            }
+          ]
         },
         {
           "date": "2025-03-03",

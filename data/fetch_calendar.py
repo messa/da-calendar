@@ -45,7 +45,8 @@ def main():
     args = p.parse_args()
     setup_logging(verbose=args.verbose)
     start_date = datetime.now(timezone.utc)
-    end_date = max(start_date + timedelta(days=365//2), start_date.replace(month=12)).date()
+    end_date = start_date + timedelta(days=365//2)
+    end_date = end_date.replace(month=12).date()
     month_date = start_date.replace(day=1).date()
     output = {'months': []}
     while month_date < end_date:

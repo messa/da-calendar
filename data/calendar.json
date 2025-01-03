@@ -95,6 +95,10 @@
             {
               "title": "Skialpov\u00fd kurz pro za\u010d\u00e1te\u010dn\u00edky - Jesen\u00edky - Instruktor \u0160t\u011bp\u00e1n",
               "url": "https://daily-adventures.cz/eshop/skialpovy-kurz-pro-zacatecniky-jeseniky/"
+            },
+            {
+              "title": "Ud\u00e1lost",
+              "url": "https://www.google.com/calendar/event?eid=NmNwNjRlMzZjY3MzZWJiM2NsaWo0YjlrYzVoajBiYjJjZ29tOGJiNTY0cDYyZGozY2dxbTRjaGw2ayBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
             }
           ]
         },
@@ -673,6 +677,10 @@
             {
               "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktorka Petra",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
+            },
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAH, INSTRUKTORKA LEA",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/"
             }
           ]
         },
@@ -682,6 +690,10 @@
             {
               "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktorka Petra",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
+            },
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAH, INSTRUKTORKA LEA",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/"
             }
           ]
         },
@@ -825,6 +837,10 @@
             {
               "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktorka Petra",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
+            },
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAH, INSTRUKTORKA LEA",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/"
             }
           ]
         },
@@ -838,6 +854,10 @@
             {
               "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktorka Petra",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
+            },
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAH, INSTRUKTORKA LEA",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/"
             }
           ]
         },
@@ -1266,11 +1286,20 @@
         },
         {
           "date": "2025-07-25",
-          "events": []
+          "events": [
+            {
+              "title": "V\u00ddSTUP NA TRIGLAV 2864 M \u2013 NEJVY\u0160\u0160\u00cd HORU SLOVINSKA - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/vystup-na-triglav-nejvyssi-horu-slovinska/"
+            }
+          ]
         },
         {
           "date": "2025-07-26",
           "events": [
+            {
+              "title": "V\u00ddSTUP NA TRIGLAV 2864 M \u2013 NEJVY\u0160\u0160\u00cd HORU SLOVINSKA - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/vystup-na-triglav-nejvyssi-horu-slovinska/"
+            },
             {
               "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/"
@@ -1280,6 +1309,10 @@
         {
           "date": "2025-07-27",
           "events": [
+            {
+              "title": "V\u00ddSTUP NA TRIGLAV 2864 M \u2013 NEJVY\u0160\u0160\u00cd HORU SLOVINSKA - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/vystup-na-triglav-nejvyssi-horu-slovinska/"
+            },
             {
               "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/"

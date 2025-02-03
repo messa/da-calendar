@@ -311,6 +311,10 @@
             {
               "title": "LAVINOV\u00dd KURZ - JESEN\u00cdKY - Luk\u00e1\u0161",
               "url": "https://daily-adventures.cz/eshop/lavinovy-kurz-pro-zacatecniky-jeseniky/"
+            },
+            {
+              "title": "Skialpov\u00fd kurz pro za\u010d\u00e1te\u010dn\u00edky - Jesen\u00edky - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/skialpovy-kurz-pro-zacatecniky-jeseniky/"
             }
           ]
         },
@@ -320,6 +324,10 @@
             {
               "title": "LAVINOV\u00dd KURZ - JESEN\u00cdKY - Luk\u00e1\u0161",
               "url": "https://daily-adventures.cz/eshop/lavinovy-kurz-pro-zacatecniky-jeseniky/"
+            },
+            {
+              "title": "Skialpov\u00fd kurz pro za\u010d\u00e1te\u010dn\u00edky - Jesen\u00edky - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/skialpovy-kurz-pro-zacatecniky-jeseniky/"
             }
           ]
         },
@@ -329,12 +337,21 @@
             {
               "title": "LAVINOV\u00dd KURZ - JESEN\u00cdKY - Luk\u00e1\u0161",
               "url": "https://daily-adventures.cz/eshop/lavinovy-kurz-pro-zacatecniky-jeseniky/"
+            },
+            {
+              "title": "Skialpov\u00fd kurz pro za\u010d\u00e1te\u010dn\u00edky - Jesen\u00edky - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/skialpovy-kurz-pro-zacatecniky-jeseniky/"
             }
           ]
         },
         {
           "date": "2025-03-31",
-          "events": []
+          "events": [
+            {
+              "title": "Skialpov\u00fd kurz pro za\u010d\u00e1te\u010dn\u00edky - Jesen\u00edky - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/skialpovy-kurz-pro-zacatecniky-jeseniky/"
+            }
+          ]
         }
       ]
     },

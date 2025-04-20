@@ -295,7 +295,12 @@
         },
         {
           "date": "2025-05-14",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ LEZEN\u00cd NA UM\u011aL\u00c9 ST\u011aN\u011a PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 PRAHA",
+              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-umele-stene/"
+            }
+          ]
         },
         {
           "date": "2025-05-15",
@@ -696,12 +701,8 @@
           "date": "2025-07-10",
           "events": [
             {
-              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor \u0160t\u011bp\u00e1n",
+              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor Luk\u00e1\u0161",
               "url": "https://daily-adventures.cz/eshop/via-ferrata-solna-komora-rakousko/"
-            },
-            {
-              "title": "VZDU\u0160N\u00c1 A VELMI OBL\u00cdBEN\u00c1 FERRATA INTERSPORT \u2013 RAKOUSKO - Instruktor Luk\u00e1\u0161",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-intersport-rakousko/"
             }
           ]
         },
@@ -709,12 +710,8 @@
           "date": "2025-07-11",
           "events": [
             {
-              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor \u0160t\u011bp\u00e1n",
+              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor Luk\u00e1\u0161",
               "url": "https://daily-adventures.cz/eshop/via-ferrata-solna-komora-rakousko/"
-            },
-            {
-              "title": "VZDU\u0160N\u00c1 A VELMI OBL\u00cdBEN\u00c1 FERRATA INTERSPORT \u2013 RAKOUSKO - Instruktor Luk\u00e1\u0161",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-intersport-rakousko/"
             }
           ]
         },
@@ -722,12 +719,8 @@
           "date": "2025-07-12",
           "events": [
             {
-              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor \u0160t\u011bp\u00e1n",
+              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor Luk\u00e1\u0161",
               "url": "https://daily-adventures.cz/eshop/via-ferrata-solna-komora-rakousko/"
-            },
-            {
-              "title": "VZDU\u0160N\u00c1 A VELMI OBL\u00cdBEN\u00c1 FERRATA INTERSPORT \u2013 RAKOUSKO - Instruktor Luk\u00e1\u0161",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-intersport-rakousko/"
             }
           ]
         },
@@ -735,12 +728,8 @@
           "date": "2025-07-13",
           "events": [
             {
-              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor \u0160t\u011bp\u00e1n",
+              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor Luk\u00e1\u0161",
               "url": "https://daily-adventures.cz/eshop/via-ferrata-solna-komora-rakousko/"
-            },
-            {
-              "title": "VZDU\u0160N\u00c1 A VELMI OBL\u00cdBEN\u00c1 FERRATA INTERSPORT \u2013 RAKOUSKO - Instruktor Luk\u00e1\u0161",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-intersport-rakousko/"
             }
           ]
         },
@@ -996,19 +985,39 @@
         },
         {
           "date": "2025-08-28",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor \u0160t\u011bp\u00e1n",
+              "url": "https://daily-adventures.cz/eshop/via-ferrata-solna-komora-rakousko/"
+            }
+          ]
         },
         {
           "date": "2025-08-29",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor \u0160t\u011bp\u00e1n",
+              "url": "https://daily-adventures.cz/eshop/via-ferrata-solna-komora-rakousko/"
+            }
+          ]
         },
         {
           "date": "2025-08-30",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor \u0160t\u011bp\u00e1n",
+              "url": "https://daily-adventures.cz/eshop/via-ferrata-solna-komora-rakousko/"
+            }
+          ]
         },
         {
           "date": "2025-08-31",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor \u0160t\u011bp\u00e1n",
+              "url": "https://daily-adventures.cz/eshop/via-ferrata-solna-komora-rakousko/"
+            }
+          ]
         }
       ]
     },
@@ -1117,6 +1126,10 @@
             {
               "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA P\u00cdSKOVCOV\u00ddCH SKAL\u00c1CH V OSTROV\u011a -Instruktor Jirka",
               "url": "https://daily-adventures.cz/eshop/kurz-na-piskovcovych-skalach-2dny/"
+            },
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/"
             }
           ]
         },
@@ -1126,6 +1139,10 @@
             {
               "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA P\u00cdSKOVCOV\u00ddCH SKAL\u00c1CH V OSTROV\u011a -Instruktor Jirka",
               "url": "https://daily-adventures.cz/eshop/kurz-na-piskovcovych-skalach-2dny/"
+            },
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/"
             }
           ]
         },
@@ -1188,7 +1205,12 @@
         },
         {
           "date": "2025-10-05",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/"
+            }
+          ]
         },
         {
           "date": "2025-10-06",
@@ -1212,11 +1234,21 @@
         },
         {
           "date": "2025-10-11",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/"
+            }
+          ]
         },
         {
           "date": "2025-10-12",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/"
+            }
+          ]
         },
         {
           "date": "2025-10-13",
@@ -1240,11 +1272,21 @@
         },
         {
           "date": "2025-10-18",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/"
+            }
+          ]
         },
         {
           "date": "2025-10-19",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/"
+            }
+          ]
         },
         {
           "date": "2025-10-20",

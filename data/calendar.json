@@ -328,11 +328,37 @@
         },
         {
           "date": "2025-06-07",
-          "events": []
+          "events": [
+            {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktorka Petra",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
+            },
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAH, INSTRUKTORKA LEA",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/"
+            },
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/"
+            }
+          ]
         },
         {
           "date": "2025-06-08",
-          "events": []
+          "events": [
+            {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktorka Petra",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
+            },
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAH, INSTRUKTORKA LEA",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/"
+            },
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/"
+            }
+          ]
         },
         {
           "date": "2025-06-09",
@@ -421,6 +447,10 @@
             {
               "title": "Kurz ter\u00e9nn\u00ed cyklistiky MTB - Instruktor Milan",
               "url": "https://daily-adventures.cz/eshop/vystup-na-hochfeiler/"
+            },
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAH, INSTRUKTORKA LEA",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/"
             }
           ]
         },
@@ -430,6 +460,10 @@
             {
               "title": "Kurz ter\u00e9nn\u00ed cyklistiky MTB - Instruktor Milan",
               "url": "https://daily-adventures.cz/eshop/vystup-na-hochfeiler/"
+            },
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAH, INSTRUKTORKA LEA",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/"
             }
           ]
         },
@@ -533,6 +567,10 @@
           "date": "2025-07-04",
           "events": [
             {
+              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Martin",
+              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-skalach-2dny/"
+            },
+            {
               "title": "Kurz dopomoci a z\u00e1chrany na ferrat\u011b Gutovka - Praha, instruktorka \u017de\u0148a",
               "url": "https://www.google.com/calendar/event?eid=NzBvajZvcHA3MWhqaWJiNDZwaW0yYjlrNjRxbWFiOW83MHJqOGI5bjZncGpnZGo2NjByajhwYjU2OCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
             }
@@ -540,11 +578,21 @@
         },
         {
           "date": "2025-07-05",
-          "events": []
+          "events": [
+            {
+              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Martin",
+              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-skalach-2dny/"
+            }
+          ]
         },
         {
           "date": "2025-07-06",
-          "events": []
+          "events": [
+            {
+              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Martin",
+              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-skalach-2dny/"
+            }
+          ]
         },
         {
           "date": "2025-07-07",
@@ -562,8 +610,16 @@
           "date": "2025-07-10",
           "events": [
             {
-              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor Luk\u00e1\u0161",
+              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor \u0160t\u011bp\u00e1n",
               "url": "https://daily-adventures.cz/eshop/via-ferrata-solna-komora-rakousko/"
+            },
+            {
+              "title": "VZDU\u0160N\u00c1 A VELMI OBL\u00cdBEN\u00c1 FERRATA INTERSPORT \u2013 RAKOUSKO - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-intersport-rakousko/"
+            },
+            {
+              "title": "KURZ LEZEN\u00cd NA UM\u011aL\u00c9 ST\u011aN\u011a PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 PRAHA - Instruktorka Lea",
+              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-umele-stene/"
             }
           ]
         },
@@ -571,8 +627,12 @@
           "date": "2025-07-11",
           "events": [
             {
-              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor Luk\u00e1\u0161",
+              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor \u0160t\u011bp\u00e1n",
               "url": "https://daily-adventures.cz/eshop/via-ferrata-solna-komora-rakousko/"
+            },
+            {
+              "title": "VZDU\u0160N\u00c1 A VELMI OBL\u00cdBEN\u00c1 FERRATA INTERSPORT \u2013 RAKOUSKO - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-intersport-rakousko/"
             }
           ]
         },
@@ -580,8 +640,12 @@
           "date": "2025-07-12",
           "events": [
             {
-              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor Luk\u00e1\u0161",
+              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor \u0160t\u011bp\u00e1n",
               "url": "https://daily-adventures.cz/eshop/via-ferrata-solna-komora-rakousko/"
+            },
+            {
+              "title": "VZDU\u0160N\u00c1 A VELMI OBL\u00cdBEN\u00c1 FERRATA INTERSPORT \u2013 RAKOUSKO - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-intersport-rakousko/"
             }
           ]
         },
@@ -589,8 +653,12 @@
           "date": "2025-07-13",
           "events": [
             {
-              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor Luk\u00e1\u0161",
+              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor \u0160t\u011bp\u00e1n",
               "url": "https://daily-adventures.cz/eshop/via-ferrata-solna-komora-rakousko/"
+            },
+            {
+              "title": "VZDU\u0160N\u00c1 A VELMI OBL\u00cdBEN\u00c1 FERRATA INTERSPORT \u2013 RAKOUSKO - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-intersport-rakousko/"
             }
           ]
         },
@@ -614,12 +682,16 @@
           "date": "2025-07-18",
           "events": [
             {
-              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO POKRO\u010cIL\u00c9 \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Luk\u00e1\u0161",
+              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO POKRO\u010cIL\u00c9 \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Martin",
               "url": "https://daily-adventures.cz/eshop/vikendovy-pokrocily-kurz-lezeni-na-skalach/"
             },
             {
               "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktorka Johanka",
               "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-skalach-2dny/"
+            },
+            {
+              "title": "V\u00cdKENDOV\u00dd KURZ V\u00cdCED\u00c9LKOVEHO LEZEN\u00cd\u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/vikendovy-pokrocily-kurz-lezeni-na-skalach/"
             }
           ]
         },
@@ -627,12 +699,16 @@
           "date": "2025-07-19",
           "events": [
             {
-              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO POKRO\u010cIL\u00c9 \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Luk\u00e1\u0161",
+              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO POKRO\u010cIL\u00c9 \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Martin",
               "url": "https://daily-adventures.cz/eshop/vikendovy-pokrocily-kurz-lezeni-na-skalach/"
             },
             {
               "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktorka Johanka",
               "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-skalach-2dny/"
+            },
+            {
+              "title": "V\u00cdKENDOV\u00dd KURZ V\u00cdCED\u00c9LKOVEHO LEZEN\u00cd\u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/vikendovy-pokrocily-kurz-lezeni-na-skalach/"
             }
           ]
         },
@@ -640,12 +716,16 @@
           "date": "2025-07-20",
           "events": [
             {
-              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO POKRO\u010cIL\u00c9 \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Luk\u00e1\u0161",
+              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO POKRO\u010cIL\u00c9 \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Martin",
               "url": "https://daily-adventures.cz/eshop/vikendovy-pokrocily-kurz-lezeni-na-skalach/"
             },
             {
               "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktorka Johanka",
               "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-skalach-2dny/"
+            },
+            {
+              "title": "V\u00cdKENDOV\u00dd KURZ V\u00cdCED\u00c9LKOVEHO LEZEN\u00cd\u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/vikendovy-pokrocily-kurz-lezeni-na-skalach/"
             }
           ]
         },
@@ -669,6 +749,10 @@
           "date": "2025-07-25",
           "events": [
             {
+              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Martin",
+              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-skalach-2dny/"
+            },
+            {
               "title": "V\u00ddSTUP NA TRIGLAV 2864 M \u2013 NEJVY\u0160\u0160\u00cd HORU SLOVINSKA - Instruktor Luk\u00e1\u0161",
               "url": "https://daily-adventures.cz/eshop/vystup-na-triglav-nejvyssi-horu-slovinska/"
             }
@@ -677,6 +761,10 @@
         {
           "date": "2025-07-26",
           "events": [
+            {
+              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Martin",
+              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-skalach-2dny/"
+            },
             {
               "title": "V\u00ddSTUP NA TRIGLAV 2864 M \u2013 NEJVY\u0160\u0160\u00cd HORU SLOVINSKA - Instruktor Luk\u00e1\u0161",
               "url": "https://daily-adventures.cz/eshop/vystup-na-triglav-nejvyssi-horu-slovinska/"
@@ -690,6 +778,10 @@
         {
           "date": "2025-07-27",
           "events": [
+            {
+              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Martin",
+              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-skalach-2dny/"
+            },
             {
               "title": "V\u00ddSTUP NA TRIGLAV 2864 M \u2013 NEJVY\u0160\u0160\u00cd HORU SLOVINSKA - Instruktor Luk\u00e1\u0161",
               "url": "https://daily-adventures.cz/eshop/vystup-na-triglav-nejvyssi-horu-slovinska/"

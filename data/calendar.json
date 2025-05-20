@@ -370,7 +370,12 @@
         },
         {
           "date": "2025-06-11",
-          "events": []
+          "events": [
+            {
+              "title": "Kurz dopomoci a z\u00e1chrany na ferrat\u011b Gutovka - Praha, instruktorka \u017de\u0148a",
+              "url": "https://www.google.com/calendar/event?eid=YzhvMzZvaG82NHJtYWJiNDZoaWpjYjlrNzFobWNiYjJjZ3EzZWI5bGNsajMwb2oyY2dvMzRjajRjZyBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
+            }
+          ]
         },
         {
           "date": "2025-06-12",

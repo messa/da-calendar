@@ -124,10 +124,6 @@
             {
               "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor \u0160t\u011bp\u00e1n",
               "url": "https://daily-adventures.cz/eshop/via-ferrata-solna-komora-rakousko/"
-            },
-            {
-              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Filip",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
             }
           ]
         },
@@ -137,10 +133,6 @@
             {
               "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor \u0160t\u011bp\u00e1n",
               "url": "https://daily-adventures.cz/eshop/via-ferrata-solna-komora-rakousko/"
-            },
-            {
-              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Filip",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
             }
           ]
         },
@@ -221,10 +213,6 @@
             {
               "title": "V\u00ddSTUP NA HOCHFEILER \u2013 GRAN PILASTRO 3509 M.N.M. - Instruktor Luk\u00e1\u0161",
               "url": "https://daily-adventures.cz/eshop/vystup-na-hochfeiler/"
-            },
-            {
-              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Filip",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
             }
           ]
         },
@@ -240,7 +228,7 @@
               "url": "https://daily-adventures.cz/eshop/vystup-na-hochfeiler/"
             },
             {
-              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Filip",
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktorka Petra",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
             },
             {
@@ -261,7 +249,7 @@
               "url": "https://daily-adventures.cz/eshop/vystup-na-hochfeiler/"
             },
             {
-              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Filip",
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktorka Petra",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
             },
             {
@@ -281,7 +269,12 @@
       "days": [
         {
           "date": "2025-07-01",
-          "events": []
+          "events": [
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAH, INSTRUKTORKA LEA",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/"
+            }
+          ]
         },
         {
           "date": "2025-07-02",
@@ -404,7 +397,12 @@
         },
         {
           "date": "2025-07-16",
-          "events": []
+          "events": [
+            {
+              "title": "Kurz dopomoci a z\u00e1chrany na ferrat\u011b Gutovka - Praha, instruktorka \u017de\u0148a",
+              "url": "https://www.google.com/calendar/event?eid=Y2dwNjZwOW42MHM2YWI5azZncjM0YjlrYzlnbWNiOW82MHM2Y2I5ajY1aTM4ZHBqNjRzajBjMWw2NCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
+            }
+          ]
         },
         {
           "date": "2025-07-17",
@@ -598,11 +596,20 @@
         },
         {
           "date": "2025-08-09",
-          "events": []
+          "events": [
+            {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Filip a Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
+            }
+          ]
         },
         {
           "date": "2025-08-10",
           "events": [
+            {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Filip a Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
+            },
             {
               "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktorka Petra",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
@@ -619,7 +626,12 @@
         },
         {
           "date": "2025-08-13",
-          "events": []
+          "events": [
+            {
+              "title": "Kurz dopomoci a z\u00e1chrany na ferrat\u011b Gutovka - Praha, instruktorka \u017de\u0148a",
+              "url": "https://www.google.com/calendar/event?eid=NzFpM2VkajFjZ3IzMGI5aWNkaGppYjlrY2dzajZiOXBjcGhtOGI5bDZncTY0ZDM1NjByM2FjcG43NCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
+            }
+          ]
         },
         {
           "date": "2025-08-14",

@@ -662,6 +662,10 @@
               "url": "https://daily-adventures.cz/eshop/kurz-na-piskovcovych-skalach-2dny/"
             },
             {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktorka Petra",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
+            },
+            {
               "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTORKA Maru\u0161ka",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/"
             },
@@ -728,6 +732,10 @@
             {
               "title": "KURZ VIA FERRATA RAXALPE, RAKOUSKO - Instruktor Luk\u00e1\u0161",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-raxalpe-rakousko/"
+            },
+            {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktorka Petra",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
             }
           ]
         },
@@ -758,7 +766,12 @@
         },
         {
           "date": "2025-10-04",
-          "events": []
+          "events": [
+            {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktorka Petra",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
+            }
+          ]
         },
         {
           "date": "2025-10-05",
@@ -801,6 +814,10 @@
         {
           "date": "2025-10-12",
           "events": [
+            {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktorka Petra",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
+            },
             {
               "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/"

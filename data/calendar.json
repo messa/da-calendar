@@ -250,11 +250,21 @@
         },
         {
           "date": "2025-10-09",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTORKA Maru\u0161ka",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/"
+            }
+          ]
         },
         {
           "date": "2025-10-10",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTORKA Maru\u0161ka",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/"
+            }
+          ]
         },
         {
           "date": "2025-10-11",
@@ -262,14 +272,6 @@
             {
               "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Filip",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
-            },
-            {
-              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Filip",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
-            },
-            {
-              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/"
             }
           ]
         },
@@ -279,10 +281,6 @@
             {
               "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Filip",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
-            },
-            {
-              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/"
             }
           ]
         },

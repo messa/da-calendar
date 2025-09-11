@@ -216,11 +216,20 @@
         },
         {
           "date": "2025-10-03",
-          "events": []
+          "events": [
+            {
+              "title": "V\u00cdKENDOV\u00dd KURZ V\u00cdCED\u00c9LKOVEHO LEZEN\u00cd\u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/vikendovy-pokrocily-kurz-lezeni-na-skalach/"
+            }
+          ]
         },
         {
           "date": "2025-10-04",
           "events": [
+            {
+              "title": "V\u00cdKENDOV\u00dd KURZ V\u00cdCED\u00c9LKOVEHO LEZEN\u00cd\u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/vikendovy-pokrocily-kurz-lezeni-na-skalach/"
+            },
             {
               "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktorka Petra",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
@@ -230,6 +239,10 @@
         {
           "date": "2025-10-05",
           "events": [
+            {
+              "title": "V\u00cdKENDOV\u00dd KURZ V\u00cdCED\u00c9LKOVEHO LEZEN\u00cd\u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/vikendovy-pokrocily-kurz-lezeni-na-skalach/"
+            },
             {
               "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR \u0160T\u011aP\u00c1N",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/"
@@ -272,6 +285,10 @@
             {
               "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Filip",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/"
+            },
+            {
+              "title": "KURZ LEZEN\u00cd NA UM\u011aL\u00c9 ST\u011aN\u011a PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 PRAHA - Instruktorka Lea",
+              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-umele-stene/"
             }
           ]
         },

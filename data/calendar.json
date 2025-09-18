@@ -259,7 +259,12 @@
         },
         {
           "date": "2025-10-08",
-          "events": []
+          "events": [
+            {
+              "title": "Kurz Slackline Stromovka - Silvie",
+              "url": "https://www.google.com/calendar/event?eid=NjBzM2llOXA3MHEzZWI5bjZzbzZjYjlrYzhwajRiOW9jNWk2OGJiNmNjb2o2ZTFwNmRqM2ljMWxjbyBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
+            }
+          ]
         },
         {
           "date": "2025-10-09",
@@ -358,7 +363,12 @@
         },
         {
           "date": "2025-10-21",
-          "events": []
+          "events": [
+            {
+              "title": "Kurz Slackline Folimanka - Silvie",
+              "url": "https://www.google.com/calendar/event?eid=NjVpMzBlOWtjZGkzYWI5bGM1ajY0YjlrNzBxamdiOW9ja282NmI5bDY5ajNjbzlsYzRxbWFjYjVjayBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
+            }
+          ]
         },
         {
           "date": "2025-10-22",

@@ -1308,15 +1308,30 @@
       "days": [
         {
           "date": "2026-05-01",
-          "events": []
+          "events": [
+            {
+              "title": "Kurz vht a pohybu po ledovci",
+              "url": "https://www.google.com/calendar/event?eid=NjRyM2NwajFjcGdtYWI5bzcxaTY2YjlrNzVoMzhiOXBjbGlqY2JiNmNvcDZjb2IyNmNwajJlMzE2byBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
+            }
+          ]
         },
         {
           "date": "2026-05-02",
-          "events": []
+          "events": [
+            {
+              "title": "Kurz vht a pohybu po ledovci",
+              "url": "https://www.google.com/calendar/event?eid=NjRyM2NwajFjcGdtYWI5bzcxaTY2YjlrNzVoMzhiOXBjbGlqY2JiNmNvcDZjb2IyNmNwajJlMzE2byBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
+            }
+          ]
         },
         {
           "date": "2026-05-03",
-          "events": []
+          "events": [
+            {
+              "title": "Kurz vht a pohybu po ledovci",
+              "url": "https://www.google.com/calendar/event?eid=NjRyM2NwajFjcGdtYWI5bzcxaTY2YjlrNzVoMzhiOXBjbGlqY2JiNmNvcDZjb2IyNmNwajJlMzE2byBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
+            }
+          ]
         },
         {
           "date": "2026-05-04",
@@ -1336,30 +1351,15 @@
         },
         {
           "date": "2026-05-08",
-          "events": [
-            {
-              "title": "Kurz vht a pohybu po ledovci",
-              "url": "https://www.google.com/calendar/event?eid=NjRyM2NwajFjcGdtYWI5bzcxaTY2YjlrNzVoMzhiOXBjbGlqY2JiNmNvcDZjb2IyNmNwajJlMzE2byBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
-            }
-          ]
+          "events": []
         },
         {
           "date": "2026-05-09",
-          "events": [
-            {
-              "title": "Kurz vht a pohybu po ledovci",
-              "url": "https://www.google.com/calendar/event?eid=NjRyM2NwajFjcGdtYWI5bzcxaTY2YjlrNzVoMzhiOXBjbGlqY2JiNmNvcDZjb2IyNmNwajJlMzE2byBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
-            }
-          ]
+          "events": []
         },
         {
           "date": "2026-05-10",
-          "events": [
-            {
-              "title": "Kurz vht a pohybu po ledovci",
-              "url": "https://www.google.com/calendar/event?eid=NjRyM2NwajFjcGdtYWI5bzcxaTY2YjlrNzVoMzhiOXBjbGlqY2JiNmNvcDZjb2IyNmNwajJlMzE2byBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague"
-            }
-          ]
+          "events": []
         },
         {
           "date": "2026-05-11",

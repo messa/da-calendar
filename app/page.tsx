@@ -29,6 +29,15 @@ import calendarData from '../data/calendar.json';
 const dayOfWeekNamesMonFirst = ['Po', 'Út', 'St', 'Čt', 'Pá', 'So', 'Ne'];
 const monthNames = ['leden', 'únor', 'březen', 'duben', 'květen', 'červen', 'červenec', 'srpen', 'září', 'říjen', 'listopad', 'prosinec'];
 
+// Layout constants
+const LAYOUT = {
+  cellMinHeight: '70px',
+  eventTitleMaxLength: 35,
+  eventTitleTruncateAt: 32,
+  continuationMaxLength: 30,
+  continuationTruncateAt: 27,
+};
+
 // Compact design colors
 const COLORS = {
   headerBg: '#0078d4',
@@ -208,12 +217,12 @@ export default function Home() {
                                 borderRight: `1px solid ${COLORS.tableBorder}`,
                                 borderBottom: `1px solid ${COLORS.tableBorder}`,
                                 backgroundColor: isWeekend ? COLORS.weekendBg : COLORS.weekdayBg,
-                                minHeight: '70px',
+                                minHeight: LAYOUT.cellMinHeight,
                                 position: 'relative',
                               }}
                             >
                               {day ? (
-                                <div style={{ height: '100%', display: 'flex', flexDirection: 'column', minHeight: '70px' }}>
+                                <div style={{ height: '100%', display: 'flex', flexDirection: 'column', minHeight: LAYOUT.cellMinHeight }}>
                                   <div style={{ 
                                     fontSize: '11px', 
                                     fontWeight: hasEvents ? '600' : '400',
@@ -263,11 +272,11 @@ export default function Home() {
                                           >
                                             {isFirstDay ? (
                                               <>
-                                                {event.title.length > 35 ? event.title.substring(0, 32) + '...' : event.title}
+                                                {event.title.length > LAYOUT.eventTitleMaxLength ? event.title.substring(0, LAYOUT.eventTitleTruncateAt) + '...' : event.title}
                                                 {isMultiDay && <span style={{ opacity: 0.7, fontSize: '9px' }}> ({durationDays}d)</span>}
                                               </>
                                             ) : (
-                                              <span style={{ opacity: 0.6 }}>↔ {event.title.length > 30 ? event.title.substring(0, 27) + '...' : event.title}</span>
+                                              <span style={{ opacity: 0.6 }}>↔ {event.title.length > LAYOUT.continuationMaxLength ? event.title.substring(0, LAYOUT.continuationTruncateAt) + '...' : event.title}</span>
                                             )}
                                           </a>
                                         </div>

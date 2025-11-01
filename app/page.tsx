@@ -27,8 +27,7 @@ import calendarData from '../data/calendar.json';
 */
 
 const dayOfWeekNames = ['Ne', 'Po', 'Út', 'St', 'Čt', 'Pá', 'So'];
-const monthNames = ['leden', 'únor', 'březen', 'duben', 'květen', 'červen', 
-                    'červenec', 'srpen', 'září', 'říjen', 'listopad', 'prosinec'];
+const monthNames = ['leden', 'únor', 'březen', 'duben', 'květen', 'červen', 'červenec', 'srpen', 'září', 'říjen', 'listopad', 'prosinec'];
 
 export default function Home() {
   // Filter out months with no events

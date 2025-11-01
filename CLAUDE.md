@@ -37,7 +37,7 @@ npm run lint
 - `app/` - Next.js app directory containing pages and layouts
 - `public/` - Static assets
 - `data/` - Data files
-- `da-calendar/` - Calendar-specific components and logic
+- `da-calendar/` - Configuration files (ESLint, gitignore)
 
 ## License
 

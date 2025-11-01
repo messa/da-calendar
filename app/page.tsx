@@ -50,6 +50,9 @@ const COLORS = {
 interface Event {
   title: string;
   url: string;
+  start_date?: string | Date;
+  end_date?: string | Date;
+  duration_days?: number;
 }
 
 interface Day {
@@ -81,56 +84,28 @@ export default function Home() {
 
   const detectMultiDayEvents = (month: Month): MultiDayEvent[] => {
     const multiDayEvents: MultiDayEvent[] = [];
-    const eventOccurrences = new Map<string, string[]>(); // event title -> dates
     
-    // Group events by title to detect multi-day events
+    // Go through all days and collect multi-day events
     month.days.forEach(day => {
       day.events.forEach(event => {
-        if (!eventOccurrences.has(event.title)) {
-          eventOccurrences.set(event.title, []);
+        // If event has duration_days, it's a multi-day event
+        if (event.duration_days && event.duration_days > 1 && event.start_date && event.end_date) {
+          const startDate = typeof event.start_date === 'string' ? event.start_date : event.start_date.toISOString().split('T')[0];
+          const endDate = typeof event.end_date === 'string' ? event.end_date : event.end_date.toISOString().split('T')[0];
+          
+          multiDayEvents.push({
+            event: {
+              title: event.title,
+              url: event.url
+            },
+            startDate,
+            endDate,
+            startDay: new Date(startDate).getDate(),
+            endDay: new Date(endDate).getDate(),
+            span: event.duration_days
+          });
         }
-        eventOccurrences.get(event.title)!.push(day.date);
       });
-    });
-    
-    // Find consecutive date ranges for each event
-    eventOccurrences.forEach((dates, title) => {
-      if (dates.length > 1) {
-        dates.sort();
-        
-        let startDate = dates[0];
-        let prevDate = dates[0];
-        
-        for (let i = 1; i <= dates.length; i++) {
-          const currentDate = i < dates.length ? dates[i] : null;
-          const prevDateTime = new Date(prevDate).getTime();
-          const currentDateTime = currentDate ? new Date(currentDate).getTime() : null;
-          const isConsecutive = currentDateTime && (currentDateTime - prevDateTime === 86400000); // 24 hours
-          
-          if (!isConsecutive) {
-            // End of consecutive range
-            if (startDate !== prevDate) {
-              // This is a multi-day event
-              const event = month.days.find(d => d.date === startDate)?.events.find(e => e.title === title);
-              if (event) {
-                multiDayEvents.push({
-                  event,
-                  startDate,
-                  endDate: prevDate,
-                  startDay: new Date(startDate).getDate(),
-                  endDay: new Date(prevDate).getDate(),
-                  span: Math.round((new Date(prevDate).getTime() - new Date(startDate).getTime()) / 86400000) + 1
-                });
-              }
-            }
-            startDate = currentDate || startDate;
-          }
-          
-          if (currentDate) {
-            prevDate = currentDate;
-          }
-        }
-      }
     });
     
     return multiDayEvents;
@@ -160,9 +135,8 @@ export default function Home() {
       }
     });
     
-    // Detect multi-day events
+    // Detect multi-day events from the data
     const multiDayEvents = detectMultiDayEvents(month);
-    const multiDayEventTitles = new Set(multiDayEvents.map(e => e.event.title));
     
     // Build calendar grid
     const weeks: (Day | null)[][] = [];
@@ -178,19 +152,9 @@ export default function Home() {
       const dateStr = `${year}-${String(monthIndex + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
       const events = eventsByDate.get(dateStr) || [];
       
-      // Filter out multi-day events that don't start on this day
-      const filteredEvents = events.filter(event => {
-        if (!multiDayEventTitles.has(event.title)) {
-          return true; // Keep single-day events
-        }
-        // For multi-day events, only show on the first day
-        const multiDayEvent = multiDayEvents.find(e => e.event.title === event.title && e.startDay === day);
-        return multiDayEvent !== undefined;
-      });
-      
       const dayData: Day = {
         date: dateStr,
-        events: filteredEvents
+        events: events
       };
       currentWeek.push(dayData);
       
@@ -232,20 +196,6 @@ export default function Home() {
       <div className="space-y-8">
         {monthsWithEvents.map((month) => {
           const { weeks, multiDayEvents } = getCalendarGrid(month);
-          const year = new Date(month.date).getFullYear();
-          const monthIndex = new Date(month.date).getMonth();
-          
-          // Helper to get week index and day index for a given day of month
-          const getDayPosition = (dayOfMonth: number) => {
-            const firstDayOfMonth = new Date(year, monthIndex, 1);
-            let startDay = firstDayOfMonth.getDay();
-            startDay = startDay === 0 ? 6 : startDay - 1;
-            const position = startDay + dayOfMonth - 1;
-            return {
-              weekIndex: Math.floor(position / 7),
-              dayIndex: position % 7
-            };
-          };
           
           return (
             <div key={month.date} style={{ backgroundColor: 'white', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
@@ -269,12 +219,6 @@ export default function Home() {
                       {week.map((day, dayIndex) => {
                         const isWeekend = dayIndex >= 5;
                         const hasEvents = day && day.events.length > 0;
-                        
-                        // Find multi-day events that start on this day
-                        const multiDayEventsStartingHere = day ? multiDayEvents.filter(mde => {
-                          const pos = getDayPosition(mde.startDay);
-                          return pos.weekIndex === weekIndex && pos.dayIndex === dayIndex;
-                        }) : [];
                         
                         return (
                           <td 
@@ -302,79 +246,39 @@ export default function Home() {
                                 </div>
                                 <div style={{ flex: 1, overflow: 'auto', padding: '0 4px' }}>
                                   {day.events.map((event, i) => {
-                                    // Check if this is a multi-day event starting here
-                                    const multiDayEvent = multiDayEventsStartingHere.find(mde => mde.event.title === event.title);
+                                    // Check if this is a multi-day event
+                                    const durationDays = event.duration_days || 1;
+                                    const isMultiDay = durationDays > 1;
                                     
-                                    if (multiDayEvent) {
-                                      // Calculate span in days, but limit to end of week
-                                      const daysUntilWeekEnd = 7 - dayIndex;
-                                      const span = Math.min(multiDayEvent.span, daysUntilWeekEnd);
-                                      const continuesNextWeek = multiDayEvent.span > daysUntilWeekEnd;
-                                      
-                                      return (
-                                        <div 
-                                          key={i} 
-                                          style={{
-                                            position: 'absolute',
-                                            left: `calc(${dayIndex * 14.28}% + 4px)`,
-                                            right: continuesNextWeek ? '4px' : `calc(${(7 - dayIndex - span) * 14.28}% + 4px)`,
-                                            backgroundColor: COLORS.eventBg,
-                                            border: `1px solid ${COLORS.eventBorder}`,
-                                            borderLeft: `3px solid ${COLORS.eventBorderLeft}`,
-                                            borderRadius: '3px',
-                                            padding: '4px 6px',
-                                            marginTop: `${20 + i * 24}px`,
-                                            fontSize: '11px',
-                                            lineHeight: '1.3',
-                                            zIndex: 1,
-                                            whiteSpace: 'nowrap',
-                                            overflow: 'hidden',
-                                            textOverflow: 'ellipsis'
+                                    return (
+                                      <div 
+                                        key={i} 
+                                        style={{
+                                          backgroundColor: COLORS.eventBg,
+                                          border: `1px solid ${COLORS.eventBorder}`,
+                                          borderLeft: `3px solid ${COLORS.eventBorderLeft}`,
+                                          borderRadius: '3px',
+                                          padding: '4px 6px',
+                                          marginBottom: '4px',
+                                          fontSize: '11px',
+                                          lineHeight: '1.3',
+                                          fontWeight: isMultiDay ? '500' : '400'
+                                        }}
+                                      >
+                                        <a 
+                                          href={event.url} 
+                                          style={{ 
+                                            color: COLORS.eventText,
+                                            textDecoration: 'none',
+                                            display: 'block'
                                           }}
+                                          title={`${event.title}${isMultiDay ? ` (${durationDays} ${durationDays === 1 ? 'den' : durationDays < 5 ? 'dny' : 'dní'})` : ''}`}
                                         >
-                                          <a 
-                                            href={event.url} 
-                                            style={{ 
-                                              color: COLORS.eventText,
-                                              textDecoration: 'none',
-                                              display: 'block'
-                                            }}
-                                            title={`${event.title} (${multiDayEvent.span} dní)`}
-                                          >
-                                            {event.title} ({multiDayEvent.span}d)
-                                          </a>
-                                        </div>
-                                      );
-                                    } else {
-                                      // Regular single-day event
-                                      return (
-                                        <div 
-                                          key={i} 
-                                          style={{
-                                            backgroundColor: COLORS.eventBg,
-                                            border: `1px solid ${COLORS.eventBorder}`,
-                                            borderLeft: `3px solid ${COLORS.eventBorderLeft}`,
-                                            borderRadius: '3px',
-                                            padding: '4px 6px',
-                                            marginBottom: '4px',
-                                            fontSize: '11px',
-                                            lineHeight: '1.3'
-                                          }}
-                                        >
-                                          <a 
-                                            href={event.url} 
-                                            style={{ 
-                                              color: COLORS.eventText,
-                                              textDecoration: 'none',
-                                              display: 'block'
-                                            }}
-                                            title={event.title}
-                                          >
-                                            {event.title}
-                                          </a>
-                                        </div>
-                                      );
-                                    }
+                                          {event.title.length > 50 ? event.title.substring(0, 47) + '...' : event.title}
+                                          {isMultiDay && <span style={{ opacity: 0.7 }}> ({durationDays}d)</span>}
+                                        </a>
+                                      </div>
+                                    );
                                   })}
                                 </div>
                               </div>

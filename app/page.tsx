@@ -26,8 +26,26 @@ import calendarData from '../data/calendar.json';
   }
 */
 
-const dayOfWeekNames = ['Ne', 'Po', 'Út', 'St', 'Čt', 'Pá', 'So'];
+const dayOfWeekNamesMonFirst = ['Po', 'Út', 'St', 'Čt', 'Pá', 'So', 'Ne'];
 const monthNames = ['leden', 'únor', 'březen', 'duben', 'květen', 'červen', 'červenec', 'srpen', 'září', 'říjen', 'listopad', 'prosinec'];
+
+// Outlook-style colors
+const COLORS = {
+  headerBg: '#0078d4',
+  headerText: 'white',
+  weekendBg: '#fafafa',
+  weekdayBg: 'white',
+  eventBg: '#e3f2fd',
+  eventBorder: '#2196f3',
+  eventBorderLeft: '#2196f3',
+  eventText: '#1565c0',
+  tableBorder: '#e0e0e0',
+  tableHeaderBg: '#f8f8f8',
+  tableHeaderBorder: '#e0e0e0',
+  linkColor: '#0066cc',
+  textMuted: '#666',
+  textSecondary: '#6b7280',
+};
 
 interface Event {
   title: string;
@@ -121,12 +139,12 @@ export default function Home() {
     <main className="container mx-auto px-4 py-6" style={{ backgroundColor: '#f5f5f5', color: 'black' }}>
       <h1 className="text-3xl font-bold mb-6" style={{ color: '#333' }}>
         Kalendář akcí a kurzů{' '}
-        <a href='https://daily-adventures.cz/' style={{ color: '#0066cc' }}>Daily Adventures</a>
+        <a href='https://daily-adventures.cz/' style={{ color: COLORS.linkColor }}>Daily Adventures</a>
       </h1>
 
-      <p className="mb-6" style={{ fontSize: '14px', color: '#666' }}>
+      <p className="mb-6" style={{ fontSize: '14px', color: COLORS.textMuted }}>
         Tato stránka shromažďuje informace o akcích a kurzech, které jsou dostupné na
-        stránce <a href='https://daily-adventures.cz/kalendar-akci-a-kurzu/' style={{ color: '#0066cc' }}>daily-adventures.cz/kalendar-akci-a-kurzu/</a>.
+        stránce <a href='https://daily-adventures.cz/kalendar-akci-a-kurzu/' style={{ color: COLORS.linkColor }}>daily-adventures.cz/kalendar-akci-a-kurzu/</a>.
       </p>
 
       <div className="space-y-8">
@@ -135,15 +153,15 @@ export default function Home() {
           
           return (
             <div key={month.date} style={{ backgroundColor: 'white', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
-              <div style={{ backgroundColor: '#0078d4', color: 'white', padding: '16px', fontSize: '20px', fontWeight: 'bold' }}>
+              <div style={{ backgroundColor: COLORS.headerBg, color: COLORS.headerText, padding: '16px', fontSize: '20px', fontWeight: 'bold' }}>
                 {formatMonthHeader(month.date)}
               </div>
               
               <table style={{ width: '100%', borderCollapse: 'collapse' }}>
                 <thead>
-                  <tr style={{ backgroundColor: '#f8f8f8', borderBottom: '2px solid #e0e0e0' }}>
-                    {['Po', 'Út', 'St', 'Čt', 'Pá', 'So', 'Ne'].map((day) => (
-                      <th key={day} style={{ padding: '12px 8px', fontSize: '14px', fontWeight: '600', color: '#666', textAlign: 'left', width: '14.28%' }}>
+                  <tr style={{ backgroundColor: COLORS.tableHeaderBg, borderBottom: `2px solid ${COLORS.tableHeaderBorder}` }}>
+                    {dayOfWeekNamesMonFirst.map((day) => (
+                      <th key={day} style={{ padding: '12px 8px', fontSize: '14px', fontWeight: '600', color: COLORS.textMuted, textAlign: 'left', width: '14.28%' }}>
                         {day}
                       </th>
                     ))}
@@ -162,10 +180,9 @@ export default function Home() {
                             style={{
                               padding: '4px',
                               verticalAlign: 'top',
-                              borderRight: '1px solid #e0e0e0',
-                              borderBottom: '1px solid #e0e0e0',
-                              backgroundColor: isWeekend ? '#fafafa' : 'white',
-                              minHeight: '100px',
+                              borderRight: `1px solid ${COLORS.tableBorder}`,
+                              borderBottom: `1px solid ${COLORS.tableBorder}`,
+                              backgroundColor: isWeekend ? COLORS.weekendBg : COLORS.weekdayBg,
                               height: '120px',
                             }}
                           >
@@ -185,9 +202,9 @@ export default function Home() {
                                     <div 
                                       key={i} 
                                       style={{
-                                        backgroundColor: '#e3f2fd',
-                                        border: '1px solid #2196f3',
-                                        borderLeft: '3px solid #2196f3',
+                                        backgroundColor: COLORS.eventBg,
+                                        border: `1px solid ${COLORS.eventBorder}`,
+                                        borderLeft: `3px solid ${COLORS.eventBorderLeft}`,
                                         borderRadius: '3px',
                                         padding: '4px 6px',
                                         marginBottom: '4px',
@@ -198,7 +215,7 @@ export default function Home() {
                                       <a 
                                         href={event.url} 
                                         style={{ 
-                                          color: '#1565c0',
+                                          color: COLORS.eventText,
                                           textDecoration: 'none',
                                           display: 'block'
                                         }}
@@ -223,8 +240,8 @@ export default function Home() {
         })}
       </div>
 
-      <p className="mt-8 pt-4" style={{ fontSize: '14px', color: '#6b7280', textAlign: 'center' }}>
-        Github: <a href='https://github.com/messa/da-calendar' style={{ color: '#0066cc' }}>github.com/messa/da-calendar</a>
+      <p className="mt-8 pt-4" style={{ fontSize: '14px', color: COLORS.textSecondary, textAlign: 'center' }}>
+        Github: <a href='https://github.com/messa/da-calendar' style={{ color: COLORS.linkColor }}>github.com/messa/da-calendar</a>
       </p>
     </main>
   );

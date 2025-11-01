@@ -296,55 +296,42 @@ sample_response = '''
 
 
 def test_parse_month_html():
-    parsed_days = parse_month_html(decompress(b64decode(sample_response)).decode('utf-8'), date(2024, 3, 1))
-    # Check that multi-day events are consolidated
-    assert len(parsed_days) == 31  # All days of March
-    
-    # First multi-day event: LAVINOVÝ KURZ - JESENÍKY (March 1-3)
-    assert parsed_days[0]['events'] == [
-        {
-            'title': 'LAVINOVÝ KURZ - JESENÍKY',
-            'url': 'https://daily-adventures.cz/eshop/lavinovy-kurz-pro-zacatecniky-jeseniky/',
-            'start_date': date(2024, 3, 1),
-            'end_date': date(2024, 3, 3),
-            'duration_days': 3
-        }
+    parsed_days = parse_month_html(decompress(b64decode(sample_response.strip())).decode('utf-8'), date(2024, 3, 1))
+    assert parsed_days == [
+        {'date': date(2024, 3, 1), 'events': [{'title': 'LAVINOVÝ KURZ - JESENÍKY', 'url': 'https://daily-adventures.cz/eshop/lavinovy-kurz-pro-zacatecniky-jeseniky/', 'start_date': date(2024, 3, 1), 'end_date': date(2024, 3, 3), 'duration_days': 3}]},
+        {'date': date(2024, 3, 2), 'events': []},
+        {'date': date(2024, 3, 3), 'events': []},
+        {'date': date(2024, 3, 4), 'events': []},
+        {'date': date(2024, 3, 5), 'events': []},
+        {'date': date(2024, 3, 6), 'events': []},
+        {'date': date(2024, 3, 7), 'events': []},
+        {'date': date(2024, 3, 8), 'events': [{'title': 'Skialpový kurz pro začátečníky - Jeseníky', 'url': 'https://daily-adventures.cz/eshop/skialpovy-kurz-pro-zacatecniky-jeseniky/', 'start_date': date(2024, 3, 8), 'end_date': date(2024, 3, 10), 'duration_days': 3}]},
+        {'date': date(2024, 3, 9), 'events': []},
+        {'date': date(2024, 3, 10), 'events': []},
+        {'date': date(2024, 3, 11), 'events': [{'title': 'KURZ LEZENÍ NA UMĚLÉ STĚNĚ PRO ZAČÁTEČNÍKY – PRAHA', 'url': 'https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-umele-stene/', 'start_date': date(2024, 3, 11), 'end_date': date(2024, 3, 11)}]},
+        {'date': date(2024, 3, 12), 'events': []},
+        {'date': date(2024, 3, 13), 'events': []},
+        {'date': date(2024, 3, 14), 'events': []},
+        {'date': date(2024, 3, 15), 'events': [{'title': 'Skialpový kurz pro začátečníky - Jeseníky - Instruktor Štěpán', 'url': 'https://daily-adventures.cz/eshop/skialpovy-kurz-pro-zacatecniky-jeseniky/', 'start_date': date(2024, 3, 15), 'end_date': date(2024, 3, 17), 'duration_days': 3}, {'title': 'Splitboardový kurz pro začátečníky - Jeseníky', 'url': 'https://daily-adventures.cz/eshop/skialpovy-kurz-pro-zacatecniky-jeseniky/', 'start_date': date(2024, 3, 15), 'end_date': date(2024, 3, 17), 'duration_days': 3}]},
+        {'date': date(2024, 3, 16), 'events': []},
+        {'date': date(2024, 3, 17), 'events': []},
+        {'date': date(2024, 3, 18), 'events': [{'title': 'KURZ LEZENÍ NA UMĚLÉ STĚNĚ PRO POKROČILÉ – PRAHA', 'url': 'https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-umele-stene/', 'start_date': date(2024, 3, 18), 'end_date': date(2024, 3, 18)}]},
+        {'date': date(2024, 3, 19), 'events': []},
+        {'date': date(2024, 3, 20), 'events': []},
+        {'date': date(2024, 3, 21), 'events': []},
+        {'date': date(2024, 3, 22), 'events': []},
+        {'date': date(2024, 3, 23), 'events': []},
+        {'date': date(2024, 3, 24), 'events': []},
+        {'date': date(2024, 3, 25), 'events': []},
+        {'date': date(2024, 3, 26), 'events': []},
+        {'date': date(2024, 3, 27), 'events': []},
+        {'date': date(2024, 3, 28), 'events': []},
+        {'date': date(2024, 3, 29), 'events': [{'title': 'LAVINOVÝ KURZ - JESENÍKY', 'url': 'https://daily-adventures.cz/eshop/lavinovy-kurz-pro-zacatecniky-jeseniky/', 'start_date': date(2024, 3, 29), 'end_date': date(2024, 3, 31), 'duration_days': 3}]},
+        {'date': date(2024, 3, 30), 'events': []},
+        {'date': date(2024, 3, 31), 'events': []},
     ]
-    # Days 2 and 3 should not have the event (it's only on start date)
-    assert parsed_days[1]['events'] == []
-    assert parsed_days[2]['events'] == []
-    
-    # Second multi-day event: Skialpový kurz (March 8-10)
-    assert parsed_days[7]['events'] == [
-        {
-            'title': 'Skialpový kurz pro začátečníky - Jeseníky',
-            'url': 'https://daily-adventures.cz/eshop/skialpovy-kurz-pro-zacatecniky-jeseniky/',
-            'start_date': date(2024, 3, 8),
-            'end_date': date(2024, 3, 10),
-            'duration_days': 3
-        }
-    ]
-    
-    # Single day event
-    assert parsed_days[10]['events'] == [
-        {
-            'title': 'KURZ LEZENÍ NA UMĚLÉ STĚNĚ PRO ZAČÁTEČNÍKY – PRAHA',
-            'url': 'https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-umele-stene/',
-            'start_date': date(2024, 3, 11),
-            'end_date': date(2024, 3, 11),
-        }
-    ]
-    
-    # Multi-event day with 2 multi-day events (March 15-17)
-    assert len(parsed_days[14]['events']) == 2
-    assert parsed_days[14]['events'][0]['title'] == 'Skialpový kurz pro začátečníky - Jeseníky - Instruktor Štěpán'
-    assert parsed_days[14]['events'][0]['duration_days'] == 3
-    assert parsed_days[14]['events'][1]['title'] == 'Splitboardový kurz pro začátečníky - Jeseníky'
-    assert parsed_days[14]['events'][1]['duration_days'] == 3
-
-
-test_parse_month_html()
 
 
 if __name__ == '__main__':
+    test_parse_month_html()
     main()

@@ -65,50 +65,12 @@ interface Month {
   days: Day[];
 }
 
-interface MultiDayEvent {
-  event: Event;
-  startDate: string;
-  endDate: string;
-  startDay: number; // day of month
-  endDay: number;   // day of month
-  span: number;     // number of days
-}
-
 export default function Home() {
   const formatMonthHeader = (dateStr: string) => {
     const date = new Date(dateStr);
     const monthName = monthNames[date.getMonth()];
     const year = date.getFullYear();
     return `${monthName} ${year}`;
-  };
-
-  const detectMultiDayEvents = (month: Month): MultiDayEvent[] => {
-    const multiDayEvents: MultiDayEvent[] = [];
-    
-    // Go through all days and collect multi-day events
-    month.days.forEach(day => {
-      day.events.forEach(event => {
-        // If event has duration_days, it's a multi-day event
-        if (event.duration_days && event.duration_days > 1 && event.start_date && event.end_date) {
-          const startDate = typeof event.start_date === 'string' ? event.start_date : event.start_date.toISOString().split('T')[0];
-          const endDate = typeof event.end_date === 'string' ? event.end_date : event.end_date.toISOString().split('T')[0];
-          
-          multiDayEvents.push({
-            event: {
-              title: event.title,
-              url: event.url
-            },
-            startDate,
-            endDate,
-            startDay: new Date(startDate).getDate(),
-            endDay: new Date(endDate).getDate(),
-            span: event.duration_days
-          });
-        }
-      });
-    });
-    
-    return multiDayEvents;
   };
 
   const getCalendarGrid = (month: Month) => {
@@ -134,9 +96,6 @@ export default function Home() {
         eventsByDate.set(day.date, day.events);
       }
     });
-    
-    // Detect multi-day events from the data
-    const multiDayEvents = detectMultiDayEvents(month);
     
     // Build calendar grid
     const weeks: (Day | null)[][] = [];
@@ -173,7 +132,7 @@ export default function Home() {
       weeks.push(currentWeek);
     }
     
-    return { weeks, multiDayEvents };
+    return weeks;
   };
 
   // Filter months with events
@@ -195,7 +154,7 @@ export default function Home() {
 
       <div className="space-y-8">
         {monthsWithEvents.map((month) => {
-          const { weeks, multiDayEvents } = getCalendarGrid(month);
+          const weeks = getCalendarGrid(month);
           
           return (
             <div key={month.date} style={{ backgroundColor: 'white', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>

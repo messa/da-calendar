@@ -41,6 +41,9 @@ rs = requests.Session()
 # Cache for course durations to avoid fetching the same page multiple times
 _course_duration_cache = {}
 
+# Pattern to match course duration in Czech ("POČET DNÍ: X den/dny/dní")
+COURSE_DURATION_PATTERN = r'POČET\s+DNÍ:\s*(\d+)\s*d(?:en|ny|ní)'
+
 
 def main():
     p = ArgumentParser()
@@ -218,7 +221,7 @@ def fetch_course_duration(url):
         
         # Look for "POČET DNÍ:" pattern (NUMBER OF DAYS:)
         # Patterns: "POČET DNÍ: 1 den", "POČET DNÍ: 2 dny", "POČET DNÍ: 3 dny"
-        match = re.search(r'POČET\s+DNÍ:\s*(\d+)\s*d(?:en|ny|ní)', text, re.IGNORECASE)
+        match = re.search(COURSE_DURATION_PATTERN, text, re.IGNORECASE)
         if match:
             days = int(match.group(1))
             logger.debug(f'Found duration for {url}: {days} days')
@@ -295,7 +298,6 @@ def consolidate_multiday_events(days):
                     calendar_duration = (end_date - start_date).days + 1
                     
                     # Determine event type based on actual duration vs calendar duration
-                    is_multiday_event = False
                     event_type = None
                     
                     if actual_duration is not None:
@@ -306,7 +308,6 @@ def consolidate_multiday_events(days):
                         elif actual_duration > 1:
                             # Multi-day continuous event
                             event_type = 'multi_day'
-                            is_multiday_event = True
                         else:
                             # Single day event
                             event_type = 'single_day'
@@ -315,7 +316,6 @@ def consolidate_multiday_events(days):
                         # but we're not certain
                         if calendar_duration > 1:
                             event_type = 'multi_day'  # Conservative assumption
-                            is_multiday_event = True
                         else:
                             event_type = 'single_day'
                     

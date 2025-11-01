@@ -26,43 +26,269 @@ import calendarData from '../data/calendar.json';
   }
 */
 
-const dayOfWeekNames = ['Ne', 'Po', 'Út', 'St', 'Čt', 'Pá', 'So'];
+const dayOfWeekNamesMonFirst = ['Po', 'Út', 'St', 'Čt', 'Pá', 'So', 'Ne'];
+const monthNames = ['leden', 'únor', 'březen', 'duben', 'květen', 'červen', 'červenec', 'srpen', 'září', 'říjen', 'listopad', 'prosinec'];
+
+// Outlook-style colors
+const COLORS = {
+  headerBg: '#0078d4',
+  headerText: 'white',
+  weekendBg: '#fafafa',
+  weekdayBg: 'white',
+  eventBg: '#e3f2fd',
+  eventBorder: '#2196f3',
+  eventBorderLeft: '#2196f3',
+  eventText: '#1565c0',
+  tableBorder: '#e0e0e0',
+  tableHeaderBg: '#f8f8f8',
+  tableHeaderBorder: '#e0e0e0',
+  linkColor: '#0066cc',
+  textMuted: '#666',
+  textSecondary: '#6b7280',
+};
+
+interface Event {
+  title: string;
+  url: string;
+  start_date?: string | Date;
+  end_date?: string | Date;
+  duration_days?: number;
+}
+
+interface Day {
+  date: string;
+  events: Event[];
+}
+
+interface Month {
+  date: string;
+  days: Day[];
+}
 
 export default function Home() {
+  const formatMonthHeader = (dateStr: string) => {
+    const date = new Date(dateStr);
+    const monthName = monthNames[date.getMonth()];
+    const year = date.getFullYear();
+    return `${monthName} ${year}`;
+  };
+
+  const getCalendarGrid = (month: Month) => {
+    const firstDay = new Date(month.date);
+    const year = firstDay.getFullYear();
+    const monthIndex = firstDay.getMonth();
+    
+    // Get first day of month and last day of month
+    const firstDayOfMonth = new Date(year, monthIndex, 1);
+    const lastDayOfMonth = new Date(year, monthIndex + 1, 0);
+    
+    // Find starting day (Monday = 1, Sunday = 0)
+    let startDay = firstDayOfMonth.getDay();
+    // Convert to Monday-based week (Monday = 0, Sunday = 6)
+    startDay = startDay === 0 ? 6 : startDay - 1;
+    
+    const daysInMonth = lastDayOfMonth.getDate();
+    
+    // Create a map of events by date, expanding multi-day events
+    const eventsByDate = new Map<string, Event[]>();
+    
+    month.days.forEach(day => {
+      day.events.forEach(event => {
+        // Get start and end dates
+        const startDate = event.start_date ? new Date(typeof event.start_date === 'string' ? event.start_date : event.start_date.toISOString().split('T')[0]) : new Date(day.date);
+        const endDate = event.end_date ? new Date(typeof event.end_date === 'string' ? event.end_date : event.end_date.toISOString().split('T')[0]) : new Date(day.date);
+        
+        // Add event to all days in its range
+        const currentDate = new Date(startDate);
+        while (currentDate <= endDate) {
+          const dateStr = currentDate.toISOString().split('T')[0];
+          
+          // Only add if this date is in the current month
+          if (currentDate.getMonth() === monthIndex && currentDate.getFullYear() === year) {
+            if (!eventsByDate.has(dateStr)) {
+              eventsByDate.set(dateStr, []);
+            }
+            eventsByDate.get(dateStr)!.push(event);
+          }
+          
+          currentDate.setDate(currentDate.getDate() + 1);
+        }
+      });
+    });
+    
+    // Build calendar grid
+    const weeks: (Day | null)[][] = [];
+    let currentWeek: (Day | null)[] = [];
+    
+    // Add empty cells for days before month starts
+    for (let i = 0; i < startDay; i++) {
+      currentWeek.push(null);
+    }
+    
+    // Add all days of the month
+    for (let day = 1; day <= daysInMonth; day++) {
+      const dateStr = `${year}-${String(monthIndex + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+      const events = eventsByDate.get(dateStr) || [];
+      
+      const dayData: Day = {
+        date: dateStr,
+        events: events
+      };
+      currentWeek.push(dayData);
+      
+      // If week is complete, start a new week
+      if (currentWeek.length === 7) {
+        weeks.push(currentWeek);
+        currentWeek = [];
+      }
+    }
+    
+    // Fill remaining days in last week
+    if (currentWeek.length > 0) {
+      while (currentWeek.length < 7) {
+        currentWeek.push(null);
+      }
+      weeks.push(currentWeek);
+    }
+    
+    return weeks;
+  };
+
+  // Filter months with events
+  const monthsWithEvents = calendarData.months.filter(month => 
+    month.days.some(day => day.events.length > 0)
+  );
+
   return (
-    <main className="container mx-auto px-4" style={{ backgroundColor: 'white', color: 'black' }}>
-      <h1 className="text-2xl font-bold mb-4">
+    <main className="container mx-auto px-4 py-6" style={{ backgroundColor: '#f5f5f5', color: 'black' }}>
+      <h1 className="text-3xl font-bold mb-6" style={{ color: '#333' }}>
         Kalendář akcí a kurzů{' '}
-        <a href='https://daily-adventures.cz/' style={{ color: 'blue' }}>Daily Adventures</a>
+        <a href='https://daily-adventures.cz/' style={{ color: COLORS.linkColor }}>Daily Adventures</a>
       </h1>
 
-      <p className="mb-4" style={{ fontSize: '14px' }}>
+      <p className="mb-6" style={{ fontSize: '14px', color: COLORS.textMuted }}>
         Tato stránka shromažďuje informace o akcích a kurzech, které jsou dostupné na
-        stránce <a href='https://daily-adventures.cz/kalendar-akci-a-kurzu/' style={{ color: 'blue' }}>daily-adventures.cz/kalendar-akci-a-kurzu/</a>.
+        stránce <a href='https://daily-adventures.cz/kalendar-akci-a-kurzu/' style={{ color: COLORS.linkColor }}>daily-adventures.cz/kalendar-akci-a-kurzu/</a>.
       </p>
 
-      <div className="grid grid-cols-2 gap-4">
-        {calendarData.months.map((month) => (
-          <div key={month.date} className="mb-4">
-            <h3 className="text-lg font-bold mb-2">{month.date.substring(0, 7)}</h3>
-            {month.days.map((day) => (
-              <div key={day.date} className="mb-2">
-                <span className="mr-2">{dayOfWeekNames[new Date(day.date).getDay()]}</span>
-                <span className="mr-2">{new Date(day.date).getDate()}.</span>
-                {day.events.map((event, i) => (
-                  <span key={event.title}>
-                    {i > 0 && ' / '}
-                    <a href={event.url} style={{ color: 'blue' }}>{event.title}</a>
-                  </span>
-                ))}
+      <div className="space-y-8">
+        {monthsWithEvents.map((month) => {
+          const weeks = getCalendarGrid(month);
+          
+          return (
+            <div key={month.date} style={{ backgroundColor: 'white', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
+              <div style={{ backgroundColor: COLORS.headerBg, color: COLORS.headerText, padding: '16px', fontSize: '20px', fontWeight: 'bold' }}>
+                {formatMonthHeader(month.date)}
               </div>
-            ))}
-          </div>
-        ))}
+              
+              <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                <thead>
+                  <tr style={{ backgroundColor: COLORS.tableHeaderBg, borderBottom: `2px solid ${COLORS.tableHeaderBorder}` }}>
+                    {dayOfWeekNamesMonFirst.map((day) => (
+                      <th key={day} style={{ padding: '12px 8px', fontSize: '14px', fontWeight: '600', color: COLORS.textMuted, textAlign: 'left', width: '14.28%' }}>
+                        {day}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {weeks.map((week, weekIndex) => (
+                    <tr key={weekIndex}>
+                      {week.map((day, dayIndex) => {
+                        const isWeekend = dayIndex >= 5;
+                        const hasEvents = day && day.events.length > 0;
+                        
+                        return (
+                          <td 
+                            key={dayIndex}
+                            style={{
+                              padding: '4px',
+                              verticalAlign: 'top',
+                              borderRight: `1px solid ${COLORS.tableBorder}`,
+                              borderBottom: `1px solid ${COLORS.tableBorder}`,
+                              backgroundColor: isWeekend ? COLORS.weekendBg : COLORS.weekdayBg,
+                              height: '120px',
+                              position: 'relative',
+                            }}
+                          >
+                            {day ? (
+                              <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
+                                <div style={{ 
+                                  fontSize: '13px', 
+                                  fontWeight: hasEvents ? '600' : '400',
+                                  color: hasEvents ? '#333' : '#999',
+                                  marginBottom: '4px',
+                                  padding: '4px 8px'
+                                }}>
+                                  {new Date(day.date).getDate()}
+                                </div>
+                                <div style={{ flex: 1, overflow: 'auto', padding: '0 4px' }}>
+                                  {day.events.map((event, i) => {
+                                    // Check if this is a multi-day event
+                                    const durationDays = event.duration_days || 1;
+                                    const isMultiDay = durationDays > 1;
+                                    
+                                    // Determine position in multi-day event
+                                    const startDate = event.start_date ? (typeof event.start_date === 'string' ? event.start_date : event.start_date.toISOString().split('T')[0]) : day.date;
+                                    const endDate = event.end_date ? (typeof event.end_date === 'string' ? event.end_date : event.end_date.toISOString().split('T')[0]) : day.date;
+                                    const isFirstDay = day.date === startDate;
+                                    const isLastDay = day.date === endDate;
+                                    const isMiddleDay = !isFirstDay && !isLastDay;
+                                    
+                                    return (
+                                      <div 
+                                        key={i} 
+                                        style={{
+                                          backgroundColor: COLORS.eventBg,
+                                          border: `1px solid ${COLORS.eventBorder}`,
+                                          borderLeft: isFirstDay ? `3px solid ${COLORS.eventBorderLeft}` : `1px solid ${COLORS.eventBorder}`,
+                                          borderRadius: isFirstDay && !isLastDay ? '3px 0 0 3px' : (!isFirstDay && isLastDay ? '0 3px 3px 0' : (isFirstDay && isLastDay ? '3px' : '0')),
+                                          padding: '4px 6px',
+                                          marginBottom: '4px',
+                                          fontSize: '11px',
+                                          lineHeight: '1.3',
+                                          fontWeight: isMultiDay ? '500' : '400',
+                                          opacity: isMiddleDay ? 0.8 : 1
+                                        }}
+                                      >
+                                        <a 
+                                          href={event.url} 
+                                          style={{ 
+                                            color: COLORS.eventText,
+                                            textDecoration: 'none',
+                                            display: 'block'
+                                          }}
+                                          title={`${event.title}${isMultiDay ? ` (${durationDays} ${durationDays === 1 ? 'den' : durationDays < 5 ? 'dny' : 'dní'})` : ''}`}
+                                        >
+                                          {isFirstDay ? (
+                                            <>
+                                              {event.title.length > 50 ? event.title.substring(0, 47) + '...' : event.title}
+                                              {isMultiDay && <span style={{ opacity: 0.7 }}> ({durationDays}d)</span>}
+                                            </>
+                                          ) : (
+                                            <span style={{ opacity: 0.6 }}>↔ {event.title.length > 45 ? event.title.substring(0, 42) + '...' : event.title}</span>
+                                          )}
+                                        </a>
+                                      </div>
+                                    );
+                                  })}
+                                </div>
+                              </div>
+                            ) : null}
+                          </td>
+                        );
+                      })}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          );
+        })}
       </div>
 
-      <p className="mb-4">
-        Github: <a href='https://github.com/messa/da-calendar' style={{ color: 'blue' }}>github.com/messa/da-calendar</a>
+      <p className="mt-8 pt-4" style={{ fontSize: '14px', color: COLORS.textSecondary, textAlign: 'center' }}>
+        Github: <a href='https://github.com/messa/da-calendar' style={{ color: COLORS.linkColor }}>github.com/messa/da-calendar</a>
       </p>
     </main>
   );

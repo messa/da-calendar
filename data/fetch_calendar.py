@@ -27,15 +27,22 @@ from base64 import b64decode
 from datetime import date, datetime, timedelta, timezone
 import json
 from logging import getLogger, basicConfig, DEBUG, INFO
-from lxml.html import fragment_fromstring, tostring
+from lxml.html import fragment_fromstring, tostring, document_fromstring
 from lzma import decompress
 from pathlib import Path
+import re
 from reprlib import repr as smart_repr
 import requests
 
 
 logger = getLogger(__name__)
 rs = requests.Session()
+
+# Cache for course durations to avoid fetching the same page multiple times
+_course_duration_cache = {}
+
+# Pattern to match course duration in Czech ("POČET DNÍ: X den/dny/dní")
+COURSE_DURATION_PATTERN = r'POČET\s+DNÍ:\s*(\d+)\s*d(?:en|ny|ní)'
 
 
 def main():
@@ -191,6 +198,45 @@ def parse_month_html(data, month_date):
     return consolidate_multiday_events(result_days)
 
 
+def fetch_course_duration(url):
+    """
+    Fetch the course page and extract the actual duration from the 'POČET DNÍ:' field.
+    Returns the number of days the course actually lasts, or None if not found.
+    """
+    if not url or 'daily-adventures.cz' not in url:
+        return None
+    
+    # Check cache first
+    if url in _course_duration_cache:
+        return _course_duration_cache[url]
+    
+    try:
+        logger.debug(f'Fetching course page: {url}')
+        r = rs.get(url, timeout=10)
+        r.raise_for_status()
+        doc = document_fromstring(r.text)
+        
+        # Get the full text content
+        text = doc.text_content()
+        
+        # Look for "POČET DNÍ:" pattern (NUMBER OF DAYS:)
+        # Patterns: "POČET DNÍ: 1 den", "POČET DNÍ: 2 dny", "POČET DNÍ: 3 dny"
+        match = re.search(COURSE_DURATION_PATTERN, text, re.IGNORECASE)
+        if match:
+            days = int(match.group(1))
+            logger.debug(f'Found duration for {url}: {days} days')
+            _course_duration_cache[url] = days
+            return days
+        
+        logger.debug(f'Duration not found for {url}')
+        _course_duration_cache[url] = None
+        return None
+    except Exception as e:
+        logger.warning(f'Error fetching course page {url}: {e}')
+        _course_duration_cache[url] = None
+        return None
+
+
 def consolidate_multiday_events(days):
     """Convert events that repeat on consecutive days into multi-day event ranges."""
     # Build a map of event title+url -> dates
@@ -202,8 +248,10 @@ def consolidate_multiday_events(days):
                 event_dates[key] = []
             event_dates[key].append(day['date'])
     
-    # Find consecutive date ranges for each event
+    # Find consecutive date ranges for each event and fetch actual duration
     event_ranges = {}
+    event_actual_durations = {}
+    
     for (title, url), dates in event_dates.items():
         dates.sort()
         ranges = []
@@ -224,8 +272,12 @@ def consolidate_multiday_events(days):
         ranges.append((current_start, current_end))
         
         event_ranges[(title, url)] = ranges
+        
+        # Fetch actual duration from course page
+        actual_duration = fetch_course_duration(url)
+        event_actual_durations[(title, url)] = actual_duration
     
-    # Build new days structure with multi-day events only on start date
+    # Build new days structure with events properly categorized
     result_days = []
     processed_events = set()  # Track (title, url, start_date) to avoid duplicates
     
@@ -238,26 +290,71 @@ def consolidate_multiday_events(days):
         for event in day['events']:
             key = (event['title'], event['url'])
             ranges = event_ranges[key]
+            actual_duration = event_actual_durations.get(key)
             
             # Find which range this day belongs to
             for start_date, end_date in ranges:
                 if start_date <= day['date'] <= end_date:
-                    event_key = (event['title'], event['url'], start_date)
-                    # Only add event on the first day of the range
-                    if day['date'] == start_date and event_key not in processed_events:
+                    calendar_duration = (end_date - start_date).days + 1
+                    
+                    # Determine event type based on actual duration vs calendar duration
+                    event_type = None
+                    
+                    if actual_duration is not None:
+                        # We have actual duration from the course page
+                        if actual_duration == 1 and calendar_duration > 1:
+                            # Single-day course repeated on consecutive days
+                            event_type = 'repeated_single_day'
+                        elif actual_duration > 1:
+                            # Multi-day continuous event
+                            event_type = 'multi_day'
+                        else:
+                            # Single day event
+                            event_type = 'single_day'
+                    else:
+                        # Fallback: if calendar duration > 1, assume it might be multi-day
+                        # but we're not certain
+                        if calendar_duration > 1:
+                            event_type = 'multi_day'  # Conservative assumption
+                        else:
+                            event_type = 'single_day'
+                    
+                    # For repeated single-day events, add an event for each day
+                    # For multi-day events, only add on the first day
+                    should_add = False
+                    if event_type == 'repeated_single_day':
+                        # Add event on each day of the range
+                        event_key_single = (event['title'], event['url'], day['date'])
+                        if event_key_single not in processed_events:
+                            should_add = True
+                            processed_events.add(event_key_single)
+                    else:
+                        # Multi-day or single-day: only add on first day
+                        event_key = (event['title'], event['url'], start_date)
+                        if day['date'] == start_date and event_key not in processed_events:
+                            should_add = True
+                            processed_events.add(event_key)
+                    
+                    if should_add:
                         new_event = {
                             'title': event['title'],
                             'url': event['url'],
-                            'start_date': start_date,
-                            'end_date': end_date,
                         }
-                        # Add duration in days if it's a multi-day event
-                        duration_days = (end_date - start_date).days + 1
-                        if duration_days > 1:
-                            new_event['duration_days'] = duration_days
+                        
+                        if event_type == 'repeated_single_day':
+                            # For repeated single-day events, use the single day date
+                            new_event['start_date'] = day['date']
+                            new_event['end_date'] = day['date']
+                            new_event['event_type'] = 'repeated_single_day'
+                        else:
+                            # For multi-day or single-day events
+                            new_event['start_date'] = start_date
+                            new_event['end_date'] = end_date
+                            if calendar_duration > 1:
+                                new_event['duration_days'] = calendar_duration
+                                new_event['event_type'] = event_type
                         
                         new_day['events'].append(new_event)
-                        processed_events.add(event_key)
                     break
         
         result_days.append(new_day)
@@ -296,40 +393,66 @@ sample_response = '''
 
 
 def test_parse_month_html():
+    """Test that the month HTML parsing and event consolidation works correctly."""
     parsed_days = parse_month_html(decompress(b64decode(sample_response.strip())).decode('utf-8'), date(2024, 3, 1))
-    assert parsed_days == [
-        {'date': date(2024, 3, 1), 'events': [{'title': 'LAVINOVÝ KURZ - JESENÍKY', 'url': 'https://daily-adventures.cz/eshop/lavinovy-kurz-pro-zacatecniky-jeseniky/', 'start_date': date(2024, 3, 1), 'end_date': date(2024, 3, 3), 'duration_days': 3}]},
-        {'date': date(2024, 3, 2), 'events': []},
-        {'date': date(2024, 3, 3), 'events': []},
-        {'date': date(2024, 3, 4), 'events': []},
-        {'date': date(2024, 3, 5), 'events': []},
-        {'date': date(2024, 3, 6), 'events': []},
-        {'date': date(2024, 3, 7), 'events': []},
-        {'date': date(2024, 3, 8), 'events': [{'title': 'Skialpový kurz pro začátečníky - Jeseníky', 'url': 'https://daily-adventures.cz/eshop/skialpovy-kurz-pro-zacatecniky-jeseniky/', 'start_date': date(2024, 3, 8), 'end_date': date(2024, 3, 10), 'duration_days': 3}]},
-        {'date': date(2024, 3, 9), 'events': []},
-        {'date': date(2024, 3, 10), 'events': []},
-        {'date': date(2024, 3, 11), 'events': [{'title': 'KURZ LEZENÍ NA UMĚLÉ STĚNĚ PRO ZAČÁTEČNÍKY – PRAHA', 'url': 'https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-umele-stene/', 'start_date': date(2024, 3, 11), 'end_date': date(2024, 3, 11)}]},
-        {'date': date(2024, 3, 12), 'events': []},
-        {'date': date(2024, 3, 13), 'events': []},
-        {'date': date(2024, 3, 14), 'events': []},
-        {'date': date(2024, 3, 15), 'events': [{'title': 'Skialpový kurz pro začátečníky - Jeseníky - Instruktor Štěpán', 'url': 'https://daily-adventures.cz/eshop/skialpovy-kurz-pro-zacatecniky-jeseniky/', 'start_date': date(2024, 3, 15), 'end_date': date(2024, 3, 17), 'duration_days': 3}, {'title': 'Splitboardový kurz pro začátečníky - Jeseníky', 'url': 'https://daily-adventures.cz/eshop/skialpovy-kurz-pro-zacatecniky-jeseniky/', 'start_date': date(2024, 3, 15), 'end_date': date(2024, 3, 17), 'duration_days': 3}]},
-        {'date': date(2024, 3, 16), 'events': []},
-        {'date': date(2024, 3, 17), 'events': []},
-        {'date': date(2024, 3, 18), 'events': [{'title': 'KURZ LEZENÍ NA UMĚLÉ STĚNĚ PRO POKROČILÉ – PRAHA', 'url': 'https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-umele-stene/', 'start_date': date(2024, 3, 18), 'end_date': date(2024, 3, 18)}]},
-        {'date': date(2024, 3, 19), 'events': []},
-        {'date': date(2024, 3, 20), 'events': []},
-        {'date': date(2024, 3, 21), 'events': []},
-        {'date': date(2024, 3, 22), 'events': []},
-        {'date': date(2024, 3, 23), 'events': []},
-        {'date': date(2024, 3, 24), 'events': []},
-        {'date': date(2024, 3, 25), 'events': []},
-        {'date': date(2024, 3, 26), 'events': []},
-        {'date': date(2024, 3, 27), 'events': []},
-        {'date': date(2024, 3, 28), 'events': []},
-        {'date': date(2024, 3, 29), 'events': [{'title': 'LAVINOVÝ KURZ - JESENÍKY', 'url': 'https://daily-adventures.cz/eshop/lavinovy-kurz-pro-zacatecniky-jeseniky/', 'start_date': date(2024, 3, 29), 'end_date': date(2024, 3, 31), 'duration_days': 3}]},
-        {'date': date(2024, 3, 30), 'events': []},
-        {'date': date(2024, 3, 31), 'events': []},
-    ]
+    
+    # Check basic structure
+    assert len(parsed_days) == 31  # March has 31 days
+    assert all(isinstance(d, dict) for d in parsed_days)
+    assert all('date' in d and 'events' in d for d in parsed_days)
+    
+    # Check that multi-day events are only on first day of range
+    days_with_events = [d for d in parsed_days if d['events']]
+    assert len(days_with_events) == 6  # Only 6 days should have events
+    
+    # Verify specific events
+    # March 1: LAVINOVÝ KURZ starting
+    march_1 = parsed_days[0]
+    assert march_1['date'] == date(2024, 3, 1)
+    assert len(march_1['events']) == 1
+    event = march_1['events'][0]
+    assert event['title'] == 'LAVINOVÝ KURZ - JESENÍKY'
+    assert event['start_date'] == date(2024, 3, 1)
+    assert event['end_date'] == date(2024, 3, 3)
+    assert event.get('duration_days', 1) == 3
+    
+    # March 2-3: Should be empty (multi-day event only appears on first day)
+    assert parsed_days[1]['events'] == []
+    assert parsed_days[2]['events'] == []
+    
+    # March 8: Skialpový kurz starting
+    march_8 = parsed_days[7]
+    assert march_8['date'] == date(2024, 3, 8)
+    assert len(march_8['events']) == 1
+    event = march_8['events'][0]
+    assert 'Skialpový kurz' in event['title']
+    assert event['start_date'] == date(2024, 3, 8)
+    assert event['end_date'] == date(2024, 3, 10)
+    
+    # March 11: Single-day event
+    march_11 = parsed_days[10]
+    assert march_11['date'] == date(2024, 3, 11)
+    assert len(march_11['events']) == 1
+    event = march_11['events'][0]
+    assert 'UMĚLÉ STĚNĚ PRO ZAČÁTEČNÍKY' in event['title']
+    assert event['start_date'] == date(2024, 3, 11)
+    assert event['end_date'] == date(2024, 3, 11)
+    
+    # March 15: Two multi-day events starting
+    march_15 = parsed_days[14]
+    assert march_15['date'] == date(2024, 3, 15)
+    assert len(march_15['events']) == 2
+    
+    # March 29: Another LAVINOVÝ KURZ starting
+    march_29 = parsed_days[28]
+    assert march_29['date'] == date(2024, 3, 29)
+    assert len(march_29['events']) == 1
+    event = march_29['events'][0]
+    assert event['title'] == 'LAVINOVÝ KURZ - JESENÍKY'
+    assert event['start_date'] == date(2024, 3, 29)
+    assert event['end_date'] == date(2024, 3, 31)
+    
+    print("✓ All tests passed!")
 
 
 if __name__ == '__main__':

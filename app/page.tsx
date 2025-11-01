@@ -62,12 +62,78 @@ interface Month {
   days: Day[];
 }
 
+interface MultiDayEvent {
+  event: Event;
+  startDate: string;
+  endDate: string;
+  startDay: number; // day of month
+  endDay: number;   // day of month
+  span: number;     // number of days
+}
+
 export default function Home() {
   const formatMonthHeader = (dateStr: string) => {
     const date = new Date(dateStr);
     const monthName = monthNames[date.getMonth()];
     const year = date.getFullYear();
     return `${monthName} ${year}`;
+  };
+
+  const detectMultiDayEvents = (month: Month): MultiDayEvent[] => {
+    const multiDayEvents: MultiDayEvent[] = [];
+    const eventOccurrences = new Map<string, string[]>(); // event title -> dates
+    
+    // Group events by title to detect multi-day events
+    month.days.forEach(day => {
+      day.events.forEach(event => {
+        if (!eventOccurrences.has(event.title)) {
+          eventOccurrences.set(event.title, []);
+        }
+        eventOccurrences.get(event.title)!.push(day.date);
+      });
+    });
+    
+    // Find consecutive date ranges for each event
+    eventOccurrences.forEach((dates, title) => {
+      if (dates.length > 1) {
+        dates.sort();
+        
+        let startDate = dates[0];
+        let prevDate = dates[0];
+        
+        for (let i = 1; i <= dates.length; i++) {
+          const currentDate = i < dates.length ? dates[i] : null;
+          const prevDateTime = new Date(prevDate).getTime();
+          const currentDateTime = currentDate ? new Date(currentDate).getTime() : null;
+          const isConsecutive = currentDateTime && (currentDateTime - prevDateTime === 86400000); // 24 hours
+          
+          if (!isConsecutive) {
+            // End of consecutive range
+            if (startDate !== prevDate) {
+              // This is a multi-day event
+              const event = month.days.find(d => d.date === startDate)?.events.find(e => e.title === title);
+              if (event) {
+                multiDayEvents.push({
+                  event,
+                  startDate,
+                  endDate: prevDate,
+                  startDay: new Date(startDate).getDate(),
+                  endDay: new Date(prevDate).getDate(),
+                  span: Math.round((new Date(prevDate).getTime() - new Date(startDate).getTime()) / 86400000) + 1
+                });
+              }
+            }
+            startDate = currentDate || startDate;
+          }
+          
+          if (currentDate) {
+            prevDate = currentDate;
+          }
+        }
+      }
+    });
+    
+    return multiDayEvents;
   };
 
   const getCalendarGrid = (month: Month) => {
@@ -94,6 +160,10 @@ export default function Home() {
       }
     });
     
+    // Detect multi-day events
+    const multiDayEvents = detectMultiDayEvents(month);
+    const multiDayEventTitles = new Set(multiDayEvents.map(e => e.event.title));
+    
     // Build calendar grid
     const weeks: (Day | null)[][] = [];
     let currentWeek: (Day | null)[] = [];
@@ -106,9 +176,21 @@ export default function Home() {
     // Add all days of the month
     for (let day = 1; day <= daysInMonth; day++) {
       const dateStr = `${year}-${String(monthIndex + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+      const events = eventsByDate.get(dateStr) || [];
+      
+      // Filter out multi-day events that don't start on this day
+      const filteredEvents = events.filter(event => {
+        if (!multiDayEventTitles.has(event.title)) {
+          return true; // Keep single-day events
+        }
+        // For multi-day events, only show on the first day
+        const multiDayEvent = multiDayEvents.find(e => e.event.title === event.title && e.startDay === day);
+        return multiDayEvent !== undefined;
+      });
+      
       const dayData: Day = {
         date: dateStr,
-        events: eventsByDate.get(dateStr) || []
+        events: filteredEvents
       };
       currentWeek.push(dayData);
       
@@ -127,7 +209,7 @@ export default function Home() {
       weeks.push(currentWeek);
     }
     
-    return weeks;
+    return { weeks, multiDayEvents };
   };
 
   // Filter months with events
@@ -149,7 +231,21 @@ export default function Home() {
 
       <div className="space-y-8">
         {monthsWithEvents.map((month) => {
-          const weeks = getCalendarGrid(month);
+          const { weeks, multiDayEvents } = getCalendarGrid(month);
+          const year = new Date(month.date).getFullYear();
+          const monthIndex = new Date(month.date).getMonth();
+          
+          // Helper to get week index and day index for a given day of month
+          const getDayPosition = (dayOfMonth: number) => {
+            const firstDayOfMonth = new Date(year, monthIndex, 1);
+            let startDay = firstDayOfMonth.getDay();
+            startDay = startDay === 0 ? 6 : startDay - 1;
+            const position = startDay + dayOfMonth - 1;
+            return {
+              weekIndex: Math.floor(position / 7),
+              dayIndex: position % 7
+            };
+          };
           
           return (
             <div key={month.date} style={{ backgroundColor: 'white', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
@@ -174,6 +270,12 @@ export default function Home() {
                         const isWeekend = dayIndex >= 5;
                         const hasEvents = day && day.events.length > 0;
                         
+                        // Find multi-day events that start on this day
+                        const multiDayEventsStartingHere = day ? multiDayEvents.filter(mde => {
+                          const pos = getDayPosition(mde.startDay);
+                          return pos.weekIndex === weekIndex && pos.dayIndex === dayIndex;
+                        }) : [];
+                        
                         return (
                           <td 
                             key={dayIndex}
@@ -184,6 +286,7 @@ export default function Home() {
                               borderBottom: `1px solid ${COLORS.tableBorder}`,
                               backgroundColor: isWeekend ? COLORS.weekendBg : COLORS.weekdayBg,
                               height: '120px',
+                              position: 'relative',
                             }}
                           >
                             {day ? (
@@ -198,33 +301,81 @@ export default function Home() {
                                   {new Date(day.date).getDate()}
                                 </div>
                                 <div style={{ flex: 1, overflow: 'auto', padding: '0 4px' }}>
-                                  {day.events.map((event, i) => (
-                                    <div 
-                                      key={i} 
-                                      style={{
-                                        backgroundColor: COLORS.eventBg,
-                                        border: `1px solid ${COLORS.eventBorder}`,
-                                        borderLeft: `3px solid ${COLORS.eventBorderLeft}`,
-                                        borderRadius: '3px',
-                                        padding: '4px 6px',
-                                        marginBottom: '4px',
-                                        fontSize: '11px',
-                                        lineHeight: '1.3'
-                                      }}
-                                    >
-                                      <a 
-                                        href={event.url} 
-                                        style={{ 
-                                          color: COLORS.eventText,
-                                          textDecoration: 'none',
-                                          display: 'block'
-                                        }}
-                                        title={event.title}
-                                      >
-                                        {event.title}
-                                      </a>
-                                    </div>
-                                  ))}
+                                  {day.events.map((event, i) => {
+                                    // Check if this is a multi-day event starting here
+                                    const multiDayEvent = multiDayEventsStartingHere.find(mde => mde.event.title === event.title);
+                                    
+                                    if (multiDayEvent) {
+                                      // Calculate span in days, but limit to end of week
+                                      const daysUntilWeekEnd = 7 - dayIndex;
+                                      const span = Math.min(multiDayEvent.span, daysUntilWeekEnd);
+                                      const continuesNextWeek = multiDayEvent.span > daysUntilWeekEnd;
+                                      
+                                      return (
+                                        <div 
+                                          key={i} 
+                                          style={{
+                                            position: 'absolute',
+                                            left: `calc(${dayIndex * 14.28}% + 4px)`,
+                                            right: continuesNextWeek ? '4px' : `calc(${(7 - dayIndex - span) * 14.28}% + 4px)`,
+                                            backgroundColor: COLORS.eventBg,
+                                            border: `1px solid ${COLORS.eventBorder}`,
+                                            borderLeft: `3px solid ${COLORS.eventBorderLeft}`,
+                                            borderRadius: '3px',
+                                            padding: '4px 6px',
+                                            marginTop: `${20 + i * 24}px`,
+                                            fontSize: '11px',
+                                            lineHeight: '1.3',
+                                            zIndex: 1,
+                                            whiteSpace: 'nowrap',
+                                            overflow: 'hidden',
+                                            textOverflow: 'ellipsis'
+                                          }}
+                                        >
+                                          <a 
+                                            href={event.url} 
+                                            style={{ 
+                                              color: COLORS.eventText,
+                                              textDecoration: 'none',
+                                              display: 'block'
+                                            }}
+                                            title={`${event.title} (${multiDayEvent.span} dní)`}
+                                          >
+                                            {event.title} ({multiDayEvent.span}d)
+                                          </a>
+                                        </div>
+                                      );
+                                    } else {
+                                      // Regular single-day event
+                                      return (
+                                        <div 
+                                          key={i} 
+                                          style={{
+                                            backgroundColor: COLORS.eventBg,
+                                            border: `1px solid ${COLORS.eventBorder}`,
+                                            borderLeft: `3px solid ${COLORS.eventBorderLeft}`,
+                                            borderRadius: '3px',
+                                            padding: '4px 6px',
+                                            marginBottom: '4px',
+                                            fontSize: '11px',
+                                            lineHeight: '1.3'
+                                          }}
+                                        >
+                                          <a 
+                                            href={event.url} 
+                                            style={{ 
+                                              color: COLORS.eventText,
+                                              textDecoration: 'none',
+                                              display: 'block'
+                                            }}
+                                            title={event.title}
+                                          >
+                                            {event.title}
+                                          </a>
+                                        </div>
+                                      );
+                                    }
+                                  })}
                                 </div>
                               </div>
                             ) : null}

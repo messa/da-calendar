@@ -89,12 +89,31 @@ export default function Home() {
     
     const daysInMonth = lastDayOfMonth.getDate();
     
-    // Create a map of events by date
+    // Create a map of events by date, expanding multi-day events
     const eventsByDate = new Map<string, Event[]>();
+    
     month.days.forEach(day => {
-      if (day.events.length > 0) {
-        eventsByDate.set(day.date, day.events);
-      }
+      day.events.forEach(event => {
+        // Get start and end dates
+        const startDate = event.start_date ? new Date(typeof event.start_date === 'string' ? event.start_date : event.start_date.toISOString().split('T')[0]) : new Date(day.date);
+        const endDate = event.end_date ? new Date(typeof event.end_date === 'string' ? event.end_date : event.end_date.toISOString().split('T')[0]) : new Date(day.date);
+        
+        // Add event to all days in its range
+        const currentDate = new Date(startDate);
+        while (currentDate <= endDate) {
+          const dateStr = currentDate.toISOString().split('T')[0];
+          
+          // Only add if this date is in the current month
+          if (currentDate.getMonth() === monthIndex && currentDate.getFullYear() === year) {
+            if (!eventsByDate.has(dateStr)) {
+              eventsByDate.set(dateStr, []);
+            }
+            eventsByDate.get(dateStr)!.push(event);
+          }
+          
+          currentDate.setDate(currentDate.getDate() + 1);
+        }
+      });
     });
     
     // Build calendar grid
@@ -209,19 +228,27 @@ export default function Home() {
                                     const durationDays = event.duration_days || 1;
                                     const isMultiDay = durationDays > 1;
                                     
+                                    // Determine position in multi-day event
+                                    const startDate = event.start_date ? (typeof event.start_date === 'string' ? event.start_date : event.start_date.toISOString().split('T')[0]) : day.date;
+                                    const endDate = event.end_date ? (typeof event.end_date === 'string' ? event.end_date : event.end_date.toISOString().split('T')[0]) : day.date;
+                                    const isFirstDay = day.date === startDate;
+                                    const isLastDay = day.date === endDate;
+                                    const isMiddleDay = !isFirstDay && !isLastDay;
+                                    
                                     return (
                                       <div 
                                         key={i} 
                                         style={{
                                           backgroundColor: COLORS.eventBg,
                                           border: `1px solid ${COLORS.eventBorder}`,
-                                          borderLeft: `3px solid ${COLORS.eventBorderLeft}`,
-                                          borderRadius: '3px',
+                                          borderLeft: isFirstDay ? `3px solid ${COLORS.eventBorderLeft}` : `1px solid ${COLORS.eventBorder}`,
+                                          borderRadius: isFirstDay && !isLastDay ? '3px 0 0 3px' : (!isFirstDay && isLastDay ? '0 3px 3px 0' : (isFirstDay && isLastDay ? '3px' : '0')),
                                           padding: '4px 6px',
                                           marginBottom: '4px',
                                           fontSize: '11px',
                                           lineHeight: '1.3',
-                                          fontWeight: isMultiDay ? '500' : '400'
+                                          fontWeight: isMultiDay ? '500' : '400',
+                                          opacity: isMiddleDay ? 0.8 : 1
                                         }}
                                       >
                                         <a 
@@ -233,8 +260,14 @@ export default function Home() {
                                           }}
                                           title={`${event.title}${isMultiDay ? ` (${durationDays} ${durationDays === 1 ? 'den' : durationDays < 5 ? 'dny' : 'dní'})` : ''}`}
                                         >
-                                          {event.title.length > 50 ? event.title.substring(0, 47) + '...' : event.title}
-                                          {isMultiDay && <span style={{ opacity: 0.7 }}> ({durationDays}d)</span>}
+                                          {isFirstDay ? (
+                                            <>
+                                              {event.title.length > 50 ? event.title.substring(0, 47) + '...' : event.title}
+                                              {isMultiDay && <span style={{ opacity: 0.7 }}> ({durationDays}d)</span>}
+                                            </>
+                                          ) : (
+                                            <span style={{ opacity: 0.6 }}>↔ {event.title.length > 45 ? event.title.substring(0, 42) + '...' : event.title}</span>
+                                          )}
                                         </a>
                                       </div>
                                     );

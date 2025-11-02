@@ -14,14 +14,20 @@
               "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAH, INSTRUKTOR Martin",
               "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/",
               "start_date": "2025-11-02",
-              "end_date": "2025-11-03",
-              "duration_days": 2
+              "end_date": "2025-11-02"
             }
           ]
         },
         {
           "date": "2025-11-03",
-          "events": []
+          "events": [
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAH, INSTRUKTOR Martin",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/",
+              "start_date": "2025-11-03",
+              "end_date": "2025-11-03"
+            }
+          ]
         },
         {
           "date": "2025-11-04",
@@ -42,25 +48,43 @@
               "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAH, INSTRUKTOR Martin",
               "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/",
               "start_date": "2025-11-07",
-              "end_date": "2025-11-08",
-              "duration_days": 2
+              "end_date": "2025-11-07"
             },
             {
               "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/",
               "start_date": "2025-11-07",
-              "end_date": "2025-11-09",
-              "duration_days": 3
+              "end_date": "2025-11-07"
             }
           ]
         },
         {
           "date": "2025-11-08",
-          "events": []
+          "events": [
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAH, INSTRUKTOR Martin",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/",
+              "start_date": "2025-11-08",
+              "end_date": "2025-11-08"
+            },
+            {
+              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/",
+              "start_date": "2025-11-08",
+              "end_date": "2025-11-08"
+            }
+          ]
         },
         {
           "date": "2025-11-09",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/",
+              "start_date": "2025-11-09",
+              "end_date": "2025-11-09"
+            }
+          ]
         },
         {
           "date": "2025-11-10",
@@ -100,18 +124,31 @@
               "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/",
               "start_date": "2025-11-14",
-              "end_date": "2025-11-16",
-              "duration_days": 3
+              "end_date": "2025-11-14"
             }
           ]
         },
         {
           "date": "2025-11-15",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/",
+              "start_date": "2025-11-15",
+              "end_date": "2025-11-15"
+            }
+          ]
         },
         {
           "date": "2025-11-16",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/",
+              "start_date": "2025-11-16",
+              "end_date": "2025-11-16"
+            }
+          ]
         },
         {
           "date": "2025-11-17",

@@ -27,15 +27,22 @@ from base64 import b64decode
 from datetime import date, datetime, timedelta, timezone
 import json
 from logging import getLogger, basicConfig, DEBUG, INFO
-from lxml.html import fragment_fromstring, tostring
+from lxml.html import fragment_fromstring, tostring, document_fromstring
 from lzma import decompress
 from pathlib import Path
+import re
 from reprlib import repr as smart_repr
 import requests
 
 
 logger = getLogger(__name__)
 rs = requests.Session()
+
+# Cache for course durations to avoid fetching the same page multiple times
+_course_duration_cache = {}
+
+# Pattern to match course duration in Czech ("POČET DNÍ: X den/dny/dní")
+COURSE_DURATION_PATTERN = r'POČET\s+DNÍ:\s*(\d+)\s*d(?:en|ny|ní)'
 
 
 def main():
@@ -191,6 +198,45 @@ def parse_month_html(data, month_date):
     return consolidate_multiday_events(result_days)
 
 
+def fetch_course_duration(url):
+    """
+    Fetch the course page and extract the actual duration from the 'POČET DNÍ:' field.
+    Returns the number of days the course actually lasts, or None if not found.
+    """
+    if not url or 'daily-adventures.cz' not in url:
+        return None
+    
+    # Check cache first
+    if url in _course_duration_cache:
+        return _course_duration_cache[url]
+    
+    try:
+        logger.debug(f'Fetching course page: {url}')
+        r = rs.get(url, timeout=10)
+        r.raise_for_status()
+        doc = document_fromstring(r.text)
+        
+        # Get the full text content
+        text = doc.text_content()
+        
+        # Look for "POČET DNÍ:" pattern (NUMBER OF DAYS:)
+        # Patterns: "POČET DNÍ: 1 den", "POČET DNÍ: 2 dny", "POČET DNÍ: 3 dny"
+        match = re.search(COURSE_DURATION_PATTERN, text, re.IGNORECASE)
+        if match:
+            days = int(match.group(1))
+            logger.debug(f'Found duration for {url}: {days} days')
+            _course_duration_cache[url] = days
+            return days
+        
+        logger.debug(f'Duration not found for {url}')
+        _course_duration_cache[url] = None
+        return None
+    except Exception as e:
+        logger.warning(f'Error fetching course page {url}: {e}')
+        _course_duration_cache[url] = None
+        return None
+
+
 def consolidate_multiday_events(days):
     """Convert events that repeat on consecutive days into multi-day event ranges."""
     # Build a map of event title+url -> dates
@@ -202,8 +248,10 @@ def consolidate_multiday_events(days):
                 event_dates[key] = []
             event_dates[key].append(day['date'])
     
-    # Find consecutive date ranges for each event
+    # Find consecutive date ranges for each event and fetch actual duration
     event_ranges = {}
+    event_actual_durations = {}
+    
     for (title, url), dates in event_dates.items():
         dates.sort()
         ranges = []
@@ -224,8 +272,12 @@ def consolidate_multiday_events(days):
         ranges.append((current_start, current_end))
         
         event_ranges[(title, url)] = ranges
+        
+        # Fetch actual duration from course page
+        actual_duration = fetch_course_duration(url)
+        event_actual_durations[(title, url)] = actual_duration
     
-    # Build new days structure with multi-day events only on start date
+    # Build new days structure with events properly categorized
     result_days = []
     processed_events = set()  # Track (title, url, start_date) to avoid duplicates
     
@@ -238,26 +290,69 @@ def consolidate_multiday_events(days):
         for event in day['events']:
             key = (event['title'], event['url'])
             ranges = event_ranges[key]
+            actual_duration = event_actual_durations.get(key)
             
             # Find which range this day belongs to
             for start_date, end_date in ranges:
                 if start_date <= day['date'] <= end_date:
-                    event_key = (event['title'], event['url'], start_date)
-                    # Only add event on the first day of the range
-                    if day['date'] == start_date and event_key not in processed_events:
+                    calendar_duration = (end_date - start_date).days + 1
+                    
+                    # Determine event type based on actual duration vs calendar duration
+                    event_type = None
+                    
+                    if actual_duration is not None:
+                        # We have actual duration from the course page
+                        if actual_duration == 1 and calendar_duration > 1:
+                            # Single-day course repeated on consecutive days
+                            event_type = 'repeated_single_day'
+                        elif actual_duration > 1:
+                            # Multi-day continuous event
+                            event_type = 'multi_day'
+                        else:
+                            # Single day event
+                            event_type = 'single_day'
+                    else:
+                        # Fallback: if calendar duration > 1, assume it might be multi-day
+                        # but we're not certain
+                        if calendar_duration > 1:
+                            event_type = 'multi_day'  # Conservative assumption
+                        else:
+                            event_type = 'single_day'
+                    
+                    # For repeated single-day events, add an event for each day
+                    # For multi-day events, only add on the first day
+                    should_add = False
+                    if event_type == 'repeated_single_day':
+                        # Add event on each day of the range
+                        event_key_single = (event['title'], event['url'], day['date'])
+                        if event_key_single not in processed_events:
+                            should_add = True
+                            processed_events.add(event_key_single)
+                    else:
+                        # Multi-day or single-day: only add on first day
+                        event_key = (event['title'], event['url'], start_date)
+                        if day['date'] == start_date and event_key not in processed_events:
+                            should_add = True
+                            processed_events.add(event_key)
+                    
+                    if should_add:
                         new_event = {
                             'title': event['title'],
                             'url': event['url'],
-                            'start_date': start_date,
-                            'end_date': end_date,
                         }
-                        # Add duration in days if it's a multi-day event
-                        duration_days = (end_date - start_date).days + 1
-                        if duration_days > 1:
-                            new_event['duration_days'] = duration_days
+                        
+                        if event_type == 'repeated_single_day':
+                            # For repeated single-day events, use the single day date
+                            new_event['start_date'] = day['date']
+                            new_event['end_date'] = day['date']
+                        else:
+                            # For multi-day or single-day events
+                            new_event['start_date'] = start_date
+                            new_event['end_date'] = end_date
+                            if calendar_duration > 1:
+                                new_event['duration_days'] = calendar_duration
                         
                         new_day['events'].append(new_event)
-                        processed_events.add(event_key)
                     break
         
         result_days.append(new_day)

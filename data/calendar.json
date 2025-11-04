@@ -896,7 +896,15 @@
         },
         {
           "date": "2026-04-10",
-          "events": []
+          "events": [
+            {
+              "title": "Zimn\u00ed kurz p\u0159e\u017eit\u00ed Level 2- Orlick\u00e9 hory",
+              "url": "https://www.google.com/calendar/event?eid=YzhvbTJwaGg2dGlqZ2JiNjZsaDNjYjlrYzlnamNiOW9jNHFqaWI5bDc1ajM2Y3I0NjVpbTJvYjZjNCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "start_date": "2026-04-10",
+              "end_date": "2026-04-12",
+              "duration_days": 3
+            }
+          ]
         },
         {
           "date": "2026-04-11",

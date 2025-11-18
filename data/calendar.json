@@ -803,7 +803,14 @@
         },
         {
           "date": "2026-03-19",
-          "events": []
+          "events": [
+            {
+              "title": "Kurz Slackline Stromovka - Silvie",
+              "url": "https://www.google.com/calendar/event?eid=NmRobWFwaGk2MG9qYWI5b2M1aWowYjlrNnRnbTJiOW82NWg2Y2JiMmNwaDNlY2htNmxpbWFwYjVjNCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "start_date": "2026-03-19",
+              "end_date": "2026-03-19"
+            }
+          ]
         },
         {
           "date": "2026-03-20",
@@ -892,7 +899,14 @@
         },
         {
           "date": "2026-04-09",
-          "events": []
+          "events": [
+            {
+              "title": "Kurz Slackline Stromovka - Silvie",
+              "url": "https://www.google.com/calendar/event?eid=NmNyamlwaG42MWlqZ2JiMTZrczNhYjlrNmdwM2ViYjE2Y3BtMmJiMmNjcDNhZWI0Y29xNjJwMzY2ZyBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "start_date": "2026-04-09",
+              "end_date": "2026-04-09"
+            }
+          ]
         },
         {
           "date": "2026-04-10",

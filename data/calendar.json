@@ -946,7 +946,15 @@
         },
         {
           "date": "2026-04-17",
-          "events": []
+          "events": [
+            {
+              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-skalach-2dny/",
+              "start_date": "2026-04-17",
+              "end_date": "2026-04-19",
+              "duration_days": 3
+            }
+          ]
         },
         {
           "date": "2026-04-18",
@@ -978,11 +986,25 @@
         },
         {
           "date": "2026-04-25",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/",
+              "start_date": "2026-04-25",
+              "end_date": "2026-04-25"
+            }
+          ]
         },
         {
           "date": "2026-04-26",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/",
+              "start_date": "2026-04-26",
+              "end_date": "2026-04-26"
+            }
+          ]
         },
         {
           "date": "2026-04-27",
@@ -1131,11 +1153,25 @@
         },
         {
           "date": "2026-05-30",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/",
+              "start_date": "2026-05-30",
+              "end_date": "2026-05-30"
+            }
+          ]
         },
         {
           "date": "2026-05-31",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/",
+              "start_date": "2026-05-31",
+              "end_date": "2026-05-31"
+            }
+          ]
         }
       ]
     },
@@ -1184,7 +1220,15 @@
         },
         {
           "date": "2026-06-11",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor \u0160t\u011bp\u00e1n",
+              "url": "https://daily-adventures.cz/eshop/via-ferrata-solna-komora-rakousko/",
+              "start_date": "2026-06-11",
+              "end_date": "2026-06-14",
+              "duration_days": 4
+            }
+          ]
         },
         {
           "date": "2026-06-12",
@@ -1244,15 +1288,37 @@
         },
         {
           "date": "2026-06-26",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA RAXALPE, RAKOUSKO - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-raxalpe-rakousko/",
+              "start_date": "2026-06-26",
+              "end_date": "2026-06-28",
+              "duration_days": 3
+            }
+          ]
         },
         {
           "date": "2026-06-27",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/",
+              "start_date": "2026-06-27",
+              "end_date": "2026-06-27"
+            }
+          ]
         },
         {
           "date": "2026-06-28",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/",
+              "start_date": "2026-06-28",
+              "end_date": "2026-06-28"
+            }
+          ]
         },
         {
           "date": "2026-06-29",
@@ -1277,7 +1343,15 @@
         },
         {
           "date": "2026-07-03",
-          "events": []
+          "events": [
+            {
+              "title": "V\u00ddSTUP NA HOCHFEILER \u2013 GRAN PILASTRO 3509 M.N.M. - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/vystup-na-hochfeiler/",
+              "start_date": "2026-07-03",
+              "end_date": "2026-07-05",
+              "duration_days": 3
+            }
+          ]
         },
         {
           "date": "2026-07-04",
@@ -1301,7 +1375,15 @@
         },
         {
           "date": "2026-07-09",
-          "events": []
+          "events": [
+            {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/",
+              "start_date": "2026-07-09",
+              "end_date": "2026-07-12",
+              "duration_days": 4
+            }
+          ]
         },
         {
           "date": "2026-07-10",
@@ -1333,7 +1415,22 @@
         },
         {
           "date": "2026-07-17",
-          "events": []
+          "events": [
+            {
+              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO POKRO\u010cIL\u00c9 \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-skalach-2dny/",
+              "start_date": "2026-07-17",
+              "end_date": "2026-07-19",
+              "duration_days": 3
+            },
+            {
+              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-skalach-2dny/",
+              "start_date": "2026-07-17",
+              "end_date": "2026-07-19",
+              "duration_days": 3
+            }
+          ]
         },
         {
           "date": "2026-07-18",
@@ -1357,7 +1454,15 @@
         },
         {
           "date": "2026-07-23",
-          "events": []
+          "events": [
+            {
+              "title": "VZDU\u0160N\u00c1 A VELMI OBL\u00cdBEN\u00c1 FERRATA INTERSPORT \u2013 RAKOUSKO - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-intersport-rakousko/",
+              "start_date": "2026-07-23",
+              "end_date": "2026-07-26",
+              "duration_days": 4
+            }
+          ]
         },
         {
           "date": "2026-07-24",
@@ -1385,7 +1490,15 @@
         },
         {
           "date": "2026-07-30",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/via-ferrata-solna-komora-rakousko/",
+              "start_date": "2026-07-30",
+              "end_date": "2026-07-31",
+              "duration_days": 2
+            }
+          ]
         },
         {
           "date": "2026-07-31",
@@ -1398,7 +1511,15 @@
       "days": [
         {
           "date": "2026-08-01",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/via-ferrata-solna-komora-rakousko/",
+              "start_date": "2026-08-01",
+              "end_date": "2026-08-02",
+              "duration_days": 2
+            }
+          ]
         },
         {
           "date": "2026-08-02",
@@ -1478,7 +1599,15 @@
         },
         {
           "date": "2026-08-21",
-          "events": []
+          "events": [
+            {
+              "title": "V\u00ddSTUP NA TRIGLAV 2864 M \u2013 NEJVY\u0160\u0160\u00cd HORU SLOVINSKA - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/vystup-na-triglav-nejvyssi-horu-slovinska/",
+              "start_date": "2026-08-21",
+              "end_date": "2026-08-23",
+              "duration_days": 3
+            }
+          ]
         },
         {
           "date": "2026-08-22",
@@ -1539,7 +1668,15 @@
         },
         {
           "date": "2026-09-04",
-          "events": []
+          "events": [
+            {
+              "title": "V\u00ddSTUP NA HOCHFEILER \u2013 GRAN PILASTRO 3509 M.N.M. - Instruktor Luk\u00e1\u0161 a \u017de\u0148a",
+              "url": "https://daily-adventures.cz/eshop/vystup-na-hochfeiler/",
+              "start_date": "2026-09-04",
+              "end_date": "2026-09-06",
+              "duration_days": 3
+            }
+          ]
         },
         {
           "date": "2026-09-05",

@@ -104,7 +104,14 @@
         },
         {
           "date": "2025-12-22",
-          "events": []
+          "events": [
+            {
+              "title": "Skialpy DM M. Karpisek",
+              "url": "https://www.google.com/calendar/event?eid=Nm9yajhvOWtja3AzZ2I5bmM1aTNlYjlrNmhnajZiYjFjb3A2MmJiNjZsaDY0YzloNnBoajhwMWs2NCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "start_date": "2025-12-22",
+              "end_date": "2025-12-22"
+            }
+          ]
         },
         {
           "date": "2025-12-23",
@@ -381,7 +388,7 @@
           "date": "2026-02-13",
           "events": [
             {
-              "title": "P\u0159echod Krkono\u0161 na sn\u011b\u017enic\u00edch - Pr\u016fvodce Luk\u00e1\u0161",
+              "title": "Zimn\u00ed p\u0159echod Mal\u00e9 Fatry na sn\u011b\u017enic\u00edch - Pr\u016fvodce Luk\u00e1\u0161",
               "url": "https://www.google.com/calendar/event?eid=NGVnc2JuYzRpbGZvZGxsZXFrcnFrMTcwbHYgZGFpbHlhZHZlbnR1cmVzY3pAbQ&ctz=Europe/Prague",
               "start_date": "2026-02-13",
               "end_date": "2026-02-15",
@@ -762,11 +769,25 @@
         },
         {
           "date": "2026-04-18",
-          "events": []
+          "events": [
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAH, INSTRUKTORKA LEA",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/",
+              "start_date": "2026-04-18",
+              "end_date": "2026-04-18"
+            }
+          ]
         },
         {
           "date": "2026-04-19",
-          "events": []
+          "events": [
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO M\u00cdRN\u011a POKRO\u010cIL\u00c9\u2013 SRBSKO U PRAH, INSTRUKTORKA LEA",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/",
+              "start_date": "2026-04-19",
+              "end_date": "2026-04-19"
+            }
+          ]
         },
         {
           "date": "2026-04-20",
@@ -790,25 +811,11 @@
         },
         {
           "date": "2026-04-25",
-          "events": [
-            {
-              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAH, INSTRUKTORKA LEA",
-              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/",
-              "start_date": "2026-04-25",
-              "end_date": "2026-04-25"
-            }
-          ]
+          "events": []
         },
         {
           "date": "2026-04-26",
-          "events": [
-            {
-              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO M\u00cdRN\u011a POKRO\u010cIL\u00c9\u2013 SRBSKO U PRAH, INSTRUKTORKA LEA",
-              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/",
-              "start_date": "2026-04-26",
-              "end_date": "2026-04-26"
-            }
-          ]
+          "events": []
         },
         {
           "date": "2026-04-27",

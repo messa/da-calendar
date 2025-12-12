@@ -74,12 +74,24 @@ interface Month {
   days: Day[];
 }
 
+interface CalendarData {
+  last_updated?: string;
+  months: Month[];
+}
+
 export default function Home() {
+  const data = calendarData as CalendarData;
+
   const formatMonthHeader = (dateStr: string) => {
     const date = new Date(dateStr);
     const monthName = monthNames[date.getMonth()];
     const year = date.getFullYear();
     return `${monthName} ${year}`;
+  };
+
+  const formatDate = (dateStr: string) => {
+    const date = new Date(dateStr);
+    return `${date.getDate()}. ${date.getMonth() + 1}. ${date.getFullYear()}`;
   };
 
   const getCalendarGrid = (month: Month) => {
@@ -164,7 +176,7 @@ export default function Home() {
   };
 
   // Filter months with events
-  const monthsWithEvents = calendarData.months.filter(month => 
+  const monthsWithEvents = data.months.filter(month =>
     month.days.some(day => day.events.length > 0)
   );
 
@@ -298,9 +310,16 @@ export default function Home() {
         })}
       </div>
 
-      <p className="mt-6 pt-4 text-xs sm:text-sm" style={{ color: COLORS.textSecondary, textAlign: 'center' }}>
-        Github: <a href='https://github.com/messa/da-calendar' style={{ color: COLORS.linkColor }}>github.com/messa/da-calendar</a>
-      </p>
+      <div className="mt-6 pt-4 text-xs sm:text-sm" style={{ color: COLORS.textSecondary, textAlign: 'center' }}>
+        {data.last_updated && (
+          <p className="mb-2">
+            Data ze dne: {formatDate(data.last_updated)}
+          </p>
+        )}
+        <p>
+          Github: <a href='https://github.com/messa/da-calendar' style={{ color: COLORS.linkColor }}>github.com/messa/da-calendar</a>
+        </p>
+      </div>
     </main>
   );
 }

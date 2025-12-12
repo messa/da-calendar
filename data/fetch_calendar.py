@@ -55,7 +55,10 @@ def main():
     end_date = start_date + timedelta(days=365//2)
     end_date = end_date.replace(month=12).date()
     month_date = start_date.replace(day=1).date()
-    output = {'months': []}
+    output = {
+        'last_updated': start_date.date(),
+        'months': [],
+    }
     while month_date < end_date:
         month_html = retrieve_month_html(month_date)
         parsed_days = parse_month_html(month_html, month_date)

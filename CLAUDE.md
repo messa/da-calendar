@@ -22,10 +22,10 @@ This workflow ensures the calendar stays synchronized with the source website wi
 ## Technology Stack
 
 ### Frontend
-- **Framework**: Next.js 16.0.1 - React framework with SSR/SSG capabilities
-- **Runtime**: React 19 - Component-based UI library
+- **Framework**: Next.js 16.0.10 - React framework with SSR/SSG capabilities
+- **Runtime**: React 19.2.3 - Component-based UI library
 - **Language**: TypeScript 5.9.3 - Type-safe JavaScript
-- **Styling**: Tailwind CSS 4.1.16 - Utility-first CSS framework
+- **Styling**: Tailwind CSS 4.1.18 - Utility-first CSS framework
 
 ### Data Collection
 - **Python 3.12** - Script runtime

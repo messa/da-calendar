@@ -1572,7 +1572,15 @@
         },
         {
           "date": "2026-10-30",
-          "events": []
+          "events": [
+            {
+              "title": "Kurz le\u017een\u00ed - Zlat\u00fd Potok",
+              "url": "https://www.google.com/calendar/event?eid=NnNzM2FvcjQ2NWgzOGJiMmNsaTNlYjlrYzhyMzRiYjJjOG8zaWJiMjZsaTY4YzMzNmtybWNkcGpjNCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "start_date": "2026-10-30",
+              "end_date": "2026-10-31",
+              "duration_days": 2
+            }
+          ]
         },
         {
           "date": "2026-10-31",
@@ -1585,7 +1593,14 @@
       "days": [
         {
           "date": "2026-11-01",
-          "events": []
+          "events": [
+            {
+              "title": "Kurz le\u017een\u00ed - Zlat\u00fd Potok",
+              "url": "https://www.google.com/calendar/event?eid=NnNzM2FvcjQ2NWgzOGJiMmNsaTNlYjlrYzhyMzRiYjJjOG8zaWJiMjZsaTY4YzMzNmtybWNkcGpjNCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "start_date": "2026-11-01",
+              "end_date": "2026-11-01"
+            }
+          ]
         },
         {
           "date": "2026-11-02",

@@ -306,7 +306,14 @@
         },
         {
           "date": "2026-02-25",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ LEZEN\u00cd NA UM\u011aL\u00c9 ST\u011aN\u011a PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 PRAHA - Instruktor Dan",
+              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-umele-stene/",
+              "start_date": "2026-02-25",
+              "end_date": "2026-02-25"
+            }
+          ]
         },
         {
           "date": "2026-02-26",
@@ -328,6 +335,12 @@
               "start_date": "2026-02-27",
               "end_date": "2026-02-28",
               "duration_days": 2
+            },
+            {
+              "title": "KURZ LEZEN\u00cd NA UM\u011aL\u00c9 ST\u011aN\u011a PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 PRAHA - Instruktorka Lea",
+              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-umele-stene/",
+              "start_date": "2026-02-27",
+              "end_date": "2026-02-27"
             }
           ]
         },
@@ -439,7 +452,14 @@
         },
         {
           "date": "2026-03-18",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ LEZEN\u00cd NA UM\u011aL\u00c9 ST\u011aN\u011a PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 PRAHA - Instruktor Dan",
+              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-umele-stene/",
+              "start_date": "2026-03-18",
+              "end_date": "2026-03-18"
+            }
+          ]
         },
         {
           "date": "2026-03-19",
@@ -454,7 +474,14 @@
         },
         {
           "date": "2026-03-20",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ LEZEN\u00cd NA UM\u011aL\u00c9 ST\u011aN\u011a PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 PRAHA - Instruktorka Lea",
+              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-umele-stene/",
+              "start_date": "2026-03-20",
+              "end_date": "2026-03-20"
+            }
+          ]
         },
         {
           "date": "2026-03-21",
@@ -488,7 +515,7 @@
           "date": "2026-03-28",
           "events": [
             {
-              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAH, INSTRUKTORKA LEA",
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAHY, INSTRUKTORKA LEA",
               "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/",
               "start_date": "2026-03-28",
               "end_date": "2026-03-28"
@@ -499,7 +526,7 @@
           "date": "2026-03-29",
           "events": [
             {
-              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO M\u00cdRN\u011a POKRO\u010cIL\u00c9\u2013 SRBSKO U PRAH, INSTRUKTORKA LEA",
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO M\u00cdRN\u011a POKRO\u010cIL\u00c9\u2013 SRBSKO U PRAHY, INSTRUKTORKA LEA",
               "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/",
               "start_date": "2026-03-29",
               "end_date": "2026-03-29"
@@ -614,7 +641,7 @@
           "date": "2026-04-18",
           "events": [
             {
-              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAH, INSTRUKTORKA LEA",
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAHY, INSTRUKTORKA LEA",
               "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/",
               "start_date": "2026-04-18",
               "end_date": "2026-04-18"
@@ -625,7 +652,7 @@
           "date": "2026-04-19",
           "events": [
             {
-              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO M\u00cdRN\u011a POKRO\u010cIL\u00c9\u2013 SRBSKO U PRAH, INSTRUKTORKA LEA",
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO M\u00cdRN\u011a POKRO\u010cIL\u00c9\u2013 SRBSKO U PRAHY, INSTRUKTORKA LEA",
               "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/",
               "start_date": "2026-04-19",
               "end_date": "2026-04-19"
@@ -654,11 +681,25 @@
         },
         {
           "date": "2026-04-25",
-          "events": []
+          "events": [
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAHY, INSTRUKTOR DAN",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/",
+              "start_date": "2026-04-25",
+              "end_date": "2026-04-25"
+            }
+          ]
         },
         {
           "date": "2026-04-26",
-          "events": []
+          "events": [
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO M\u00cdRN\u011a POKRO\u010cIL\u00c9\u2013 SRBSKO U PRAHY, INSTRUKTOR DAN",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/",
+              "start_date": "2026-04-26",
+              "end_date": "2026-04-26"
+            }
+          ]
         },
         {
           "date": "2026-04-27",
@@ -723,7 +764,14 @@
         },
         {
           "date": "2026-05-09",
-          "events": []
+          "events": [
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAHY, INSTRUKTOR DAN",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/",
+              "start_date": "2026-05-09",
+              "end_date": "2026-05-09"
+            }
+          ]
         },
         {
           "date": "2026-05-10",
@@ -918,11 +966,31 @@
         },
         {
           "date": "2026-06-20",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/",
+              "start_date": "2026-06-20",
+              "end_date": "2026-06-20"
+            }
+          ]
         },
         {
           "date": "2026-06-21",
-          "events": []
+          "events": [
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAHY, INSTRUKTOR DAN",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/",
+              "start_date": "2026-06-21",
+              "end_date": "2026-06-21"
+            },
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/",
+              "start_date": "2026-06-21",
+              "end_date": "2026-06-21"
+            }
+          ]
         },
         {
           "date": "2026-06-22",
@@ -1065,7 +1133,15 @@
         },
         {
           "date": "2026-07-16",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor \u0160t\u011bp\u00e1n",
+              "url": "https://daily-adventures.cz/eshop/via-ferrata-solna-komora-rakousko/",
+              "start_date": "2026-07-16",
+              "end_date": "2026-07-19",
+              "duration_days": 4
+            }
+          ]
         },
         {
           "date": "2026-07-17",
@@ -1193,7 +1269,15 @@
         },
         {
           "date": "2026-08-06",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor \u0160t\u011bp\u00e1n",
+              "url": "https://daily-adventures.cz/eshop/via-ferrata-solna-komora-rakousko/",
+              "start_date": "2026-08-06",
+              "end_date": "2026-08-09",
+              "duration_days": 4
+            }
+          ]
         },
         {
           "date": "2026-08-07",
@@ -1229,11 +1313,25 @@
         },
         {
           "date": "2026-08-15",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/",
+              "start_date": "2026-08-15",
+              "end_date": "2026-08-15"
+            }
+          ]
         },
         {
           "date": "2026-08-16",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/",
+              "start_date": "2026-08-16",
+              "end_date": "2026-08-16"
+            }
+          ]
         },
         {
           "date": "2026-08-17",
@@ -1354,7 +1452,15 @@
         },
         {
           "date": "2026-09-10",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA SOLN\u00c1 KOMORA \u2013 RAKOUSKO - Instruktor \u0160t\u011bp\u00e1n",
+              "url": "https://daily-adventures.cz/eshop/via-ferrata-solna-komora-rakousko/",
+              "start_date": "2026-09-10",
+              "end_date": "2026-09-13",
+              "duration_days": 4
+            }
+          ]
         },
         {
           "date": "2026-09-11",
@@ -1390,11 +1496,25 @@
         },
         {
           "date": "2026-09-19",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/",
+              "start_date": "2026-09-19",
+              "end_date": "2026-09-19"
+            }
+          ]
         },
         {
           "date": "2026-09-20",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/",
+              "start_date": "2026-09-20",
+              "end_date": "2026-09-20"
+            }
+          ]
         },
         {
           "date": "2026-09-21",

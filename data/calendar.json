@@ -1,188 +1,6 @@
 {
   "months": [
     {
-      "date": "2026-01-01",
-      "days": [
-        {
-          "date": "2026-01-01",
-          "events": []
-        },
-        {
-          "date": "2026-01-02",
-          "events": [
-            {
-              "title": "Skialpov\u00fd kurz pro za\u010d\u00e1te\u010dn\u00edky - Jesen\u00edky - Instruktor \u0160t\u011bp\u00e1n",
-              "url": "https://daily-adventures.cz/eshop/skialpovy-kurz-pro-zacatecniky-jeseniky/",
-              "start_date": "2026-01-02",
-              "end_date": "2026-01-04",
-              "duration_days": 3
-            },
-            {
-              "title": "Splitboardov\u00fd kurz pro za\u010d\u00e1te\u010dn\u00edky - Jesen\u00edky - Instruktor Luk\u00e1\u0161",
-              "url": "https://www.google.com/url?q=https://daily-adventures.cz/eshop/skialpovy-kurz-pro-zacatecniky-jeseniky/&sa=D&source=calendar&usd=2&usg=AOvVaw2r6aVG3DhkJ7Xt5_zWyjug",
-              "start_date": "2026-01-02",
-              "end_date": "2026-01-04",
-              "duration_days": 3
-            }
-          ]
-        },
-        {
-          "date": "2026-01-03",
-          "events": []
-        },
-        {
-          "date": "2026-01-04",
-          "events": []
-        },
-        {
-          "date": "2026-01-05",
-          "events": []
-        },
-        {
-          "date": "2026-01-06",
-          "events": []
-        },
-        {
-          "date": "2026-01-07",
-          "events": []
-        },
-        {
-          "date": "2026-01-08",
-          "events": []
-        },
-        {
-          "date": "2026-01-09",
-          "events": [
-            {
-              "title": "LAVINOV\u00dd KURZ - JESEN\u00cdKY - Instruktor \u0160t\u011bp\u00e1n",
-              "url": "https://daily-adventures.cz/eshop/lavinovy-kurz-pro-zacatecniky-jeseniky/",
-              "start_date": "2026-01-09",
-              "end_date": "2026-01-11",
-              "duration_days": 3
-            },
-            {
-              "title": "Skialpov\u00fd kurz pro za\u010d\u00e1te\u010dn\u00edky - Jesen\u00edky - Instruktor Luk\u00e1\u0161",
-              "url": "https://daily-adventures.cz/eshop/skialpovy-kurz-pro-zacatecniky-jeseniky/",
-              "start_date": "2026-01-09",
-              "end_date": "2026-01-11",
-              "duration_days": 3
-            }
-          ]
-        },
-        {
-          "date": "2026-01-10",
-          "events": []
-        },
-        {
-          "date": "2026-01-11",
-          "events": []
-        },
-        {
-          "date": "2026-01-12",
-          "events": []
-        },
-        {
-          "date": "2026-01-13",
-          "events": []
-        },
-        {
-          "date": "2026-01-14",
-          "events": []
-        },
-        {
-          "date": "2026-01-15",
-          "events": []
-        },
-        {
-          "date": "2026-01-16",
-          "events": []
-        },
-        {
-          "date": "2026-01-17",
-          "events": []
-        },
-        {
-          "date": "2026-01-18",
-          "events": []
-        },
-        {
-          "date": "2026-01-19",
-          "events": []
-        },
-        {
-          "date": "2026-01-20",
-          "events": []
-        },
-        {
-          "date": "2026-01-21",
-          "events": []
-        },
-        {
-          "date": "2026-01-22",
-          "events": []
-        },
-        {
-          "date": "2026-01-23",
-          "events": [
-            {
-              "title": "LAVINOV\u00dd KURZ - JESEN\u00cdKY - Luk\u00e1\u0161",
-              "url": "https://daily-adventures.cz/eshop/lavinovy-kurz-pro-zacatecniky-jeseniky/",
-              "start_date": "2026-01-23",
-              "end_date": "2026-01-25",
-              "duration_days": 3
-            }
-          ]
-        },
-        {
-          "date": "2026-01-24",
-          "events": []
-        },
-        {
-          "date": "2026-01-25",
-          "events": []
-        },
-        {
-          "date": "2026-01-26",
-          "events": []
-        },
-        {
-          "date": "2026-01-27",
-          "events": [
-            {
-              "title": "KURZ LEZEN\u00cd NA UM\u011aL\u00c9 ST\u011aN\u011a PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 PRAHA - Instruktorka Lea",
-              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-umele-stene/",
-              "start_date": "2026-01-27",
-              "end_date": "2026-01-27"
-            }
-          ]
-        },
-        {
-          "date": "2026-01-28",
-          "events": []
-        },
-        {
-          "date": "2026-01-29",
-          "events": []
-        },
-        {
-          "date": "2026-01-30",
-          "events": [
-            {
-              "title": "Skialpov\u00fd kurz pro za\u010d\u00e1te\u010dn\u00edky - Jesen\u00edky - Instruktor \u0160t\u011bp\u00e1n",
-              "url": "https://daily-adventures.cz/eshop/skialpovy-kurz-pro-zacatecniky-jeseniky/",
-              "start_date": "2026-01-30",
-              "end_date": "2026-01-31",
-              "duration_days": 2
-            }
-          ]
-        },
-        {
-          "date": "2026-01-31",
-          "events": []
-        }
-      ]
-    },
-    {
       "date": "2026-02-01",
       "days": [
         {
@@ -905,7 +723,15 @@
         },
         {
           "date": "2026-06-05",
-          "events": []
+          "events": [
+            {
+              "title": "Kurz ter\u00e9nn\u00ed cyklistiky MTB - Instruktor Milan",
+              "url": "https://daily-adventures.cz/eshop/vystup-na-hochfeiler/",
+              "start_date": "2026-06-05",
+              "end_date": "2026-06-07",
+              "duration_days": 3
+            }
+          ]
         },
         {
           "date": "2026-06-06",
@@ -1838,6 +1664,135 @@
         },
         {
           "date": "2026-11-30",
+          "events": []
+        }
+      ]
+    },
+    {
+      "date": "2026-12-01",
+      "days": [
+        {
+          "date": "2026-12-01",
+          "events": []
+        },
+        {
+          "date": "2026-12-02",
+          "events": []
+        },
+        {
+          "date": "2026-12-03",
+          "events": []
+        },
+        {
+          "date": "2026-12-04",
+          "events": []
+        },
+        {
+          "date": "2026-12-05",
+          "events": []
+        },
+        {
+          "date": "2026-12-06",
+          "events": []
+        },
+        {
+          "date": "2026-12-07",
+          "events": []
+        },
+        {
+          "date": "2026-12-08",
+          "events": []
+        },
+        {
+          "date": "2026-12-09",
+          "events": []
+        },
+        {
+          "date": "2026-12-10",
+          "events": []
+        },
+        {
+          "date": "2026-12-11",
+          "events": []
+        },
+        {
+          "date": "2026-12-12",
+          "events": []
+        },
+        {
+          "date": "2026-12-13",
+          "events": []
+        },
+        {
+          "date": "2026-12-14",
+          "events": []
+        },
+        {
+          "date": "2026-12-15",
+          "events": []
+        },
+        {
+          "date": "2026-12-16",
+          "events": []
+        },
+        {
+          "date": "2026-12-17",
+          "events": []
+        },
+        {
+          "date": "2026-12-18",
+          "events": []
+        },
+        {
+          "date": "2026-12-19",
+          "events": []
+        },
+        {
+          "date": "2026-12-20",
+          "events": []
+        },
+        {
+          "date": "2026-12-21",
+          "events": []
+        },
+        {
+          "date": "2026-12-22",
+          "events": []
+        },
+        {
+          "date": "2026-12-23",
+          "events": []
+        },
+        {
+          "date": "2026-12-24",
+          "events": []
+        },
+        {
+          "date": "2026-12-25",
+          "events": []
+        },
+        {
+          "date": "2026-12-26",
+          "events": []
+        },
+        {
+          "date": "2026-12-27",
+          "events": []
+        },
+        {
+          "date": "2026-12-28",
+          "events": []
+        },
+        {
+          "date": "2026-12-29",
+          "events": []
+        },
+        {
+          "date": "2026-12-30",
+          "events": []
+        },
+        {
+          "date": "2026-12-31",
           "events": []
         }
       ]

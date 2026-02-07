@@ -27,33 +27,59 @@ import calendarData from '../data/calendar.json';
 */
 
 const dayOfWeekNamesMonFirst = ['Po', 'Út', 'St', 'Čt', 'Pá', 'So', 'Ne'];
-const monthNames = ['leden', 'únor', 'březen', 'duben', 'květen', 'červen', 'červenec', 'srpen', 'září', 'říjen', 'listopad', 'prosinec'];
+const monthNames = ['Leden', 'Únor', 'Březen', 'Duben', 'Květen', 'Červen', 'Červenec', 'Srpen', 'Září', 'Říjen', 'Listopad', 'Prosinec'];
 
 // Layout constants
 const LAYOUT = {
-  cellMinHeight: '70px',
+  cellMinHeight: '85px',
   eventTitleMaxLength: 35,
   eventTitleTruncateAt: 32,
   continuationMaxLength: 30,
   continuationTruncateAt: 27,
 };
 
-// Compact design colors
+// Modern design colors with adventure theme
 const COLORS = {
-  headerBg: '#0078d4',
+  // Primary gradient colors (mountain/adventure theme)
+  headerGradientStart: '#1e3a5f',
+  headerGradientEnd: '#2563eb',
   headerText: 'white',
-  weekendBg: '#f8f9fa',
-  weekdayBg: 'white',
-  eventBg: '#e3f2fd',
-  eventBorder: '#2196f3',
-  eventBorderLeft: '#2196f3',
-  eventText: '#1565c0',
-  tableBorder: '#dee2e6',
-  tableHeaderBg: '#f1f3f5',
-  tableHeaderBorder: '#dee2e6',
-  linkColor: '#0066cc',
-  textMuted: '#6c757d',
-  textSecondary: '#6b7280',
+  
+  // Background colors
+  pageBg: '#f0f4f8',
+  weekendBg: '#f8fafc',
+  weekdayBg: '#ffffff',
+  todayBg: '#fef3c7',
+  
+  // Event colors
+  eventBg: 'linear-gradient(135deg, #dbeafe 0%, #e0f2fe 100%)',
+  eventBgSolid: '#dbeafe',
+  eventBorder: '#3b82f6',
+  eventBorderLeft: '#2563eb',
+  eventText: '#1e40af',
+  eventHoverBg: '#bfdbfe',
+  
+  // Multi-day event colors
+  multiDayBg: 'linear-gradient(135deg, #c7d2fe 0%, #ddd6fe 100%)',
+  multiDayBgSolid: '#c7d2fe',
+  multiDayBorder: '#8b5cf6',
+  multiDayText: '#5b21b6',
+  
+  // Table colors
+  tableBorder: '#e2e8f0',
+  tableHeaderBg: '#f1f5f9',
+  tableHeaderText: '#475569',
+  
+  // Link and text colors
+  linkColor: '#2563eb',
+  linkHoverColor: '#1d4ed8',
+  textMuted: '#64748b',
+  textSecondary: '#475569',
+  textPrimary: '#1e293b',
+  
+  // Shadow
+  cardShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+  cardHoverShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
 };
 
 interface Event {
@@ -81,6 +107,10 @@ export default function Home() {
     const year = date.getFullYear();
     return `${monthName} ${year}`;
   };
+
+  // Get today's date for highlighting
+  const today = new Date();
+  const todayStr = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
 
   const getCalendarGrid = (month: Month) => {
     const firstDay = new Date(month.date);
@@ -169,33 +199,109 @@ export default function Home() {
   );
 
   return (
-    <main className="container mx-auto px-2 sm:px-4 py-3 sm:py-4" style={{ backgroundColor: '#f5f5f5', color: 'black', maxWidth: '1400px' }}>
-      <h1 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4" style={{ color: '#333' }}>
-        Kalendář akcí a kurzů{' '}
-        <a href='https://daily-adventures.cz/' style={{ color: COLORS.linkColor }}>Daily Adventures</a>
-      </h1>
+    <main className="container mx-auto px-3 sm:px-6 py-6 sm:py-8" style={{ backgroundColor: COLORS.pageBg, color: 'black', maxWidth: '1400px', minHeight: '100vh' }}>
+      {/* Header Section */}
+      <header className="mb-6 sm:mb-10">
+        <div className="flex items-center gap-3 mb-3">
+          <div style={{ 
+            width: '48px', 
+            height: '48px', 
+            background: `linear-gradient(135deg, ${COLORS.headerGradientStart} 0%, ${COLORS.headerGradientEnd} 100%)`,
+            borderRadius: '12px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            boxShadow: '0 4px 6px -1px rgba(37, 99, 235, 0.3)'
+          }}>
+            <span style={{ fontSize: '24px' }}>🏔️</span>
+          </div>
+          <div>
+            <h1 className="text-2xl sm:text-4xl font-bold" style={{ color: COLORS.textPrimary, letterSpacing: '-0.02em' }}>
+              Kalendář akcí a kurzů
+            </h1>
+            <a 
+              href='https://daily-adventures.cz/' 
+              className="text-lg sm:text-xl font-semibold hover:underline transition-all"
+              style={{ color: COLORS.linkColor }}
+            >
+              Daily Adventures
+            </a>
+          </div>
+        </div>
+        <p className="text-sm sm:text-base max-w-2xl" style={{ color: COLORS.textSecondary, lineHeight: '1.6' }}>
+          Tato stránka shromažďuje informace o akcích a kurzech z{' '}
+          <a 
+            href='https://daily-adventures.cz/kalendar-akci-a-kurzu/' 
+            className="hover:underline font-medium"
+            style={{ color: COLORS.linkColor }}
+          >
+            daily-adventures.cz
+          </a>
+        </p>
+      </header>
 
-      <p className="mb-4 sm:mb-6 text-xs sm:text-sm" style={{ color: COLORS.textMuted }}>
-        Tato stránka shromažďuje informace o akcích a kurzech, které jsou dostupné na
-        stránce <a href='https://daily-adventures.cz/kalendar-akci-a-kurzu/' style={{ color: COLORS.linkColor }}>daily-adventures.cz/kalendar-akci-a-kurzu/</a>.
-      </p>
-
-      <div className="space-y-4 sm:space-y-6">
+      <div className="space-y-6 sm:space-y-8">
         {monthsWithEvents.map((month) => {
           const weeks = getCalendarGrid(month);
           
           return (
-            <div key={month.date} style={{ backgroundColor: 'white', borderRadius: '6px', overflow: 'hidden', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
-              <div style={{ backgroundColor: COLORS.headerBg, color: COLORS.headerText, padding: '10px 12px', fontSize: '16px', fontWeight: 'bold' }} className="sm:text-lg sm:px-4 sm:py-3">
+            <div 
+              key={month.date} 
+              style={{ 
+                backgroundColor: 'white', 
+                borderRadius: '16px', 
+                overflow: 'hidden', 
+                boxShadow: COLORS.cardShadow,
+                transition: 'box-shadow 0.3s ease'
+              }}
+              className="hover:shadow-lg"
+            >
+              {/* Month Header */}
+              <div 
+                style={{ 
+                  background: `linear-gradient(135deg, ${COLORS.headerGradientStart} 0%, ${COLORS.headerGradientEnd} 100%)`,
+                  color: COLORS.headerText, 
+                  padding: '16px 20px', 
+                  fontSize: '20px', 
+                  fontWeight: '700',
+                  letterSpacing: '0.01em',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '12px'
+                }} 
+                className="sm:text-2xl sm:px-6 sm:py-4"
+              >
+                <span style={{ 
+                  backgroundColor: 'rgba(255,255,255,0.2)', 
+                  padding: '8px 12px', 
+                  borderRadius: '8px',
+                  fontSize: '14px',
+                  fontWeight: '600'
+                }}>
+                  📅
+                </span>
                 {formatMonthHeader(month.date)}
               </div>
               
               <div style={{ overflowX: 'auto' }}>
                 <table style={{ width: '100%', borderCollapse: 'collapse', minWidth: '640px' }}>
                   <thead>
-                    <tr style={{ backgroundColor: COLORS.tableHeaderBg, borderBottom: `1px solid ${COLORS.tableHeaderBorder}` }}>
-                      {dayOfWeekNamesMonFirst.map((day) => (
-                        <th key={day} style={{ padding: '6px 4px', fontSize: '12px', fontWeight: '600', color: COLORS.textMuted, textAlign: 'left', width: '14.28%' }} className="sm:text-sm sm:px-2">
+                    <tr style={{ backgroundColor: COLORS.tableHeaderBg, borderBottom: `2px solid ${COLORS.tableBorder}` }}>
+                      {dayOfWeekNamesMonFirst.map((day, index) => (
+                        <th 
+                          key={day} 
+                          style={{ 
+                            padding: '12px 8px', 
+                            fontSize: '13px', 
+                            fontWeight: '700', 
+                            color: index >= 5 ? COLORS.linkColor : COLORS.tableHeaderText, 
+                            textAlign: 'center', 
+                            width: '14.28%',
+                            textTransform: 'uppercase',
+                            letterSpacing: '0.05em'
+                          }} 
+                          className="sm:text-sm sm:px-3"
+                        >
                           {day}
                         </th>
                       ))}
@@ -207,32 +313,41 @@ export default function Home() {
                         {week.map((day, dayIndex) => {
                           const isWeekend = dayIndex >= 5;
                           const hasEvents = day && day.events.length > 0;
+                          const isToday = day && day.date === todayStr;
                           
                           return (
                             <td 
                               key={dayIndex}
                               style={{
-                                padding: '2px',
+                                padding: '4px',
                                 verticalAlign: 'top',
                                 borderRight: `1px solid ${COLORS.tableBorder}`,
                                 borderBottom: `1px solid ${COLORS.tableBorder}`,
-                                backgroundColor: isWeekend ? COLORS.weekendBg : COLORS.weekdayBg,
+                                backgroundColor: isToday ? COLORS.todayBg : (isWeekend ? COLORS.weekendBg : COLORS.weekdayBg),
                                 minHeight: LAYOUT.cellMinHeight,
                                 position: 'relative',
+                                transition: 'background-color 0.2s ease',
                               }}
                             >
                               {day ? (
                                 <div style={{ height: '100%', display: 'flex', flexDirection: 'column', minHeight: LAYOUT.cellMinHeight }}>
                                   <div style={{ 
-                                    fontSize: '11px', 
-                                    fontWeight: hasEvents ? '600' : '400',
-                                    color: hasEvents ? '#333' : '#999',
-                                    marginBottom: '2px',
-                                    padding: '3px 4px'
+                                    fontSize: '14px', 
+                                    fontWeight: hasEvents ? '700' : '500',
+                                    color: isToday ? COLORS.linkColor : (hasEvents ? COLORS.textPrimary : COLORS.textMuted),
+                                    marginBottom: '4px',
+                                    padding: '4px 6px',
+                                    borderRadius: isToday ? '50%' : '0',
+                                    backgroundColor: isToday ? '#dbeafe' : 'transparent',
+                                    width: isToday ? '28px' : 'auto',
+                                    height: isToday ? '28px' : 'auto',
+                                    display: isToday ? 'flex' : 'block',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
                                   }}>
                                     {new Date(day.date).getDate()}
                                   </div>
-                                  <div style={{ flex: 1, overflow: 'auto', padding: '0 2px' }}>
+                                  <div style={{ flex: 1, overflow: 'auto', padding: '0 4px 4px 4px' }}>
                                     {day.events.map((event, i) => {
                                       // Check if this is a multi-day event
                                       const durationDays = event.duration_days || 1;
@@ -245,26 +360,32 @@ export default function Home() {
                                       const isLastDay = day.date === endDate;
                                       const isMiddleDay = !isFirstDay && !isLastDay;
                                       
+                                      // Choose colors based on whether it's a multi-day event
+                                      const bgColor = isMultiDay ? COLORS.multiDayBgSolid : COLORS.eventBgSolid;
+                                      const borderColor = isMultiDay ? COLORS.multiDayBorder : COLORS.eventBorder;
+                                      const textColor = isMultiDay ? COLORS.multiDayText : COLORS.eventText;
+                                      
                                       return (
                                         <div 
                                           key={i} 
+                                          className="event-card"
                                           style={{
-                                            backgroundColor: COLORS.eventBg,
-                                            border: `1px solid ${COLORS.eventBorder}`,
-                                            borderLeft: isFirstDay ? `2px solid ${COLORS.eventBorderLeft}` : `1px solid ${COLORS.eventBorder}`,
-                                            borderRadius: isFirstDay && !isLastDay ? '2px 0 0 2px' : (!isFirstDay && isLastDay ? '0 2px 2px 0' : (isFirstDay && isLastDay ? '2px' : '0')),
-                                            padding: '2px 4px',
-                                            marginBottom: '2px',
-                                            fontSize: '10px',
-                                            lineHeight: '1.2',
-                                            fontWeight: isMultiDay ? '500' : '400',
-                                            opacity: isMiddleDay ? 0.75 : 1
+                                            background: bgColor,
+                                            border: `1px solid ${borderColor}`,
+                                            borderLeft: isFirstDay ? `3px solid ${borderColor}` : `1px solid ${borderColor}`,
+                                            borderRadius: isFirstDay && !isLastDay ? '6px 0 0 6px' : (!isFirstDay && isLastDay ? '0 6px 6px 0' : (isFirstDay && isLastDay ? '6px' : '0')),
+                                            padding: '4px 8px',
+                                            marginBottom: '4px',
+                                            fontSize: '11px',
+                                            lineHeight: '1.4',
+                                            fontWeight: isMultiDay ? '600' : '500',
+                                            opacity: isMiddleDay ? 0.8 : 1,
                                           }}
                                         >
                                           <a 
                                             href={event.url} 
                                             style={{ 
-                                              color: COLORS.eventText,
+                                              color: textColor,
                                               textDecoration: 'none',
                                               display: 'block'
                                             }}
@@ -273,10 +394,10 @@ export default function Home() {
                                             {isFirstDay ? (
                                               <>
                                                 {event.title.length > LAYOUT.eventTitleMaxLength ? event.title.substring(0, LAYOUT.eventTitleTruncateAt) + '...' : event.title}
-                                                {isMultiDay && <span style={{ opacity: 0.7, fontSize: '9px' }}> ({durationDays}d)</span>}
+                                                {isMultiDay && <span style={{ opacity: 0.8, fontSize: '10px', marginLeft: '4px' }}>📆 {durationDays}d</span>}
                                               </>
                                             ) : (
-                                              <span style={{ opacity: 0.6 }}>↔ {event.title.length > LAYOUT.continuationMaxLength ? event.title.substring(0, LAYOUT.continuationTruncateAt) + '...' : event.title}</span>
+                                              <span style={{ opacity: 0.75 }}>→ {event.title.length > LAYOUT.continuationMaxLength ? event.title.substring(0, LAYOUT.continuationTruncateAt) + '...' : event.title}</span>
                                             )}
                                           </a>
                                         </div>
@@ -298,9 +419,23 @@ export default function Home() {
         })}
       </div>
 
-      <p className="mt-6 pt-4 text-xs sm:text-sm" style={{ color: COLORS.textSecondary, textAlign: 'center' }}>
-        Github: <a href='https://github.com/messa/da-calendar' style={{ color: COLORS.linkColor }}>github.com/messa/da-calendar</a>
-      </p>
+      {/* Footer */}
+      <footer className="mt-10 pt-6 pb-4 border-t" style={{ borderColor: COLORS.tableBorder }}>
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-3 text-sm" style={{ color: COLORS.textSecondary }}>
+          <span>Vytvořeno s ❤️ pro outdoorovou komunitu</span>
+          <span className="hidden sm:inline">•</span>
+          <a 
+            href='https://github.com/messa/da-calendar' 
+            className="flex items-center gap-2 hover:underline font-medium"
+            style={{ color: COLORS.linkColor }}
+          >
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+            github.com/messa/da-calendar
+          </a>
+        </div>
+      </footer>
     </main>
   );
 }

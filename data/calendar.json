@@ -1029,7 +1029,15 @@
         },
         {
           "date": "2026-07-24",
-          "events": []
+          "events": [
+            {
+              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Martin",
+              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-skalach-2dny/",
+              "start_date": "2026-07-24",
+              "end_date": "2026-07-26",
+              "duration_days": 3
+            }
+          ]
         },
         {
           "date": "2026-07-25",

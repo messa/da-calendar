@@ -1038,15 +1038,7 @@
         },
         {
           "date": "2026-08-21",
-          "events": [
-            {
-              "title": "V\u00ddSTUP NA TRIGLAV 2864 M \u2013 NEJVY\u0160\u0160\u00cd HORU SLOVINSKA - Instruktor Luk\u00e1\u0161",
-              "url": "https://daily-adventures.cz/eshop/vystup-na-triglav-nejvyssi-horu-slovinska/",
-              "start_date": "2026-08-21",
-              "end_date": "2026-08-23",
-              "duration_days": 3
-            }
-          ]
+          "events": []
         },
         {
           "date": "2026-08-22",
@@ -1074,7 +1066,15 @@
         },
         {
           "date": "2026-08-28",
-          "events": []
+          "events": [
+            {
+              "title": "V\u00ddSTUP NA TRIGLAV 2864 M \u2013 NEJVY\u0160\u0160\u00cd HORU SLOVINSKA - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/vystup-na-triglav-nejvyssi-horu-slovinska/",
+              "start_date": "2026-08-28",
+              "end_date": "2026-08-30",
+              "duration_days": 3
+            }
+          ]
         },
         {
           "date": "2026-08-29",

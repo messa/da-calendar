@@ -297,6 +297,12 @@
               "start_date": "2026-04-17",
               "end_date": "2026-04-19",
               "duration_days": 3
+            },
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTORKA Maru\u0161ka",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/",
+              "start_date": "2026-04-17",
+              "end_date": "2026-04-17"
             }
           ]
         },
@@ -458,11 +464,25 @@
         },
         {
           "date": "2026-05-15",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTORKA Maru\u0161ka",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/",
+              "start_date": "2026-05-15",
+              "end_date": "2026-05-15"
+            }
+          ]
         },
         {
           "date": "2026-05-16",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTORKA Maru\u0161ka",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/",
+              "start_date": "2026-05-16",
+              "end_date": "2026-05-16"
+            }
+          ]
         },
         {
           "date": "2026-05-17",
@@ -1205,7 +1225,15 @@
         },
         {
           "date": "2026-09-21",
-          "events": []
+          "events": [
+            {
+              "title": "Lezeck\u00fd a rozvojov\u00fd kemp Bosna a Hercegovina",
+              "url": "https://www.google.com/calendar/event?eid=NmtvM2lkMWo2MWlqY2I5b2M4cW0yYjlrNm9xMzZiYjFjZ3AzaWI5bTYwcGphb2huNjRxNjZlMWxjZyBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "start_date": "2026-09-21",
+              "end_date": "2026-09-27",
+              "duration_days": 7
+            }
+          ]
         },
         {
           "date": "2026-09-22",

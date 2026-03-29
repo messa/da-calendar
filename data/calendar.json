@@ -5,26 +5,7 @@
       "days": [
         {
           "date": "2026-03-01",
-          "events": [
-            {
-              "title": "Skialpov\u00fd kurz pro za\u010d\u00e1te\u010dn\u00edky - Jesen\u00edky - Instruktor \u0160t\u011bp\u00e1n",
-              "url": "https://daily-adventures.cz/eshop/skialpovy-kurz-pro-zacatecniky-jeseniky/",
-              "start_date": "2026-03-01",
-              "end_date": "2026-03-01"
-            },
-            {
-              "title": "Splitboardov\u00fd kurz pro za\u010d\u00e1te\u010dn\u00edky - Jesen\u00edky - Instruktor Luk\u00e1\u0161",
-              "url": "https://www.google.com/url?q=https://daily-adventures.cz/eshop/skialpovy-kurz-pro-zacatecniky-jeseniky/&sa=D&source=calendar&usd=2&usg=AOvVaw2r6aVG3DhkJ7Xt5_zWyjug",
-              "start_date": "2026-03-01",
-              "end_date": "2026-03-01"
-            },
-            {
-              "title": "P\u0159echod Krkono\u0161 na sn\u011b\u017enic\u00edch",
-              "url": "https://www.google.com/calendar/event?eid=Y2dvNjJwajQ2ZGkzZWI5bjY4cmo0YjlrNjFpajBiOXA2bGg2NmI5azZoaGphb3I1Y2txajRwMzQ2ZyBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
-              "start_date": "2026-03-01",
-              "end_date": "2026-03-01"
-            }
-          ]
+          "events": []
         },
         {
           "date": "2026-03-02",

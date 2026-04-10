@@ -164,7 +164,14 @@
         },
         {
           "date": "2026-04-30",
-          "events": []
+          "events": [
+            {
+              "title": "Kurz dopomoci a z\u00e1chrany na ferrat\u011b Gutovka lvl.1 - Praha, instruktor \u0160t\u011bp\u00e1n",
+              "url": "https://www.google.com/calendar/event?eid=NzRzMzhkOWo2MHBqZ2I5bDZwaWo0YjlrNmtvM2ViOXA2MWgzZ2I5amM5aDYyZGhpYzVoamlvajM2YyBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "start_date": "2026-04-30",
+              "end_date": "2026-04-30"
+            }
+          ]
         }
       ]
     },
@@ -334,14 +341,7 @@
         },
         {
           "date": "2026-05-25",
-          "events": [
-            {
-              "title": "Kurz dopomoci a z\u00e1chrany na ferrat\u011b Gutovka lvl.1 - Praha, instruktorka \u017de\u0148a",
-              "url": "https://www.google.com/calendar/event?eid=Nm9xajBjcGtja29qaWJiMTZzc2owYjlrNnBpajJiYjI2a3EzNGI5bjZrc204ZHBwNmNybWNkcGw2ayBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
-              "start_date": "2026-05-25",
-              "end_date": "2026-05-25"
-            }
-          ]
+          "events": []
         },
         {
           "date": "2026-05-26",
@@ -539,7 +539,14 @@
         },
         {
           "date": "2026-06-25",
-          "events": []
+          "events": [
+            {
+              "title": "Kurz dopomoci a z\u00e1chrany na ferrat\u011b Gutovka lvl.1 - Praha, instruktor \u0160t\u011bp\u00e1n",
+              "url": "https://www.google.com/calendar/event?eid=Y3BnajBvcGw2c3A2MmI5ZzYwc20yYjlrY2NwM2ViOXA2cGgzMGJiNmNjcjMyY2hrNjBwamdvcHA2NCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "start_date": "2026-06-25",
+              "end_date": "2026-06-25"
+            }
+          ]
         },
         {
           "date": "2026-06-26",
@@ -727,7 +734,7 @@
               "duration_days": 3
             },
             {
-              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Luk\u00e1\u0161",
+              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Martin",
               "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-skalach-2dny/",
               "start_date": "2026-07-17",
               "end_date": "2026-07-19",
@@ -768,15 +775,7 @@
         },
         {
           "date": "2026-07-24",
-          "events": [
-            {
-              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Martin",
-              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-skalach-2dny/",
-              "start_date": "2026-07-24",
-              "end_date": "2026-07-26",
-              "duration_days": 3
-            }
-          ]
+          "events": []
         },
         {
           "date": "2026-07-25",

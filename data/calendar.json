@@ -91,12 +91,6 @@
               "start_date": "2026-04-17",
               "end_date": "2026-04-19",
               "duration_days": 3
-            },
-            {
-              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTORKA Maru\u0161ka",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/",
-              "start_date": "2026-04-17",
-              "end_date": "2026-04-17"
             }
           ]
         },
@@ -234,7 +228,15 @@
         },
         {
           "date": "2026-05-07",
-          "events": []
+          "events": [
+            {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Vitalij",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/",
+              "start_date": "2026-05-07",
+              "end_date": "2026-05-08",
+              "duration_days": 2
+            }
+          ]
         },
         {
           "date": "2026-05-08",
@@ -253,7 +255,14 @@
         },
         {
           "date": "2026-05-10",
-          "events": []
+          "events": [
+            {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Vitalij",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/",
+              "start_date": "2026-05-10",
+              "end_date": "2026-05-10"
+            }
+          ]
         },
         {
           "date": "2026-05-11",
@@ -1459,7 +1468,15 @@
         },
         {
           "date": "2026-11-20",
-          "events": []
+          "events": [
+            {
+              "title": "Kurz p\u0159e\u017eit\u00ed Level 1 - Orlick\u00e9 hory",
+              "url": "https://www.google.com/calendar/event?eid=NjRwajhwajM3NHFqZ2I5ZzYwcG0yYjlrY2hqNjhiYjFjZGdqZ2JiMjYwc20yZHIyNjBvamNlMzI2OCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "start_date": "2026-11-20",
+              "end_date": "2026-11-22",
+              "duration_days": 3
+            }
+          ]
         },
         {
           "date": "2026-11-21",

@@ -188,6 +188,13 @@
           "date": "2026-05-02",
           "events": [
             {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Filip",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/",
+              "start_date": "2026-05-02",
+              "end_date": "2026-05-03",
+              "duration_days": 2
+            },
+            {
               "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAHY, INSTRUKTOR DAN",
               "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/",
               "start_date": "2026-05-02",
@@ -473,7 +480,15 @@
         },
         {
           "date": "2026-06-13",
-          "events": []
+          "events": [
+            {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Filip",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/",
+              "start_date": "2026-06-13",
+              "end_date": "2026-06-14",
+              "duration_days": 2
+            }
+          ]
         },
         {
           "date": "2026-06-14",

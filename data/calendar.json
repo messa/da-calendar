@@ -412,6 +412,12 @@
               "start_date": "2026-06-26",
               "end_date": "2026-06-28",
               "duration_days": 3
+            },
+            {
+              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/",
+              "start_date": "2026-06-26",
+              "end_date": "2026-06-26"
             }
           ]
         },
@@ -534,11 +540,25 @@
         },
         {
           "date": "2026-07-11",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTORKA Maru\u0161ka",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/",
+              "start_date": "2026-07-11",
+              "end_date": "2026-07-11"
+            }
+          ]
         },
         {
           "date": "2026-07-12",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTORKA Maru\u0161ka",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/",
+              "start_date": "2026-07-12",
+              "end_date": "2026-07-12"
+            }
+          ]
         },
         {
           "date": "2026-07-13",
@@ -780,12 +800,24 @@
               "start_date": "2026-08-14",
               "end_date": "2026-08-16",
               "duration_days": 3
+            },
+            {
+              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/",
+              "start_date": "2026-08-14",
+              "end_date": "2026-08-14"
             }
           ]
         },
         {
           "date": "2026-08-15",
           "events": [
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAHY, INSTRUKTORKA LEA",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/",
+              "start_date": "2026-08-15",
+              "end_date": "2026-08-15"
+            },
             {
               "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR \u0160T\u011aP\u00c1N",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/",

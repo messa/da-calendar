@@ -192,7 +192,7 @@
           "events": [
             {
               "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAHY, INSTRUKTORKA LEA",
-              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-pro-mirne-pokrocile-praha/",
               "start_date": "2026-06-27",
               "end_date": "2026-06-27"
             },
@@ -239,7 +239,7 @@
           "events": [
             {
               "title": "Kurz dopomoci a z\u00e1chrany na ferrat\u011b Cakle lvl.1 - \u00dast\u00ed nad Orlic\u00ed, instruktor Luk\u00e1\u0161",
-              "url": "https://www.google.com/calendar/event?eid=NzVpbWNjMW1jbGlqZ2I5bzZoaW1hYjlrNmNxNjhiOW9jOHIzNmJiNjY0cDZjZTlqNnBoajhjMW02YyBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "url": "https://daily-adventures.cz/eshop/kurz-zachrany-na-via-ferrata/",
               "start_date": "2026-07-01",
               "end_date": "2026-07-01"
             }
@@ -250,7 +250,7 @@
           "events": [
             {
               "title": "Kurz z\u00e1chrany a sebez\u00e1chrany na ferrat\u011b Cakle lvl.2 - \u00dast\u00ed nad Orlic\u00ed, instruktor Luk\u00e1\u0161",
-              "url": "https://www.google.com/calendar/event?eid=NzFpajBjMWc2b3M2NGI5aGNrcTNpYjlrYzRwM2NiOXA2NHNtY2JiMjcwbzY2cGo2Y2xqNjRvOWw3MCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "url": "https://daily-adventures.cz/eshop/kurz-zachrany-a-sebezachrany-na-ferrate-gutovka-level-2/",
               "start_date": "2026-07-02",
               "end_date": "2026-07-02"
             }
@@ -293,20 +293,32 @@
           "events": [
             {
               "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Luk\u00e1\u0161",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/",
+              "url": "https://daily-adventures.cz/eshop/ferratovy-kurz-na-velke-dohode-blansko/",
               "start_date": "2026-07-09",
-              "end_date": "2026-07-12",
-              "duration_days": 4
+              "end_date": "2026-07-09"
             }
           ]
         },
         {
           "date": "2026-07-10",
-          "events": []
+          "events": [
+            {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/ferratovy-kurz-na-velke-dohode-blansko/",
+              "start_date": "2026-07-10",
+              "end_date": "2026-07-10"
+            }
+          ]
         },
         {
           "date": "2026-07-11",
           "events": [
+            {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/ferratovy-kurz-na-velke-dohode-blansko/",
+              "start_date": "2026-07-11",
+              "end_date": "2026-07-11"
+            },
             {
               "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTORKA Maru\u0161ka",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/",
@@ -318,6 +330,12 @@
         {
           "date": "2026-07-12",
           "events": [
+            {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/ferratovy-kurz-na-velke-dohode-blansko/",
+              "start_date": "2026-07-12",
+              "end_date": "2026-07-12"
+            },
             {
               "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTORKA Maru\u0161ka",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/",
@@ -335,7 +353,7 @@
           "events": [
             {
               "title": "Kurz dopomoci a z\u00e1chrany na Velk\u00e9 Dohod\u011b lvl.1 - Blansko, instruktor Luk\u00e1\u0161",
-              "url": "https://www.google.com/calendar/event?eid=NmtyM2VjOWo2dGhtNmI5aTcxajM0YjlrYzVnamFiOW83MWgzYWJiMzYwcmppZDM0NjRzNjJvcG02MCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "url": "https://daily-adventures.cz/eshop/kurz-zachrany-na-via-ferrata/",
               "start_date": "2026-07-14",
               "end_date": "2026-07-14"
             }
@@ -346,7 +364,7 @@
           "events": [
             {
               "title": "Kurz z\u00e1chrany a sebez\u00e1chrany na Velk\u00e9 Dohod\u011b lvl.2 - Blansko, instruktor Luk\u00e1\u0161",
-              "url": "https://www.google.com/calendar/event?eid=YzRvNjZjMWw2MHFqOGI5a2M5aTY0YjlrNnNvbTZiYjE3NWozY2I5ZzZwaWowYzFvNmhobTZlMWhjayBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "url": "https://daily-adventures.cz/eshop/kurz-zachrany-a-sebezachrany-na-ferrate-gutovka-level-2/",
               "start_date": "2026-07-15",
               "end_date": "2026-07-15"
             }
@@ -369,7 +387,7 @@
           "events": [
             {
               "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO POKRO\u010cIL\u00c9 \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Luk\u00e1\u0161",
-              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-skalach-2dny/",
+              "url": "https://daily-adventures.cz/eshop/vikendovy-pokrocily-kurz-lezeni-na-skalach/",
               "start_date": "2026-07-17",
               "end_date": "2026-07-19",
               "duration_days": 3
@@ -499,7 +517,7 @@
           "events": [
             {
               "title": "Kurz dopomoci a z\u00e1chrany na ferrat\u011b Cakle lvl.1 - \u00dast\u00ed nad Orlic\u00ed, instruktor Luk\u00e1\u0161",
-              "url": "https://www.google.com/calendar/event?eid=Y2hpbTRlYjE3NWk2NGI5bDZvb2phYjlrNjFpajZiYjE2OWk2NmI5aWNvcDNhZHBoNzBwMzZlMWo2ZyBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "url": "https://daily-adventures.cz/eshop/kurz-zachrany-na-via-ferrata/",
               "start_date": "2026-08-04",
               "end_date": "2026-08-04"
             }
@@ -510,7 +528,7 @@
           "events": [
             {
               "title": "Kurz z\u00e1chrany a sebez\u00e1chrany na ferrat\u011b Cakle lvl.2 - \u00dast\u00ed nad Orlic\u00ed, instruktor Luk\u00e1\u0161",
-              "url": "https://www.google.com/calendar/event?eid=NzFnbWNkMXBjY28zNmI5bDZ0aGpnYjlrNjVoNmFiYjE2cGo2YWI5azZzcTM4ZTlrNjFqNmNkajY3MCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "url": "https://daily-adventures.cz/eshop/kurz-zachrany-a-sebezachrany-na-ferrate-gutovka-level-2/",
               "start_date": "2026-08-05",
               "end_date": "2026-08-05"
             }
@@ -569,7 +587,7 @@
           "events": [
             {
               "title": "V\u00cdKENDOV\u00dd KURZ V\u00cdCED\u00c9LKOVEHO LEZEN\u00cd\u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Luk\u00e1\u0161",
-              "url": "https://daily-adventures.cz/eshop/vikendovy-pokrocily-kurz-lezeni-na-skalach/",
+              "url": "https://daily-adventures.cz/eshop/vikendovy-kurz-vicedelkoveho-lezeni/",
               "start_date": "2026-08-14",
               "end_date": "2026-08-16",
               "duration_days": 3
@@ -1118,23 +1136,29 @@
           "events": [
             {
               "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Luk\u00e1\u0161",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/",
+              "url": "https://daily-adventures.cz/eshop/ferratovy-kurz-na-velke-dohode-blansko/",
               "start_date": "2026-11-13",
-              "end_date": "2026-11-14",
-              "duration_days": 2
+              "end_date": "2026-11-13"
             }
           ]
         },
         {
           "date": "2026-11-14",
-          "events": []
+          "events": [
+            {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/ferratovy-kurz-na-velke-dohode-blansko/",
+              "start_date": "2026-11-14",
+              "end_date": "2026-11-14"
+            }
+          ]
         },
         {
           "date": "2026-11-15",
           "events": [
             {
               "title": "Kurz dopomoci a z\u00e1chrany na Velk\u00e9 Dohod\u011b lvl.1 - Blansko, instruktor Luk\u00e1\u0161",
-              "url": "https://www.google.com/calendar/event?eid=NmxnamVjajI2a29qZ2JiNjYwcGppYjlrY2NxM2NiOXA3NHE2Y2I5bDZvczNjZGIyNjBwbThlMW9jNCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "url": "https://daily-adventures.cz/eshop/kurz-zachrany-na-via-ferrata/",
               "start_date": "2026-11-15",
               "end_date": "2026-11-15"
             }
@@ -1145,7 +1169,7 @@
           "events": [
             {
               "title": "Kurz z\u00e1chrany a sebez\u00e1chrany na Velk\u00e9 Dohod\u011b lvl.2 - Blansko, instruktor Luk\u00e1\u0161",
-              "url": "https://www.google.com/calendar/event?eid=NjhvMzhlYjVjNHBtNmI5aDc0bzY2YjlrYzVpajBiOXA2NHNqNGI5bGM0cmplb3BsNmNvamVlOW5jbyBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "url": "https://daily-adventures.cz/eshop/kurz-zachrany-a-sebezachrany-na-ferrate-gutovka-level-2/",
               "start_date": "2026-11-16",
               "end_date": "2026-11-16"
             }
@@ -1168,7 +1192,7 @@
           "events": [
             {
               "title": "Kurz p\u0159e\u017eit\u00ed Level 1 - Orlick\u00e9 hory",
-              "url": "https://www.google.com/calendar/event?eid=NjRwajhwajM3NHFqZ2I5ZzYwcG0yYjlrY2hqNjhiYjFjZGdqZ2JiMjYwc20yZHIyNjBvamNlMzI2OCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "url": "https://daily-adventures.cz/eshop/kurz-preziti-orlicke-hory-level-1/",
               "start_date": "2026-11-20",
               "end_date": "2026-11-22",
               "duration_days": 3
@@ -1265,7 +1289,7 @@
           "events": [
             {
               "title": "Zimn\u00ed kurz p\u0159e\u017eit\u00ed Level 2- Orlick\u00e9 hory",
-              "url": "https://www.google.com/calendar/event?eid=YzhvajZjaGw3NWlqNmI5bzY4cDZhYjlrNzVpajhiOXBjOHNqNGJiMzZvcm1hcDlrNmRnamlvYjU3NCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "url": "https://daily-adventures.cz/eshop/zimni-kurz-preziti/",
               "start_date": "2026-12-11",
               "end_date": "2026-12-13",
               "duration_days": 3

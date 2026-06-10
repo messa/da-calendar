@@ -101,7 +101,14 @@
         },
         {
           "date": "2026-06-17",
-          "events": []
+          "events": [
+            {
+              "title": "FERRATOV\u00dd KURZ PLZE\u0147 - INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/ferratovy-kurz-pro-zacatecniky-plzen/",
+              "start_date": "2026-06-17",
+              "end_date": "2026-06-17"
+            }
+          ]
         },
         {
           "date": "2026-06-18",
@@ -430,7 +437,15 @@
         },
         {
           "date": "2026-07-23",
-          "events": []
+          "events": [
+            {
+              "title": "VZDU\u0160N\u00c1 A VELMI OBL\u00cdBEN\u00c1 FERRATA INTERSPORT \u2013 RAKOUSKO - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-intersport-rakousko/",
+              "start_date": "2026-07-23",
+              "end_date": "2026-07-26",
+              "duration_days": 4
+            }
+          ]
         },
         {
           "date": "2026-07-24",

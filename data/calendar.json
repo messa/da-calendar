@@ -210,8 +210,8 @@
               "end_date": "2026-06-27"
             },
             {
-              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTORKA Maru\u0161ka",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/",
+              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTORKA Maru\u0161ka",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/",
               "start_date": "2026-06-27",
               "end_date": "2026-06-27"
             }
@@ -439,7 +439,14 @@
         },
         {
           "date": "2026-07-22",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/",
+              "start_date": "2026-07-22",
+              "end_date": "2026-07-22"
+            }
+          ]
         },
         {
           "date": "2026-07-23",
@@ -490,7 +497,14 @@
         },
         {
           "date": "2026-07-29",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR \u0160T\u011aP\u00c1N",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/",
+              "start_date": "2026-07-29",
+              "end_date": "2026-07-29"
+            }
+          ]
         },
         {
           "date": "2026-07-30",

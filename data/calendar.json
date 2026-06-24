@@ -593,6 +593,12 @@
           "date": "2026-08-09",
           "events": [
             {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAHY, INSTRUKTOR DAN",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/",
+              "start_date": "2026-08-09",
+              "end_date": "2026-08-09"
+            },
+            {
               "title": "Lezeck\u00fd kemp pro d\u011bti na Vyso\u010din\u011b",
               "url": "https://www.google.com/calendar/event?eid=NmRpajJvYjM3MHJqaWI5cDY4czYyYjlrNzRvajJiYjE2cGkzOGJiM2M1aDNjcDFqYzhyNmFkcGc2YyBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
               "start_date": "2026-08-09",
@@ -898,6 +904,12 @@
           "date": "2026-09-20",
           "events": [
             {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAHY, INSTRUKTOR DAN",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/",
+              "start_date": "2026-09-20",
+              "end_date": "2026-09-20"
+            },
+            {
               "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR \u0160T\u011aP\u00c1N",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/",
               "start_date": "2026-09-20",
@@ -1072,7 +1084,14 @@
         },
         {
           "date": "2026-10-25",
-          "events": []
+          "events": [
+            {
+              "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO M\u00cdRN\u011a POKRO\u010cIL\u00c9\u2013 SRBSKO U PRAHY, INSTRUKTOR DAN",
+              "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-srbsko-u-prahy/",
+              "start_date": "2026-10-25",
+              "end_date": "2026-10-25"
+            }
+          ]
         },
         {
           "date": "2026-10-26",
@@ -1104,7 +1123,14 @@
         },
         {
           "date": "2026-10-31",
-          "events": []
+          "events": [
+            {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Filip",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/",
+              "start_date": "2026-10-31",
+              "end_date": "2026-10-31"
+            }
+          ]
         }
       ]
     },
@@ -1117,6 +1143,12 @@
             {
               "title": "Kurz le\u017een\u00ed - Zlat\u00fd Potok",
               "url": "https://www.google.com/calendar/event?eid=NnNzM2FvcjQ2NWgzOGJiMmNsaTNlYjlrYzhyMzRiYjJjOG8zaWJiMjZsaTY4YzMzNmtybWNkcGpjNCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "start_date": "2026-11-01",
+              "end_date": "2026-11-01"
+            },
+            {
+              "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Filip",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/",
               "start_date": "2026-11-01",
               "end_date": "2026-11-01"
             }

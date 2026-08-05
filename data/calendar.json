@@ -631,6 +631,13 @@
           "date": "2026-10-16",
           "events": [
             {
+              "title": "Kurz ter\u00e9nn\u00ed cyklistiky MTB - Instruktor Milan",
+              "url": "https://daily-adventures.cz/eshop/kurz-mtb-jizda-na-trailu/",
+              "start_date": "2026-10-16",
+              "end_date": "2026-10-18",
+              "duration_days": 3
+            },
+            {
               "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Luk\u00e1\u0161",
               "url": "https://daily-adventures.cz/eshop/ferratovy-kurz-na-velke-dohode-blansko/",
               "start_date": "2026-10-16",
@@ -1332,7 +1339,15 @@
         },
         {
           "date": "2027-02-19",
-          "events": []
+          "events": [
+            {
+              "title": "Kurz vht a pohybu po ledovci - Instruktor Luk\u00e1\u0161",
+              "url": "https://www.google.com/calendar/event?eid=NmdvM2FkcGdjOHBqNGI5a2Nvc20yYjlrNjByM2diOXBjOWgzaWJiMzY0cjNjZWIxNjRyMzhlOWc2ZyBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "start_date": "2027-02-19",
+              "end_date": "2027-02-21",
+              "duration_days": 3
+            }
+          ]
         },
         {
           "date": "2027-02-20",
@@ -1638,7 +1653,14 @@
         },
         {
           "date": "2027-04-30",
-          "events": []
+          "events": [
+            {
+              "title": "Kurz vht a pohybu po ledovci - Instruktor Luk\u00e1\u0161",
+              "url": "https://www.google.com/calendar/event?eid=NmNxamVjYjFjaGlqY2I5cGNvcDNnYjlrYzlpMzhiOW82NWlqNmI5bjYwbzNpZGozYzloMzJwajZjOCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "start_date": "2027-04-30",
+              "end_date": "2027-04-30"
+            }
+          ]
         }
       ]
     },
@@ -1647,7 +1669,15 @@
       "days": [
         {
           "date": "2027-05-01",
-          "events": []
+          "events": [
+            {
+              "title": "Kurz vht a pohybu po ledovci - Instruktor Luk\u00e1\u0161",
+              "url": "https://www.google.com/calendar/event?eid=NmNxamVjYjFjaGlqY2I5cGNvcDNnYjlrYzlpMzhiOW82NWlqNmI5bjYwbzNpZGozYzloMzJwajZjOCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "start_date": "2027-05-01",
+              "end_date": "2027-05-02",
+              "duration_days": 2
+            }
+          ]
         },
         {
           "date": "2027-05-02",

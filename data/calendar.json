@@ -631,13 +631,6 @@
           "date": "2026-10-16",
           "events": [
             {
-              "title": "Kurz ter\u00e9nn\u00ed cyklistiky MTB - Instruktor Milan",
-              "url": "https://daily-adventures.cz/eshop/kurz-mtb-jizda-na-trailu/",
-              "start_date": "2026-10-16",
-              "end_date": "2026-10-18",
-              "duration_days": 3
-            },
-            {
               "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Luk\u00e1\u0161",
               "url": "https://daily-adventures.cz/eshop/ferratovy-kurz-na-velke-dohode-blansko/",
               "start_date": "2026-10-16",
@@ -654,6 +647,13 @@
         {
           "date": "2026-10-17",
           "events": [
+            {
+              "title": "Kurz ter\u00e9nn\u00ed cyklistiky MTB - Instruktor Milan",
+              "url": "https://daily-adventures.cz/eshop/kurz-mtb-jizda-na-trailu/",
+              "start_date": "2026-10-17",
+              "end_date": "2026-10-18",
+              "duration_days": 2
+            },
             {
               "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Luk\u00e1\u0161",
               "url": "https://daily-adventures.cz/eshop/ferratovy-kurz-na-velke-dohode-blansko/",

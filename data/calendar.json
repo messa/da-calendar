@@ -345,7 +345,15 @@
         },
         {
           "date": "2026-09-11",
-          "events": []
+          "events": [
+            {
+              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Michal",
+              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-skalach-2dny/",
+              "start_date": "2026-09-11",
+              "end_date": "2026-09-13",
+              "duration_days": 3
+            }
+          ]
         },
         {
           "date": "2026-09-12",
@@ -490,7 +498,15 @@
         },
         {
           "date": "2026-09-25",
-          "events": []
+          "events": [
+            {
+              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Michal",
+              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-skalach-2dny/",
+              "start_date": "2026-09-25",
+              "end_date": "2026-09-27",
+              "duration_days": 3
+            }
+          ]
         },
         {
           "date": "2026-09-26",
@@ -594,7 +610,15 @@
         },
         {
           "date": "2026-10-09",
-          "events": []
+          "events": [
+            {
+              "title": "V\u00cdKENDOV\u00dd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO POKRO\u010cIL\u00c9 \u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Michal",
+              "url": "https://daily-adventures.cz/eshop/zakladni-kurz-lezeni-na-skalach-2dny/",
+              "start_date": "2026-10-09",
+              "end_date": "2026-10-11",
+              "duration_days": 3
+            }
+          ]
         },
         {
           "date": "2026-10-10",

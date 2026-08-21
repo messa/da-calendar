@@ -727,7 +727,15 @@
         },
         {
           "date": "2026-10-23",
-          "events": []
+          "events": [
+            {
+              "title": "V\u00cdKENDOV\u00dd KURZ V\u00cdCED\u00c9LKOVEHO LEZEN\u00cd\u2013 \u017d\u010e\u00c1RSK\u00c9 VRCHY - Instruktor Luk\u00e1\u0161",
+              "url": "https://daily-adventures.cz/eshop/vikendovy-kurz-vicedelkoveho-lezeni/",
+              "start_date": "2026-10-23",
+              "end_date": "2026-10-25",
+              "duration_days": 3
+            }
+          ]
         },
         {
           "date": "2026-10-24",

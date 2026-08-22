@@ -566,14 +566,7 @@
         },
         {
           "date": "2026-10-03",
-          "events": [
-            {
-              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR \u0160T\u011aP\u00c1N",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/",
-              "start_date": "2026-10-03",
-              "end_date": "2026-10-03"
-            }
-          ]
+          "events": []
         },
         {
           "date": "2026-10-04",
@@ -581,12 +574,6 @@
             {
               "title": "JEDNODENN\u00cd KURZ LEZEN\u00cd NA SKAL\u00c1CH PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 SRBSKO U PRAHY, INSTRUKTORKA LEA",
               "url": "https://daily-adventures.cz/eshop/jednodenni-kurz-lezeni-na-skalach-pro-mirne-pokrocile-praha/",
-              "start_date": "2026-10-04",
-              "end_date": "2026-10-04"
-            },
-            {
-              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR \u0160T\u011aP\u00c1N",
-              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/",
               "start_date": "2026-10-04",
               "end_date": "2026-10-04"
             }

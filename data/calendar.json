@@ -770,15 +770,7 @@
         },
         {
           "date": "2026-10-30",
-          "events": [
-            {
-              "title": "Kurz le\u017een\u00ed - Zlat\u00fd Potok",
-              "url": "https://www.google.com/calendar/event?eid=NnNzM2FvcjQ2NWgzOGJiMmNsaTNlYjlrYzhyMzRiYjJjOG8zaWJiMjZsaTY4YzMzNmtybWNkcGpjNCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
-              "start_date": "2026-10-30",
-              "end_date": "2026-10-31",
-              "duration_days": 2
-            }
-          ]
+          "events": []
         },
         {
           "date": "2026-10-31",
@@ -799,12 +791,6 @@
         {
           "date": "2026-11-01",
           "events": [
-            {
-              "title": "Kurz le\u017een\u00ed - Zlat\u00fd Potok",
-              "url": "https://www.google.com/calendar/event?eid=NnNzM2FvcjQ2NWgzOGJiMmNsaTNlYjlrYzhyMzRiYjJjOG8zaWJiMjZsaTY4YzMzNmtybWNkcGpjNCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
-              "start_date": "2026-11-01",
-              "end_date": "2026-11-01"
-            },
             {
               "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Filip",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/",
@@ -951,7 +937,15 @@
         },
         {
           "date": "2026-11-27",
-          "events": []
+          "events": [
+            {
+              "title": "Kurz le\u017een\u00ed - Zlat\u00fd Potok",
+              "url": "https://www.google.com/calendar/event?eid=NnNzM2FvcjQ2NWgzOGJiMmNsaTNlYjlrYzhyMzRiYjJjOG8zaWJiMjZsaTY4YzMzNmtybWNkcGpjNCBkYWlseWFkdmVudHVyZXNjekBt&ctz=Europe/Prague",
+              "start_date": "2026-11-27",
+              "end_date": "2026-11-29",
+              "duration_days": 3
+            }
+          ]
         },
         {
           "date": "2026-11-28",

@@ -593,7 +593,14 @@
         },
         {
           "date": "2026-10-08",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR LUK\u00c1\u0160",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/",
+              "start_date": "2026-10-08",
+              "end_date": "2026-10-08"
+            }
+          ]
         },
         {
           "date": "2026-10-09",
@@ -604,20 +611,47 @@
               "start_date": "2026-10-09",
               "end_date": "2026-10-11",
               "duration_days": 3
+            },
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR LUK\u00c1\u0160",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/",
+              "start_date": "2026-10-09",
+              "end_date": "2026-10-09"
             }
           ]
         },
         {
           "date": "2026-10-10",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR LUK\u00c1\u0160",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/",
+              "start_date": "2026-10-10",
+              "end_date": "2026-10-10"
+            }
+          ]
         },
         {
           "date": "2026-10-11",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR LUK\u00c1\u0160",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/",
+              "start_date": "2026-10-11",
+              "end_date": "2026-10-11"
+            }
+          ]
         },
         {
           "date": "2026-10-12",
-          "events": []
+          "events": [
+            {
+              "title": "KURZ VIA FERRATA LU\u017dICK\u00c9 HORY \u2013 N\u011aMECKO, INSTRUKTOR LUK\u00c1\u0160",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-luzicke-hory/",
+              "start_date": "2026-10-12",
+              "end_date": "2026-10-12"
+            }
+          ]
         },
         {
           "date": "2026-10-13",
@@ -780,6 +814,12 @@
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/",
               "start_date": "2026-10-31",
               "end_date": "2026-10-31"
+            },
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR LUK\u00c1\u0160",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/",
+              "start_date": "2026-10-31",
+              "end_date": "2026-10-31"
             }
           ]
         }
@@ -794,6 +834,12 @@
             {
               "title": "Ferratov\u00fd kurz na Velk\u00e9 Dohod\u011b \u2013 Blansko, instruktor Filip",
               "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata-vodni-brana-semily/",
+              "start_date": "2026-11-01",
+              "end_date": "2026-11-01"
+            },
+            {
+              "title": "KURZ VIA FERRATA PRO ZA\u010c\u00c1TE\u010cN\u00cdKY \u2013 D\u011a\u010c\u00cdNSK\u00c1 ST\u011aNA, INSTRUKTOR LUK\u00c1\u0160",
+              "url": "https://daily-adventures.cz/eshop/kurz-via-ferrata/",
               "start_date": "2026-11-01",
               "end_date": "2026-11-01"
             }
